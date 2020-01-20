@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at	datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C20131122115432.11349drq61qpgpuw%40mail.uni-leipzig.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002108.html">
+   <LINK REL="Next"  HREF="002110.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at	datahub ?</H1>
+    <B>Bettina Klimek</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C20131122115432.11349drq61qpgpuw%40mail.uni-leipzig.de%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at	datahub ?">klimek at informatik.uni-leipzig.de
+       </A><BR>
+    <I>Fri Nov 22 10:54:32 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002108.html">&#239;&#187;&#191;ESWC 2014 Final Call for Workshops
+</A></li>
+        <LI>Next message: <A HREF="002110.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#567">[ date ]</a>
+              <a href="thread.html#567">[ thread ]</a>
+              <a href="subject.html#567">[ subject ]</a>
+              <a href="author.html#567">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear all,
+
+at the last telco I agreed to categorize all the data sets in the  
+datahub. In the telco we set up the following three categories:
+
+Lexicon ? based on data containing words
+Corpus ? based on data containing text
+Linguistic Database ? based on data containing languages
+
+After I looked up every single data set in the datahub several  
+problems occurred:
+
+1) some data sets seem to be wrong/spam
+2) the source URLs in some data sets do not work or are missing
+3) there seem to be less data sets at datahub than there are bubbles  
+in the cloud diagram
+4) some data sets are not linked yet
+
+Concerning these issues I would like to know if there is someone  
+managing and maintaining the correctness and completeness of the data  
+set entries at datahub? I think this is a matter of quality that  
+should not be ignored.
+
+5) a categorization in terms of the three categories defined above  
+does not work for all the data sets
+
+While going through all the data sets manifold questions concerning  
+the LLOD cloud as such occurred to me. The most important one is: what  
+is linguistic data? It is not defined anywhere on the website and the  
+data sets reveal all kinds of data which differ in their information  
+provided, purpose of representation, data types they supply to the  
+user as well as in the linguistic content. To me it seemed as if the  
+categorization of the data sets is taking the second step without the  
+first. The first step should be to  set up a definition of what  
+linguistic data is and as a result which kind of data sets are to be  
+expected as belonging into the cloud.
+
+When thinking of the category labels I tried to find some that would  
+be broadly accepted by the users. However there seems to be no ideal  
+user. A user could be a linguist interested in human languages, a  
+computer linguist, a computer scientist or someone interested in NLP  
+(even more different users are thinkable). The data sets mirror the  
+diversity of users within the data they provide. I think it is  
+impossible to find category labels which can cover all the special  
+research areas linguistic data could be used for. That is why I tried  
+to establish categories everybody understands intuitively. Thus I have  
+assigned the data sets to the following 5-6 categories, which are  
+defined as follows:
+
+LLOD data set categories:
+1) Data representing words = Lexicon
+2) Data representing texts = Corpus
+3) Data representing information about languages = Language Database
+4) Data derived derived from but conserving original data = Ontology
+5) Data representing further knowledge about the data (such as  
+bibliographical references) = Meta Data
+6) maybe: category for further relevant data sets not directly  
+concerned with linguistic data
+
+As you can see I kept the first two categories because they are  
+straightforward and users intuitively know what a lexicon and a corpus  
+are. I established category #3 for those data sets dealing with  
+certain information on a large number of languages which cannot easily  
+be understood as lexicon or corpus. This holds for PHOIBLE and ASJP.  
+The former lists phonological segments that are below the word and  
+text level and which are provided for many languages. The latter is a  
+language classification based on lexical similarities (which are not  
+given though). Another case is glottolog being a language  
+classification as well but additionally providing relevant  
+bibliographical sources. Since these references are set up in a  
+distinct application (Langdoc) glottolog is one special case covering  
+two categories: Language Database and Meta Data. Another case, even  
+more diverse, is the Multext-East data set which seems to cover the  
+categories Lexicon, Corpus as well as Ontology. We can debate about  
+the assignment of a data set to two categories. Maybe it is better to  
+force everybody uploading data sets to select for only one default  
+category.
+
+Furthermore the assignment of the data sets to the categories is based  
+on what is to be provided primarily! The ASIt for instance evokes the  
+impression that some kind of Italian corpora are the content of the  
+data set. However it is rather interested in presenting the analysis  
+of various corpora (which are not provided as such!) in form of  
+rdf-schema. Data sets like these are the reason why I set up category  
+#4. These are problematic because they are based on human language  
+data but converted into a machine readable language and by doing so  
+totally changing the user interested in the data. The linguist would  
+be interested in a user friendly searchable language corpus and the  
+computer linguist/scientist is only concerned with the rdf data for  
+instance. To solve this problem I assigned data sets primarily  
+providing human language data (even if there is also an rdf verision)  
+to the categories #1 to #3 and data sets being concerned with machine  
+language in any way (only using human language material in order to do  
+so) to category #4.
+
+I think it is essential to put these definitions into the cloud (maybe  
+as tooltips), because the Meta Data category for instance will be  
+associated with different information depending on whether a user is  
+concerned with human language or with computer languages.
+
+My classification of the data sets can be seen at:
+<A HREF="https://docs.google.com/spreadsheet/ccc?key=0AkVaxylrRsewdGwtckloTlYyZ25iY2duTkQwdlZBaHc&amp;usp=sharing">https://docs.google.com/spreadsheet/ccc?key=0AkVaxylrRsewdGwtckloTlYyZ25iY2duTkQwdlZBaHc&amp;usp=sharing</A>
+
+There you can also see some ?unsure data sets? such as DBpedia. I  
+think these are corresponding to the ?resources used to assist and  
+augment language processing applications, even if the nature of the  
+resource is not deeply entrenched in Linguistics, but only as long as  
+the usefulness is well motivated? as explained on:  
+<A HREF="http://www.semantic-web-journal.net/blog/call-multilingual-linked-open-data-mlod-2012-data-post-proceedings.">http://www.semantic-web-journal.net/blog/call-multilingual-linked-open-data-mlod-2012-data-post-proceedings.</A> I couldn?t come up with an appropriate category label for them yet (maybe ?indirectly relevant resources??!). And I am not sure if they should be in the cloud at all because the data sets are already so heterogeneous that adding not primarily linguistic data sets might cause even more confusion to the user and maybe also frustration when he won?t find only linguistic data. Keeping the LLOD cloud as a pure linguistic data cloud and providing a possibility to link to the LOD cloud (which already contains the ?unsure? data sets) could be a practical option  
+here.
+
+This is just another proposal for a possible classification. I think  
+it is efficient enough to also cover data sets which are to come in  
+the future. I know it is very broad and not very specific, but since I  
+am of the opinion that further sub-classifications need to be  
+developed with regard to the different linguistic user types, we can  
+work on that more carefully later. As a first impression of the cloud  
+the 5-6 categories I proposed here should be sufficient to get an  
+overview of the main cloud content.
+
+Looking forward to your comments,
+Bettina
+
+
+
+
+----------------------------------------------------------------
+This message was sent using IMP, the Internet Messaging Program.
+
+
+</PRE>
+
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002108.html">&#239;&#187;&#191;ESWC 2014 Final Call for Workshops
+</A></li>
+	<LI>Next message: <A HREF="002110.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#567">[ date ]</a>
+              <a href="thread.html#567">[ thread ]</a>
+              <a href="subject.html#567">[ subject ]</a>
+              <a href="author.html#567">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

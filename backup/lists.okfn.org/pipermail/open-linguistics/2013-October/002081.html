@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at	datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C0728CFA4-7A8A-4FFB-A669-E5D4EC79D2FA%40freenet.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002076.html">
+   <LINK REL="Next"  HREF="002077.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at	datahub ?</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C0728CFA4-7A8A-4FFB-A669-E5D4EC79D2FA%40freenet.de%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at	datahub ?">christian_chiarcos at freenet.de
+       </A><BR>
+    <I>Sun Oct  6 22:00:20 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002076.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+        <LI>Next message: <A HREF="002077.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2081">[ date ]</a>
+              <a href="thread.html#2081">[ thread ]</a>
+              <a href="subject.html#2081">[ subject ]</a>
+              <a href="author.html#2081">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Wrt. corpus definition, we may take <A HREF="http://www.isocat.org/rest/dc/4046">http://www.isocat.org/rest/dc/4046</A> as a basis, although it is resricted to text only. CDMI would have been a natural starting point, but they don't provide a proper definition.
+
+Best,
+Christian
+
+On 05.10.2013, at 19:32, Hugh Paterson III &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">hugh at thejourneyler.org</A>&gt; wrote:
+
+&gt;<i> This division makes sense given the stated problem.
+</I>&gt;<i> 
+</I>&gt;<i> I think that the original OLAC division was mostly aimed at the Himmelmann 1998 division between Descriptive linguistics and Documentary linguistics, and OLAC was focused on resources produced and housed in archives which were part of the documentary enterprise. - at least that is how I have understood it. (I am still not sure if what is being proposed here is just for the LLOD diagram or a larger framework for connecting linked data. If it is just for the LLOD diagram then what I have to say may not be maximally helpful.)
+</I>&gt;<i> 
+</I>&gt;<i> If we introduce terms like &quot;lexicon&quot; and &quot;corpus&quot; the we should also introduce a definition with them. I was rapidly looking for some definitions for these terms so I turned to project GOLD to see if the terms were at all defined. &quot;lexicon&quot; does have a definition [<A HREF="http://linguistics-ontology.org/gold/2010/Lexicon">http://linguistics-ontology.org/gold/2010/Lexicon</A>] , but &quot;corpus&quot; is not listed.  Though Project GOLD does introduce us to the variation in the use of the term &quot;Lexicon&quot; - I suppose in the LLOD context we are saying that it is a resource like a dictionary, wordlist, etc. But what is a &quot;corpus&quot;? - is it a cohesive work or is it just a collection of all known works on a language? Perhaps we need an addition to Project GOLD - if it is going to continue to be useful.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> - Hugh
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> On Oct 5, 2013, at 3:26 AM, Christian Chiarcos wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> Dear all,
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> earlier, we discussed categories for coloring the LLOD diagram. The diagram we prepared for LDL-2013 was based on a something like the minimal consensus:
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> - lexicon (= LREMap lexicon, olac:lexicon)
+</I>&gt;&gt;<i> - corpus (= LREMap corpus, ~ olac:primary data)
+</I>&gt;&gt;<i> - language_description (basically everything else, ~ olac:language_description)
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> I guess the first two are unproblematic, but the third is very heterogeneous, it includes
+</I>&gt;&gt;<i> - terminology repositories
+</I>&gt;&gt;<i> - typological databases
+</I>&gt;&gt;<i> - bibliographical databases
+</I>&gt;&gt;<i> In a way, all of these &quot;describe language&quot; (information about languages, information about concepts relevant to the description of language, information about collections of language data), but honestly, I would prefer the label &quot;other&quot;, because this is very different from what I think an olac:language_description is meant to be.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> Two questions
+</I>&gt;&gt;<i> - Is this general classification acceptable ?
+</I>&gt;&gt;<i> - How shall we encode the categories ? Using tags &quot;lexicon&quot;, &quot;corpus&quot;, etc. ? Or using a custom field &quot;LLOD category&quot; ? Unless anyone protests, I would suggest to use tags for &quot;lexicon&quot; and &quot;corpus&quot; and classify everything without such a tag as &quot;language_description&quot;.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> Best,
+</I>&gt;&gt;<i> Christian
+</I>&gt;&gt;<i> -- 
+</I>&gt;&gt;<i> Christian Chiarcos
+</I>&gt;&gt;<i> Applied Computational Linguistics
+</I>&gt;&gt;<i> Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+</I>&gt;&gt;<i> 60054 Frankfurt am Main, Germany
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> office: Robert-Mayer-Str. 10, #401b
+</I>&gt;&gt;<i> mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+</I>&gt;&gt;<i> web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+</I>&gt;&gt;<i> tel: +49-(0)69-798-22463
+</I>&gt;&gt;<i> fax: +49-(0)69-798-28931
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> _______________________________________________
+</I>&gt;&gt;<i> open-linguistics mailing list
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;&gt;<i> <A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;&gt;<i> Unsubscribe: <A HREF="http://lists.okfn.org/mailman/options/open-linguistics">http://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>&gt;<i> 
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> open-linguistics mailing list
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;<i> <A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i> Unsubscribe: <A HREF="http://lists.okfn.org/mailman/options/open-linguistics">http://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20131007/8b65c9da/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20131007/8b65c9da/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002076.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+	<LI>Next message: <A HREF="002077.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2081">[ date ]</a>
+              <a href="thread.html#2081">[ thread ]</a>
+              <a href="subject.html#2081">[ subject ]</a>
+              <a href="author.html#2081">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

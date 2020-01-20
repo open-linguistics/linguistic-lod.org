@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%20SPARQL%20BIND%20statement%3F&In-Reply-To=%3CCAGDmdGifaHFLSmiupDOVLg%3DOqJwfRx%2BRgS5TQHox5zoxsq_FvA%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002686.html">
+   <LINK REL="Next"  HREF="002687.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?</H1>
+    <B>Manuel Fiorelli</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%20SPARQL%20BIND%20statement%3F&In-Reply-To=%3CCAGDmdGifaHFLSmiupDOVLg%3DOqJwfRx%2BRgS5TQHox5zoxsq_FvA%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?">manuel.fiorelli at gmail.com
+       </A><BR>
+    <I>Sun Mar 13 18:24:08 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002686.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+        <LI>Next message: <A HREF="002687.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1146">[ date ]</a>
+              <a href="thread.html#1146">[ thread ]</a>
+              <a href="subject.html#1146">[ subject ]</a>
+              <a href="author.html#1146">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi John, All
+
+In the SPARQL 1.1 specification, I found some functions that could be
+useful to Dr. Christian Chiarcos.
+
+STRLANG (<A HREF="https://www.w3.org/TR/sparql11-query/#func-strlang">https://www.w3.org/TR/sparql11-query/#func-strlang</A>) allows to
+construct an RDF literal from its literal form and language tag, such as:
+
+bind(strlang(&quot;Mais&quot;, &quot;it&quot;) as ?aLiteral)
+
+langMatches (<A HREF="https://www.w3.org/TR/sparql11-query/#func-langMatches">https://www.w3.org/TR/sparql11-query/#func-langMatches</A>)
+allows to match a language tag against a language range. By means of this
+function, it should be possible to match the language tags en_GB and en_US
+against en.
+
+However, I don't know a standard function that transforms language tags
+from a standard to another. If the queries are evaluated by an endpoint
+controlled by the user, depending on the specific technologies in use, it
+should be possible to register additional functions performing specialized
+tasks (however, in such a case, the queries will be obviously dependent on
+the existence of non standard functions)
+
+Best Regards
+
+Manuel Fiorelli
+
+
+2016-03-13 17:23 GMT+01:00 John McCrae &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">john at mccr.ae</A>&gt;:
+
+&gt;<i> As far as I know there is no provision in SPARQL for querying ignoring the
+</I>&gt;<i> language literal. In RDF at least &quot;cat&quot;, &quot;cat&quot;@en and &quot;cat&quot;@en-GB are all
+</I>&gt;<i> different values. Perhaps you could ask this question on a list like
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">public-lod at w3.org</A> or <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">semantic-web at w3.org</A>?
+</I>&gt;<i>
+</I>&gt;<i> Regards,
+</I>&gt;<i> John
+</I>&gt;<i>
+</I>&gt;<i> On Sun, Mar 13, 2016 at 11:09 AM, Christian Chiarcos &lt;
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Dear all,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> this is a general technical question, albeit one specific to working with
+</I>&gt;&gt;<i> multilinguality issues in multiple lemon/ontolex dictionaries, hence I'm
+</I>&gt;&gt;<i> asking here in the first place.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Imagine the following situation: I use the Russian DBnary (provided in a
+</I>&gt;&gt;<i> slightly extended variant of the old lemon) and an ontolex dictionary for
+</I>&gt;&gt;<i> Chalkan (with Russian glosses). Both provided by third parties, and I do
+</I>&gt;&gt;<i> not want to manipulate the data prior to querying. Now, I want to use
+</I>&gt;&gt;<i> DBnary to retrieve an English gloss for the Chalkan words in a single
+</I>&gt;&gt;<i> SPARQL query.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> If both dictionaries use the same xml:lang representation, this works
+</I>&gt;&gt;<i> rather well (I skip the query for reasons of brevity): I bind the Russian
+</I>&gt;&gt;<i> gloss from the Chalkan dictionary to variable ?ru and start searching
+</I>&gt;&gt;<i> DBnary for a data property that assigns ?ru as literal.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It is more complicated, though, if both files use different language
+</I>&gt;&gt;<i> codes, e.g., ISO-639-3 (rus) and ISO-639-2 (ru) for Russian, or if a
+</I>&gt;&gt;<i> language code with region sub-tag is used (e.g., ru-RU). Is there any way
+</I>&gt;&gt;<i> to use, say, BIND to bind the string value of ?ru to a new variable which
+</I>&gt;&gt;<i> uses ISO-639-2 codes instead of the original ISO-639-3 (resp.
+</I>&gt;&gt;<i> ISO-639-2+ISO-3166) code?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> At the moment, I see only one way to solve this problem, i.e., using
+</I>&gt;&gt;<i> FILTER, str() and a string comparison of both variables. This should be
+</I>&gt;&gt;<i> fairly inefficient, though, as I presume the FILTER is applied only after
+</I>&gt;&gt;<i> all potential bindings for both variables for Russian terms have been
+</I>&gt;&gt;<i> determined.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Am I overlooking anything?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Best,
+</I>&gt;&gt;<i> Christian
+</I>&gt;&gt;<i> --
+</I>&gt;&gt;<i> Prof. Dr. Christian Chiarcos
+</I>&gt;&gt;<i> Applied Computational Linguistics
+</I>&gt;&gt;<i> Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+</I>&gt;&gt;<i> 60054 Frankfurt am Main, Germany
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> office: Robert-Mayer-Str. 10, #401b
+</I>&gt;&gt;<i> mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+</I>&gt;&gt;<i> web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+</I>&gt;&gt;<i> tel: +49-(0)69-798-22463
+</I>&gt;&gt;<i> fax: +49-(0)69-798-28931
+</I>&gt;&gt;<i> _______________________________________________
+</I>&gt;&gt;<i> open-linguistics mailing list
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">https://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;&gt;<i> Unsubscribe: <A HREF="https://lists.okfn.org/mailman/options/open-linguistics">https://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>
+
+-- 
+Manuel Fiorelli
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20160313/ebea36fc/attachment-0001.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20160313/ebea36fc/attachment-0001.html</A>&gt;
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002686.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+	<LI>Next message: <A HREF="002687.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1146">[ date ]</a>
+              <a href="thread.html#1146">[ thread ]</a>
+              <a href="subject.html#1146">[ subject ]</a>
+              <a href="author.html#1146">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] [LLOD] LOD Cloud Validator
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BLLOD%5D%20LOD%20Cloud%20Validator&In-Reply-To=%3Cop.wjhwekenpbi2z2%40lingua182%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001908.html">
+   <LINK REL="Next"  HREF="001912.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] [LLOD] LOD Cloud Validator</H1>
+    <B>Sebastian Nordhoff</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BLLOD%5D%20LOD%20Cloud%20Validator&In-Reply-To=%3Cop.wjhwekenpbi2z2%40lingua182%3E"
+       TITLE="[open-linguistics] [LLOD] LOD Cloud Validator">sebastian_nordhoff at eva.mpg.de
+       </A><BR>
+    <I>Thu Aug 23 13:14:34 UTC 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001908.html">[open-linguistics] [LLOD] LOD Cloud Validator
+</A></li>
+        <LI>Next message: <A HREF="001912.html">[open-linguistics] What to do about CC-NC and CC-ND in the LLOD cloud ? [was: Proprietary licenses in Creative Commons 4.0]
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1911">[ date ]</a>
+              <a href="thread.html#1911">[ thread ]</a>
+              <a href="subject.html#1911">[ subject ]</a>
+              <a href="author.html#1911">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Pablo,
+the validator at
+<A HREF="http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php">http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php</A>
+does not recognize 'Linguistics' as a valid topic,
+
+&gt;<i> Missing topic. No topic tag found. Use one of: media, government,  
+</I>&gt;<i> geographic, publications, crossdomain, lifesciences,  
+</I>&gt;<i> usergeneratedcontent, ecommerce, schemata.
+</I>
+Would it be possible to add 'Linguistics' there?
+Best
+Sebastian
+
+
+On Wed, 22 Aug 2012 17:25:56 +0200, Pablo N. Mendes  
+&lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">pablomendes at gmail.com</A>&gt; wrote:
+
+&gt;<i> Hi all,
+</I>&gt;<i> CKAN has substantially changed since last July, when we developed the  
+</I>&gt;<i> CKAN
+</I>&gt;<i> validator for producing the 2011 version of the LOD cloud. Changes  
+</I>&gt;<i> include
+</I>&gt;<i> the URL (from ckan.net to thedatahub.org), the interface, available
+</I>&gt;<i> functions, etc.
+</I>&gt;<i>
+</I>&gt;<i> Unfortunately I do not have time to make the upgrade. But the code is
+</I>&gt;<i> available from GitHub: <A HREF="https://github.com/anjeve/ckan-lod-validator">https://github.com/anjeve/ckan-lod-validator</A>
+</I>&gt;<i>
+</I>&gt;<i> Anybody can send pull requests and we'd be glad to incorporate them.
+</I>&gt;<i>
+</I>&gt;<i> Downloads &amp; Resources section
+</I>&gt;&gt;<i> --&gt; There is no such section on thedatahub.org
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  This section is now called &quot;Resources&quot;
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> - Missing instance namespace
+</I>&gt;&gt;<i> --&gt; I do not know where to put this information
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  It should go under View / Additional Information   (settings) / Extras
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> The test site does an automatic check for the availability of the example
+</I>&gt;&gt;<i> resources and indicates 404. This is incorrect, as c&amp;p of the link given
+</I>&gt;&gt;<i> does resolve.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Does not resolve for me. The validator is complaining about &quot;Description  
+</I>&gt;<i> of
+</I>&gt;<i> the Kinyarwanda langauge&quot;
+</I>&gt;<i>
+</I>&gt;<i> $ curl -I <A HREF="http://www.glottolog.org/resource/languoid/id/kiny1244.rdf">http://www.glottolog.org/resource/languoid/id/kiny1244.rdf</A>
+</I>&gt;<i> HTTP/1.1 404 Not Found
+</I>&gt;<i> Date: Wed, 22 Aug 2012 15:23:56 GMT
+</I>&gt;<i> Server: Apache/2.2.14 (Ubuntu)
+</I>&gt;<i> Pragma: no-cache
+</I>&gt;<i> Cache-Control: no-cache
+</I>&gt;<i> Content-Length: 638
+</I>&gt;<i> Vary: Accept-Encoding
+</I>&gt;<i> Content-Type: text/html; charset=utf-8
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Cheers,
+</I>&gt;<i> Pablo
+</I>&gt;<i>
+</I>&gt;<i> On Wed, Aug 22, 2012 at 4:37 PM, Sebastian Nordhoff &lt;
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">sebastian_nordhoff at eva.mpg.de</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> On Tue, 21 Aug 2012 17:16:40 +0200, Sebastian Hellmann &lt;
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">hellmann at informatik.uni-</A>**leipzig.de  
+</I>&gt;&gt;<i> &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">hellmann at informatik.uni-leipzig.de</A>&gt;&gt;
+</I>&gt;&gt;<i> wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Hi all,
+</I>&gt;&gt;&gt;<i> I just found this LOD Cloud Validator:
+</I>&gt;&gt;&gt;<i> I am not sure yet, if it will be of any help though:
+</I>&gt;&gt;&gt;<i> <A HREF="http://www4.wiwiss.fu-berlin.**de/lodcloud/ckan/validator/**validate.php&lt;http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php">http://www4.wiwiss.fu-berlin.**de/lodcloud/ckan/validator/**validate.php&lt;http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php</A>&gt;
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> For:
+</I>&gt;&gt;&gt;<i> <A HREF="http://www4.wiwiss.fu-berlin.**de/lodcloud/ckan/validator/**">http://www4.wiwiss.fu-berlin.**de/lodcloud/ckan/validator/**</A>
+</I>&gt;&gt;&gt;<i> validate.php?package=**glottolog-langdoc&lt;<A HREF="http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php?package=glottolog-langdoc">http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php?package=glottolog-langdoc</A>&gt;
+</I>&gt;&gt;&gt;<i> It found out that there is no author given among other things
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I tried to add the required information. I found the following issues
+</I>&gt;&gt;<i> difficult to address:
+</I>&gt;&gt;<i> - Missing download(s). Please provide a link to the download file(s) if
+</I>&gt;&gt;<i> available in the Downloads &amp; Resources section
+</I>&gt;&gt;<i> --&gt; There is no such section on thedatahub.org
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> - Missing instance namespace. Please provide the namespace used for
+</I>&gt;&gt;<i> instances of the dataset.
+</I>&gt;&gt;<i> --&gt; I do not know where to put this information
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The test site does an automatic check for the availability of the  
+</I>&gt;&gt;<i> example
+</I>&gt;&gt;<i> resources and indicates 404. This is incorrect, as c&amp;p of the link given
+</I>&gt;&gt;<i> does resolve.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Additionally, Opera does not provide access to all pages of  
+</I>&gt;&gt;<i> thedatahub.org.
+</I>&gt;&gt;<i> I then used Firefox, where access to submenus was possible. This might  
+</I>&gt;&gt;<i> be
+</I>&gt;&gt;<i> worth looking into, as the bug is rather subtle (you do not notice that  
+</I>&gt;&gt;<i> you
+</I>&gt;&gt;<i> do not see something you were supposed to see)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Best
+</I>&gt;&gt;<i> Sebastian N
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> For :
+</I>&gt;&gt;&gt;<i> <A HREF="http://www4.wiwiss.fu-berlin.**de/lodcloud/ckan/validator/**">http://www4.wiwiss.fu-berlin.**de/lodcloud/ckan/validator/**</A>
+</I>&gt;&gt;&gt;<i> validate.php?package=**wiktionary-dbpedia&lt;<A HREF="http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php?package=wiktionary-dbpedia">http://www4.wiwiss.fu-berlin.de/lodcloud/ckan/validator/validate.php?package=wiktionary-dbpedia</A>&gt;
+</I>&gt;&gt;&gt;<i> It couldn't even validate the SPARQL endpoint
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Seems like it checks home made LOD conventions and tags such as:
+</I>&gt;&gt;&gt;<i> /published-by-producer, published-by-third-party
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> /All the best,
+</I>&gt;&gt;&gt;<i> Sebastian
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> ______________________________**_________________
+</I>&gt;&gt;<i> open-linguistics mailing list
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.</A>**org &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>&gt;
+</I>&gt;&gt;<i> <A HREF="http://lists.okfn.org/mailman/**listinfo/open-linguistics&lt;http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/**listinfo/open-linguistics&lt;http://lists.okfn.org/mailman/listinfo/open-linguistics</A>&gt;
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001908.html">[open-linguistics] [LLOD] LOD Cloud Validator
+</A></li>
+	<LI>Next message: <A HREF="001912.html">[open-linguistics] What to do about CC-NC and CC-ND in the LLOD cloud ? [was: Proprietary licenses in Creative Commons 4.0]
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1911">[ date ]</a>
+              <a href="thread.html#1911">[ thread ]</a>
+              <a href="subject.html#1911">[ subject ]</a>
+              <a href="author.html#1911">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

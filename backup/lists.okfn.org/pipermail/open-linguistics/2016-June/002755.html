@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] lemon api tutorial
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20lemon%20api%20tutorial&In-Reply-To=%3CCAC5njqoqSxBuRfnZdO6-hkLwyMnr6G_aX_GffHNnYgt2jbb26Q%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002754.html">
+   <LINK REL="Next"  HREF="001214.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] lemon api tutorial</H1>
+    <B>John McCrae</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20lemon%20api%20tutorial&In-Reply-To=%3CCAC5njqoqSxBuRfnZdO6-hkLwyMnr6G_aX_GffHNnYgt2jbb26Q%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] lemon api tutorial">john at mccr.ae
+       </A><BR>
+    <I>Thu Jun  9 09:28:24 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002754.html">[open-linguistics] lemon api tutorial
+</A></li>
+        <LI>Next message: <A HREF="001214.html">[open-linguistics] ICDIM 2016
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2755">[ date ]</a>
+              <a href="thread.html#2755">[ thread ]</a>
+              <a href="subject.html#2755">[ subject ]</a>
+              <a href="author.html#2755">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello Alia,
+
+As Christian summarized, the Lemon API applies only to the Monnet version
+of the API. It has been our experience that lemon is best treated using a
+standard RDF library such as Jena &lt;<A HREF="https://jena.apache.org/">https://jena.apache.org/</A>&gt; or a specific
+API such as for WordNets &lt;<A HREF="https://github.com/jmccrae/gwn-scala-api">https://github.com/jmccrae/gwn-scala-api</A>&gt;. There
+is still extensive documentation on the Lemon API here
+<A HREF="http://monnetproject.github.io/lemon.api/">http://monnetproject.github.io/lemon.api/</A> as well as description of the
+lemon model of both the old version (<A HREF="http://lemon-model.net/learn/learn.html">http://lemon-model.net/learn/learn.html</A>)
+and the W3C vocabulary that replaces it (<A HREF="https://www.w3.org/2016/05/ontolex/">https://www.w3.org/2016/05/ontolex/</A>
+).
+
+Regards,
+John
+
+PS. As Christian points out we need a converter from Monnet Lemon to W3C
+Ontolex Lemon... I will try and work on that.
+
+On Wed, Jun 8, 2016 at 9:55 PM, Christian Chiarcos &lt;
+<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>&gt; wrote:
+
+&gt;<i> Dear Alia,
+</I>&gt;<i>
+</I>&gt;<i> the lemon API was meant to be used with the old (Monnet) lemon, and has
+</I>&gt;<i> not been updated yet to OntoLex/lemon. Using the old API would not be
+</I>&gt;<i> recommended. Normative information about OntoLex/lemon can be found under
+</I>&gt;<i> <A HREF="https://www.w3.org/2016/05/ontolex/.">https://www.w3.org/2016/05/ontolex/.</A>
+</I>&gt;<i>
+</I>&gt;<i> A number of colleagues do have converters that produce OntoLex/lemon, and
+</I>&gt;<i> in case you don't want to write RDF data yourself (which isn't that
+</I>&gt;<i> complicated, actually, as long as you stay with Turtle), it might be
+</I>&gt;<i> possible to transform your data so that one of these converters can be
+</I>&gt;<i> applied. However, we'd have to know what kind of data you're working with
+</I>&gt;<i> to see whether this is possible.
+</I>&gt;<i>
+</I>&gt;<i> Best regards,
+</I>&gt;<i> Christian
+</I>&gt;<i>
+</I>&gt;<i> Am .06.2016, 17:05 Uhr, schrieb Alia Bahanshal &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">a.bahanshal at gmail.com</A>&gt;:
+</I>&gt;<i>
+</I>&gt;<i> Hello
+</I>&gt;<i>
+</I>&gt;<i> I would like to know if there are useful resources and tutorials about
+</I>&gt;<i> using lemon api?
+</I>&gt;<i>
+</I>&gt;<i> Best Regards
+</I>&gt;<i> Alia Bahanshal
+</I>&gt;<i> PhD Student
+</I>&gt;<i> King Saud University
+</I>&gt;<i> Riyadh, Saudi Arabia
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> --
+</I>&gt;<i> Prof. Dr. Christian Chiarcos
+</I>&gt;<i> Applied Computational Linguistics
+</I>&gt;<i> Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+</I>&gt;<i> 60054 Frankfurt am Main, Germany
+</I>&gt;<i>
+</I>&gt;<i> office: Robert-Mayer-Str. 10, #401b
+</I>&gt;<i> mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+</I>&gt;<i> web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+</I>&gt;<i> tel: +49-(0)69-798-22463
+</I>&gt;<i> fax: +49-(0)69-798-28931
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> open-linguistics mailing list
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">https://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i> Unsubscribe: <A HREF="https://lists.okfn.org/mailman/options/open-linguistics">https://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20160609/da830b5d/attachment-0002.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20160609/da830b5d/attachment-0002.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002754.html">[open-linguistics] lemon api tutorial
+</A></li>
+	<LI>Next message: <A HREF="001214.html">[open-linguistics] ICDIM 2016
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2755">[ date ]</a>
+              <a href="thread.html#2755">[ thread ]</a>
+              <a href="subject.html#2755">[ subject ]</a>
+              <a href="author.html#2755">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

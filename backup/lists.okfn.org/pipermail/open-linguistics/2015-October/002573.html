@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Linked Open Data and Endangered Languages
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Linked%20Open%20Data%20and%20Endangered%20Languages&In-Reply-To=%3Cop.x6sw5ces89jat0%40kitaba%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002572.html">
+   <LINK REL="Next"  HREF="002574.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Linked Open Data and Endangered Languages</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Linked%20Open%20Data%20and%20Endangered%20Languages&In-Reply-To=%3Cop.x6sw5ces89jat0%40kitaba%3E"
+       TITLE="[open-linguistics] Linked Open Data and Endangered Languages">chiarcos at informatik.uni-frankfurt.de
+       </A><BR>
+    <I>Tue Oct 20 11:06:38 UTC 2015</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002572.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+        <LI>Next message: <A HREF="002574.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2573">[ date ]</a>
+              <a href="thread.html#2573">[ thread ]</a>
+              <a href="subject.html#2573">[ subject ]</a>
+              <a href="author.html#2573">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Damir,
+
+thank you very much for this brief overview over GORILLA. Certainly a  
+highly valuable piece in the language resource landscape, and with the  
+possibility of hosting open data, it also provides a great stimulus for  
+publishing language resources under non-NC licenses.
+
+GORILLA also comes at a critical point in time where existing European  
+infrastructures for endangered languages are in transition, e.g., the TLA  
+tools at the MPI Nijmegen. Considering, for example, the lexicon portal  
+lexus (<A HREF="https://tla.mpi.nl/tools/tla-tools/older-tools/lexus/">https://tla.mpi.nl/tools/tla-tools/older-tools/lexus/</A>), it is  
+impossible to register new users to the system since about a year ago, and  
+accordingly, it is no longer possible to provide access to certain  
+resources. For these (or their providers), GORILLA could represent a great  
+alternative.
+
+Please let us know whether any input from the side of this community would  
+be helpful for future GORILLA development, e.g., regarding preferred  
+formats and tool support, whether you need assistance for developing  
+converters or an (L)LOD interface, or recommendations with respect to  
+other technological aspects.
+
+Of course, the question of recommended formats is quite an urgent one in  
+this context, and if understood correctly, you do not want to create  
+yet-another generic formalism. But when focusing on established formats,  
+the choice depends on what you want to achieve. For merely depositing  
+language resources, a restricted choice of formats with offline tool  
+support is a great solution. To mention one format not on your list below,  
+Toolbox is perfectly fine for this purpose.
+
+If you want to go beyond this in the longer perspective, e.g., by  
+encouraging an (L)LOD conversion for selected resources, or by providing  
+online search in these language resources, however, it is important to  
+focus on formats which can be converted seamlessly with little to no  
+manual interference. Here, Toolbox is a problematic as it is known for  
+encoding issues in its output format and because of the problem to align  
+morphological units on different layers of interlinear glosses. Depending  
+on the type of data, similar issues with interpreting the structure of a  
+format can arise with ELAN (judging from our experiences with converting  
+the Old German section of the German Reference Corpus,  
+<A HREF="http://www.deutschdiachrondigital.de/">http://www.deutschdiachrondigital.de/</A>). TEI has problems, too, most  
+noteably complexity, ambiguity and redundancy, so, if convertability is an  
+issue, it would be advisable to focus on or to design a specific TEI  
+sublanguage. In fact, most current formats do have interoperability  
+issues, and we need to discuss and document advantages and disadvantages  
+of using one or the other before promoting one of these to yet another  
+de-facto standard.
+
+What I would like to suggest is to initiate a discussion with respect to  
+which formats to recommend (not necessarily now, but as soon as first data  
+sets are available, and certainly not exclusively to this mailing list),  
+and a good way to do so would be to present the platform and its goals as  
+soon as a minimal level of maturity is achieved, on our blog/website or at  
+one of our workshops (e.g., LDL-2016). Please let me know what you think ;)
+
+Thanks a lot,
+Christian
+
+Am .10.2015, 16:43 Uhr, schrieb Damir Cavar &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">dcavar at me.com</A>&gt;:
+
+&gt;<i> Hi there,
+</I>&gt;<i>
+</I>&gt;<i> we are right now setting up the environment and tools to launch
+</I>&gt;<i> something like that, a linked repository for language data and corpora,
+</I>&gt;<i> covering among others also endangered language data (processed using eg.
+</I>&gt;<i> ELAN, Praat, or Flex). On GORILLA
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://gorilla.linguistlist.org/about/">http://gorilla.linguistlist.org/about/</A>
+</I>&gt;<i>
+</I>&gt;<i> we will set up our own data for a number of languages, i.e.
+</I>&gt;<i> time-aligned, tagged and translated ELAN files (and corresponding audio
+</I>&gt;<i> recordings), transcoded and augmented Praat files, and plain TIMIT-type
+</I>&gt;<i> of speech corpus files etc. with acoustic and language models for
+</I>&gt;<i> training of Forced Aligners or common ASRs. This is aiming at corpora as
+</I>&gt;<i> well as speech and language technologies for endangered and
+</I>&gt;<i> low-resourced languages, and it will serve also as a repository for
+</I>&gt;<i> language documentation data in general. Two corpora that we created this
+</I>&gt;<i> summer that are from endangered languages, a bunch more from
+</I>&gt;<i> low-resourced ones. Since we are busy setting up some of the technology,
+</I>&gt;<i> it might still take us a month or two to come up with the first data and
+</I>&gt;<i> catalog.
+</I>&gt;<i>
+</I>&gt;<i> There are various possibilities. We could host people's data (maybe for
+</I>&gt;<i> the time being, till you establish a mirror), attach CMDI
+</I>&gt;<i> meta-information to it, assign it DOIs, and put it up in a linked
+</I>&gt;<i> catalog that also connects to the CLARIN (and OAI) infrastructure (we
+</I>&gt;<i> did not set this up yet, just solved the DOI issue right now), and then
+</I>&gt;<i> we can generate the RDF and so on.
+</I>&gt;<i>
+</I>&gt;<i> We will come up with more tutorials and material on our site that might
+</I>&gt;<i> be helpful for you to set up your own repository, maybe mirror ours, so
+</I>&gt;<i> that we have cross-continental redundancy and backups etc.
+</I>&gt;<i>
+</I>&gt;<i> Our requirements are that the data is at least CC BY-SA (or CC BY, but
+</I>&gt;<i> we would not accept an NC clause), if we are to invest in the above
+</I>&gt;<i> described process of meta-information and linking. We can take any kind
+</I>&gt;<i> of data into the archive, though. Our GORILLA goal is to document as
+</I>&gt;<i> many languages as possible using audio or video recordings,
+</I>&gt;<i> transcription, phonetic or phonemic transcription, PoS-tagging,
+</I>&gt;<i> translation. We are using a uniform standard (or two, e.g. ELAN
+</I>&gt;<i> annotation format, Praat TextGrid, TEI XML) and interoperable linguistic
+</I>&gt;<i> tags or annotations (linking to GOLD and/or ISOCat).
+</I>&gt;<i>
+</I>&gt;<i> Ritesh, I do not know, whether I could make it to Agra in February, but
+</I>&gt;<i> I will be somewhere closer there next year spring. We could talk about
+</I>&gt;<i> that over a private line.
+</I>&gt;<i>
+</I>&gt;<i> Best wishes
+</I>&gt;<i>
+</I>&gt;<i> Damir
+</I>-- 
+Prof. Dr. Christian Chiarcos
+Applied Computational Linguistics
+Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+60054 Frankfurt am Main, Germany
+
+office: Robert-Mayer-Str. 10, #401b
+mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+tel: +49-(0)69-798-22463
+fax: +49-(0)69-798-28931
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002572.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+	<LI>Next message: <A HREF="002574.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2573">[ date ]</a>
+              <a href="thread.html#2573">[ thread ]</a>
+              <a href="subject.html#2573">[ subject ]</a>
+              <a href="author.html#2573">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

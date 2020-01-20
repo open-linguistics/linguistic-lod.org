@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Linked Open Data-enabled Recommender Systems
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20ESWC%202014%20Final%20Call%20for%20Challenge%20%5BDeadline%0A%20Extension%5D%3A%20Linked%20Open%20Data-enabled%20Recommender%20Systems&In-Reply-To=%3Cmailman.25.1525695981.12873.open-linguistics%40lists.okfn.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000623.html">
+   <LINK REL="Next"  HREF="000624.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Linked Open Data-enabled Recommender Systems</H1>
+    <B>speroni at cs.unibo.it</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20ESWC%202014%20Final%20Call%20for%20Challenge%20%5BDeadline%0A%20Extension%5D%3A%20Linked%20Open%20Data-enabled%20Recommender%20Systems&In-Reply-To=%3Cmailman.25.1525695981.12873.open-linguistics%40lists.okfn.org%3E"
+       TITLE="[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Linked Open Data-enabled Recommender Systems">speroni at cs.unibo.it
+       </A><BR>
+    <I>Fri Mar 14 16:53:48 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000623.html">[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Linked Open Data-enabled Recommender Systems
+</A></li>
+        <LI>Next message: <A HREF="000624.html">[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Semantic Publishing
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2165">[ date ]</a>
+              <a href="thread.html#2165">[ thread ]</a>
+              <a href="subject.html#2165">[ subject ]</a>
+              <a href="author.html#2165">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>** apologies for cross-posting **
+
+==== Final Call for Challenge: Linked Open Data-enabled Recommender Systems ====
+Challenge Website: <A HREF="http://challenges.2014.eswc-conferences.org/RecSys">http://challenges.2014.eswc-conferences.org/RecSys</A>
+Call Web page: <A HREF="http://2014.eswc-conferences.org/important-dates/call-RecSys">http://2014.eswc-conferences.org/important-dates/call-RecSys</A> 
+
+** Deadline Extension:
+**     Friday 21 March 2014 - 23:59 Central European Time
+
+11th Extended Semantic Web Conference (ESWC) 2014
+Dates: May 25 - 29, 2014
+Venue: Anissaras, Crete, Greece
+Hashtag: #eswc2014
+Feed: @eswc_conf
+Site: <A HREF="http://2014.eswc-conferences.org">http://2014.eswc-conferences.org</A>
+General Chair: Valentina Presutti (STLab, ISTC-CNR, IT)
+Challenge Coordinator: Milan Stankovic (Sepage &amp; Universite Paris-Sorbonne, FR)
+Challenge Chairs:
+- Tommaso Di Noia (Polytechnic University of Bari, IT)
+- Ivan Cantador (Universidad Autonoma de Madrid, ES)
+
+
+MOTIVATION AND OBJECTIVES
+
+People generally need more and more advanced tools that go beyond those implementing the canonical search paradigm for seeking relevant information. A new search paradigm is emerging, where the user perspective is completely reversed: from finding to being found. Recommender systems may help to support this new perspective, because they have the effect of pushing relevant objects, selected from a large space of possible options, to potentially interested users. To achieve this result, recommendation techniques generally rely on data referring to three kinds of objects: users, items and their relations.
+
+Recent developments in the Semantic Web community offer novel strategies to represent data about users, items and their relations that might improve the current state of the art of recommender systems, in order to move towards a new generation of recommender systems that fully understand the items they deal with.
+
+More and more semantic data are published following the Linked Data principles, that enable to set up links between objects in different data sources, by connecting information in a single global data space: the Web of Data. Today, the Web of Data includes different types of knowledge represented in a homogeneous form: sedimentary one (encyclopedic, cultural, linguistic, common-sense) and real-time one (news, data streams, ...). These data might be useful to interlink diverse information about users, items, and their relations and implement reasoning mechanisms that can support and improve the recommendation process.
+
+The primary goal of this challenge is twofold. On the one hand, we want to create a link between the Semantic Web and the Recommender Systems communities. On the other hand, we  aim to show how Linked Open Data (LOD) and semantic technologies can boost the creation of a new breed of knowledge-enabled and content-based recommender systems.
+
+
+TARGET AUDIENCE
+
+The target audience is all of the Semantic Web and the Recommender Systems communities, both academic and industrial, which are interested in personalized information access with a particular emphasis on Linked Open Data.
+
+During the last ACM RecSys conference more than 60% of participants were from industry. This is for sure a witness of the actual interest of recommender systems for industrial applications ready to be released in the market.
+
+
+TASKS
+
+* Task 1: Rating prediction in cold-start situations
+
+This task deals with the rating prediction problem, in which a system is requested to estimate the value of unknown numeric scores (a.k.a. ratings) that a target user would assign to available items, indicating whether she likes or dislikes them.
+
+In order to favor the proposal of content-based, LOD-enabled recommendation approaches, and limit the use of collaborative filtering approaches, this task aims at predicting ratings in cold-start situations, that is, predicting ratings for users who have a few past ratings, and predicting ratings of items that have been rated by a few users.
+The dataset to use in the task - DBbook - relates to the book domain. It contains explicit numeric ratings assigned by users to books. For each book we provide the corresponding DBpedia URI.
+
+Participants will have to exploit the provided ratings as training sets, and will have to estimate unknown ratings in a non-provided evaluation set.
+
+Recommendation approaches will be evaluated on the evaluation set by means of metrics that measure the differences between real and estimated ratings, namely the Root Mean Square Error (RMSE).
+
+
+* Task 2: Top-N recommendation from binary user feedback
+
+This task deals with the top-N recommendation problem, in which a system is requested to find and recommend a limited set of N items that best match a user profile, instead of correctly predict the ratings for all available items.
+
+Similarly to Task 1, in order to favor the proposal of content-based, LOD-enabled recommendation approaches, and limit the use of collaborative filtering approaches, this task aims to generate ranked lists of items for which no graded ratings are available, but only binary ones. Also in this case, the DBbook dataset is used.
+
+In this task, the accuracy of recommendation approaches will be evaluated on an evaluation set using the F-measure.
+
+
+*  Task 3: Diversity
+
+A very interesting aspect of content-based recommender systems, and then of LOD-enabled ones, is giving the possibility to evaluate the diversity of recommended items in a straight way. This is a very popular topic in content-based recommender systems, which usually suffer from over-specialization.
+
+In this task, the evaluation will be made by considering a combination of both accuracy (F-measure) of the recommendation list and the diversity (Intra-List Diversity) of items belonging to it. Also for this task, the DBbook dataset is used.
+
+Given the domain of books, diversity with respect to the two properties <A HREF="http://dbpedia.org/ontology/author">http://dbpedia.org/ontology/author</A> and <A HREF="http://purl.org/dc/terms/subject">http://purl.org/dc/terms/subject</A> will be considered.
+
+
+DATASET
+
+* DBbook dataset
+
+This dataset relies on user data and preferences retrieved from the Web. The books available in the dataset have been mapped to their corresponding DBpedia URIs. The mapping contains 8170 DBpedia URIs.
+
+These mappings can be used to extract semantic features from DBpedia or other LOD repositories to be exploited by the recommendation approaches proposed in the challenge.
+The dataset is split in a training set and an evaluation set. In the former, user ratings are provided to train a system while in the latter, ratings have been removed, and they will be used in the eventual evaluation step.
+
+The mapping file is available at:
+<A HREF="http://sisinflab.poliba.it/semanticweb/lod/recsys/2014challenge/DBbook_Items_DBpedia_mapping.tsv.zip">http://sisinflab.poliba.it/semanticweb/lod/recsys/2014challenge/DBbook_Items_DBpedia_mapping.tsv.zip</A> 
+
+It contains a tab-separated values file where each line has the following format: DBbook_ItemID \t name \t DBpedia_URI.
+
+We suggest to extract a semantic descriptions for all the items present in this mapping file by starting from the DBpedia URIs.
+
+The training sets are available at:
+
+
+* Task 1: <A HREF="http://sisinflab.poliba.it/semanticweb/lod/recsys/2014challenge/DBbook_train_ratings.zip">http://sisinflab.poliba.it/semanticweb/lod/recsys/2014challenge/DBbook_train_ratings.zip</A> 
+
+The archive contains a tab-separated values file containing the training data and a README describing its content. Each line in the file is composed by: userID \t itemID \t rating. The ratings are in scale 0-5. The training set contains 75559 ratings. There are 6181 users and 6166 items which have been rated by at least one user.
+
+
+* Task 2 and Task 3:  <A HREF="http://sisinflab.poliba.it/semanticweb/lod/recsys/2014challenge/DBbook_train_binary.zip">http://sisinflab.poliba.it/semanticweb/lod/recsys/2014challenge/DBbook_train_binary.zip</A> 
+
+The archive contains a tab-separated values file containing the training data and a README describing its content. Each line in the file is composed by: userID \t itemID \t rating. The ratings are in binary scale. 1 means that the item is relevant for the user, 0 means irrelevant. The training set contains 72372 ratings. There are 6181 users and 6733 items which have been rated by at least one user.
+
+
+ADDITIONAL DATASETS
+
+Although not used in the challenge, two additional rating datasets linked to DBpedia are provided, namely the well known MovieLens10M dataset and the Last.fm dataset published at HetRec'11 workshop.
+
+<A HREF="http://sisinflab.poliba.it/semanticweb/lod/recsys/datasets/">http://sisinflab.poliba.it/semanticweb/lod/recsys/datasets/</A> 
+
+We encourage participants to use these datasets for testing the developed recommendation approaches on several domains.
+
+
+JUDGING AND PRIZES
+
+After a first round of reviews, the Program Committee and the chairs will select a number of submissions that will have to satisfy the challenge requirements, and will have to be presented at the conference. Submissions accepted for presentation will receive constructive reviews from the Program Committee, and will be included in post-proceedings. All accepted submissions will have a slot in a poster session dedicated to the challenge. In addition, the winners will present their work in a special slot of the main program of ESWC'14, and will be invited to submit a paper to a dedicated Semantic Web Journal special issue.
+
+For each task we will select:
+* the best performing tool, given to the paper which will get the highest score in the evaluation
+* the most original approach, selected by the Challenge Program Committee with the reviewing process
+
+An amount of 700 Euro has already been secured for the final prize. We are currently working on securing further funding.
+
+Winners will be selected only for tasks with at least 3 participants. In any case, all submissions will be reviewed and, if accepted, published at ESWC post-proceedings.
+
+
+HOW TO PARTICIPATE
+
+1.  Make your result submission
+* Register your group using the registration web form available at:
+<A HREF="http://193.204.59.20:8181/eswc2014lodrecsys/signup.html">http://193.204.59.20:8181/eswc2014lodrecsys/signup.html</A>
+* Choose one or more tasks among Task 1, Task 2 and Task 3
+* Build your recommender system using the provided training data.
+* Evaluate your approach by submitting your results using the evaluation service.
+* Your final score will be the one computed with respect to the last result submission made before March 7, 2014, 23:59 CET.
+
+2. Submit your paper
+The following information has to be provided:
+* Abstract: no more than 200 words.
+* Description: It should contain the details of the system, including why the system is innovative, how it uses Semantic Web, which features or functions the system provides, what design choices were made, and what lessons were learned. The description should also summarize how participants have addressed the evaluation tasks. Papers must be submitted in PDF format, following the style of the Springer's Lecture Notes in Computer Science (LNCS) series (<A HREF="http://www.springer.com/computer/lncs/lncs+authors">http://www.springer.com/computer/lncs/lncs+authors</A>), and not exceeding 5 pages in length.
+
+All submissions should be provided via EasyChair: 
+
+<A HREF="https://www.easychair.org/conferences/?conf=eswc2014-challenges">https://www.easychair.org/conferences/?conf=eswc2014-challenges</A> 
+
+
+MAILING LIST
+
+We invite the potential participants to subscribe to our mailing list in order to be kept up to date with the latest news related to the challenge. 
+
+<A HREF="https://lists.sti2.org/mailman/listinfo/eswc2014-recsys-challenge">https://lists.sti2.org/mailman/listinfo/eswc2014-recsys-challenge</A> 
+
+
+IMPORTANT DATES
+
+* EXTENDED to March 14, 2014, 23:59 CET: Result submission due
+* EXTENDED to March 21, 2014, 23:59 CET: Paper submission due
+* April 9, 2014, 23:59 CET: Notification of acceptance
+* May 27-29, 2014: The Challenge takes place at ESWC'14
+
+
+EVALUATION COORDINATOR
+
+* Vito Claudio Ostuni (Polytechnic University of Bari, IT)
+
+
+PROGRAM COMMITTEE (to be completed)
+
+* Pablo Castells, Universidad Autonoma de Madrid, Spain
+* Oscar Corcho, Universidad Politecnica de Madrid, Spain
+* Marco de Gemmis, University of Bari Aldo Moro, Italy
+* Frank Hopfgartner, Technische Universitat Berlin, Germany
+* Andreas Hotho, Universitat Wurzburg, Germany
+* Dietmar Jannach, TU Dortmund University, Germany
+* Pasquale Lops, University of Bari Aldo Moro, Italy
+* Valentina Maccatrozzo, VU University Amsterdam, The Netherlands
+* Roberto Mirizzi, Polytechnic University of Bari, Italy
+* Alexandre Passant, seevl.fm, Ireland
+* Francesco Ricci, Free University of Bozen-Bolzano, Italy
+* Giovanni Semeraro, University of Bari Aldo Moro, Italy
+* David Vallet, NICTA, Australia
+* Manolis Wallace, University of Peloponnese, Greece
+* Markus Zanker, Alpen-Adria-Universitaet Klagenfurt, Austria
+* Tao Ye, Pandora Internet Radio, USA
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000623.html">[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Linked Open Data-enabled Recommender Systems
+</A></li>
+	<LI>Next message: <A HREF="000624.html">[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Semantic Publishing
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2165">[ date ]</a>
+              <a href="thread.html#2165">[ thread ]</a>
+              <a href="subject.html#2165">[ subject ]</a>
+              <a href="author.html#2165">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

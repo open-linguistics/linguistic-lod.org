@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Concept-Level Sentiment Analysis
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20ESWC%202014%20Final%20Call%20for%20Challenge%20%5BDeadline%0A%20Extension%5D%3A%20Concept-Level%20Sentiment%20Analysis&In-Reply-To=%3Cmailman.27.1525695981.12873.open-linguistics%40lists.okfn.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000625.html">
+   <LINK REL="Next"  HREF="000634.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Concept-Level Sentiment Analysis</H1>
+    <B>speroni at cs.unibo.it</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20ESWC%202014%20Final%20Call%20for%20Challenge%20%5BDeadline%0A%20Extension%5D%3A%20Concept-Level%20Sentiment%20Analysis&In-Reply-To=%3Cmailman.27.1525695981.12873.open-linguistics%40lists.okfn.org%3E"
+       TITLE="[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Concept-Level Sentiment Analysis">speroni at cs.unibo.it
+       </A><BR>
+    <I>Fri Mar 14 17:09:49 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000625.html">[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Concept-Level Sentiment Analysis
+</A></li>
+        <LI>Next message: <A HREF="000634.html">[open-linguistics] [SenticNet] Deadline Extension: ESWC'14 Challenge on Concept-Level Sentiment Analysis
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2167">[ date ]</a>
+              <a href="thread.html#2167">[ thread ]</a>
+              <a href="subject.html#2167">[ subject ]</a>
+              <a href="author.html#2167">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>** apologies for cross-posting **
+
+==== Final Call for Challenge: Concept-Level Sentiment Analysis ====
+Challenge Website: <A HREF="http://challenges.2014.eswc-conferences.org/SemSA">http://challenges.2014.eswc-conferences.org/SemSA</A>
+Call Web page: <A HREF="http://2014.eswc-conferences.org/important-dates/call-SemSA">http://2014.eswc-conferences.org/important-dates/call-SemSA</A>
+
+** Deadline Extension:
+**     Friday 21 March 2014 - 23:59 Central European Time
+
+11th Extended Semantic Web Conference (ESWC) 2014
+Dates: May 25 - 29, 2014
+Venue: Anissaras, Crete, Greece
+Hashtag: #eswc2014
+Feed: @eswc_conf
+Site: <A HREF="http://2014.eswc-conferences.org">http://2014.eswc-conferences.org</A>
+General Chair: Valentina Presutti (STLab, ISTC-CNR, IT)
+Challenge Coordinator: Milan Stankovic (Sepage &amp; Universite Paris-Sorbonne, FR)
+Challenge Chairs:
+- Erik Cambria (National University of Singapore, SG)
+- Diego Reforgiato (STLab, ISTC-CNR, IT)
+
+
+MOTIVATION AND OBJECTIVES
+
+Mining opinions and sentiments from natural language is an extremely difficult task as it involves a deep understanding of most of the explicit and implicit, regular and irregular, syntactical and semantic rules proper of a language. Existing approaches mainly rely on parts of text in which opinions and sentiments are explicitly expressed such as polarity terms, affect words and their co-occurrence frequencies. However, opinions and sentiments are often conveyed implicitly through latent semantics, which make purely syntactical approaches ineffective. To this end, concept-level sentiment analysis aims to go beyond a mere word-level analysis of text and provide novel approaches to opinion mining and sentiment analysis that allow a more efficient passage from (unstructured) textual information to (structured) machine-processable data, in potentially any domain.
+
+Concept-level sentiment analysis focuses on a semantic analysis of text through the use of web ontologies or semantic networks, which allow the aggregation of conceptual and affective information associated with natural language opinions. By relying on large semantic knowledge bases, concept-level sentiment analysis steps away from blind use of keywords and word co-occurrence count, but rather relies on the implicit features associated with natural language concepts.
+
+This Challenge focuses on the introduction, presentation, and discussion of novel approaches to concept-level sentiment analysis. Participants will have to design a concept-level opinion-mining engine that exploits common-sense knowledge bases, e.g., SenticNet, and/or Linked Data and Semantic Web ontologies, e.g., DBPedia, to perform multi-domain sentiment analysis. The main motivation for the Challenge, in particular, is to go beyond a mere word-level analysis of natural language text and provide novel concept-level tools and techniques that allow a more efficient passage from (unstructured) natural language to (structured) machine-processable data, in potentially any domain.
+
+Systems must have a semantics flavor (e.g., by making use of Linked Data or known semantic networks within their core functionalities) and authors need to show how the introduction of semantics can be used to obtain valuable information, functionality or performance. Existing natural language processing methods or statistical approaches can be used too as long as the semantics plays a main role within the core approach (engines based merely on syntax/word-count will be excluded from the competition).
+
+
+TARGET AUDIENCE
+
+The Challenge is open to everyone from industry and academia.
+
+
+TASKS
+
+The Concept-Level Sentiment Analysis Challenge is defined in terms of different tasks. The first task is elementary whereas the others are more advanced. The input units of each task are sentences. Sentences are assumed to be in grammatically correct American English and have to be processed according to the input format specified at <A HREF="http://sentic.net/challenge/sentence.">http://sentic.net/challenge/sentence.</A>
+
+* Elementary Task: Polarity Detection The main goal of the task is polarity detection. The proposed systems will be assessed according to precision, recall and F-measure of detected binary polarity values (1=positive; 0=negative) for each input sentence of the evaluation dataset, following the same format as in <A HREF="http://sentic.net/challenge/task0.">http://sentic.net/challenge/task0.</A> The problem of subjectivity detection is not addressed within this Challenge, hence participants can assume that there will be no neutral sentences. Participants are encouraged to use the Sentic API or further develop and apply sentic computing tools.
+
+* Advanced Task #1: Aspect-Based Sentiment Analysis The output of this task will be a set of aspects of the reviewed product and a binary polarity value associated to each of such aspects, in the format specified at <A HREF="http://sentic.net/challenge/task1.">http://sentic.net/challenge/task1.</A> So, for example, while for the Elementary task an overall polarity (positive or negative) is expected for a review about a mobile phone, this task requires a set of aspects (such as 'speaker', 'touchscreen', 'camera', etc.) and a polarity value (positive OR negative) associated with each of such aspects. Systems will be assessed according to both aspect extraction and aspect polarity detection.
+
+* Advanced Task #2: Semantic Parsing As suggested by the title, the Challenge focuses on sentiment analysis at concept-level. This means that the proposed systems are not supposed to work at word/syntax level but rather work with concepts/semantics. Hence, this task will evaluate the capability of the proposed systems to deconstruct natural language text into concepts, following the same format as in <A HREF="http://sentic.net/challenge/task2.">http://sentic.net/challenge/task2.</A> SenticNet will be taken as a reference to test the efficiency of the proposed parsers, but extracted concepts won't necessary have to match SenticNet concepts. The proposed systems, for example, are supposed to be able to extract a multi-word expression like 'buy christmas present' from sentences such as 'Today I bought a lot of very nice Christmas presents'. The number of extracted concepts per sentence will be assessed through precision, recall and F-measure against the evaluation dataset.
+
+* Advanced Task #3: Topic Spotting Input sentences will be about four different domains, namely: books, DVDs, electronics, and kitchen appliances. This task focuses on the automatic classification of sentences into one of such domains, in the format specified at <A HREF="http://sentic.net/challenge/task3.">http://sentic.net/challenge/task3.</A> All sentences are assumed to belong to only one of the above-mentioned domains. The proposed systems are supposed to exploit the extracted concepts to infer which domain each sentence belongs to. Classification accuracy will be evaluated in terms of precision, recall and F-measure against the evaluation dataset.
+
+
+EVALUATION DATASET
+
+Systems will be evaluated against a testing dataset which will be revealed and released after the first-round of evaluation during the Conference. The dataset will be made public on the challenge website. Participants are suggested to train and/or test their own systems using the Blitzer Dataset. The testing dataset will be constructed in the same way and from the same sources as the Blitzer dataset.
+
+
+EVALUATION
+
+The evaluation will be performed by the members of the Program Committee. For systems that can be tuned with different parameters, please indicate a range of up to 4 sets of settings. Settings with the best F-measures will be considered for judgment. For each system, reviewers will give a numerical score within the range [1-10] and details motivating their choice. The scores will be given to the following aspects:
+1. Use of common-sense knowledge and semantics;
+2. Precision, recall, and F-measure wrt the selected task;
+3. Computational time;
+4. Innovative nature of the approach.
+
+
+JUDGING AND PRIZES
+
+After a first round of review, the Program Committee and the chairs will select a number of submissions confirming to the challenge requirements that will be invited to present their work. Submissions accepted for presentation will be included in post-proceedings and will receive constructive reviews from the Program Committee. All accepted submissions will have a slot in a poster session dedicated to the challenge. In addition, the winners will present their work in a special slot of the main program of ESWC and will be invited to submit a paper to a dedicated Semantic Web Journal special issue.
+
+For the Concept-Level Sentiment Analysis Challenge there will be two awards for each task:
+* Quantitative: the system with the highest average score in items 1-3 above;
+* Innovative: the system with the highest score in item 4 above.
+
+There will be a board of judges at the conference who will evaluate again the systems in more detail. The judges will then meet in private to discuss the entries and to determine the winners. It may happen that the same system runs for both the awards. Winners will be selected only for tasks with at least 3 participants. In any case all submissions will be reviewed and, if accepted, published in ESWC post-proceedings. An amount of 700 euros has already been secured for the first task for what the first point of the evaluation aspects is concerned. We are currently working on securing further funding.
+
+
+HOW TO PARTICIPATE
+
+The following information has to be provided:
+* Abstract: no more than 200 words.
+* Description: It should contain the details of the system, including why the system is innovative, how it uses Semantic Web, which features or functions the system provides, what design choices were made and what lessons were learned. The description should also summarize how participants have addressed the evaluation tasks. Papers must be submitted in PDF format, following the style of the Springer's Lecture Notes in Computer Science (LNCS) series (<A HREF="http://www.springer.com/computer/lncs/lncs+authors">http://www.springer.com/computer/lncs/lncs+authors</A>), and not exceeding 5 pages in length.
+* Web Access: The application can either be accessible via the web or downloadable. If the application is not publicly accessible, password must be provided. A short set of instructions on how to use the application should be provided as well.
+
+All submissions should be provided via EasyChair:
+
+<A HREF="https://www.easychair.org/conferences/?conf=eswc2014-challenges">https://www.easychair.org/conferences/?conf=eswc2014-challenges</A>
+
+
+MAILING LIST
+
+We invite the potential participants to subscribe to our mailing list in order to be kept up to date with the latest news related to the challenge.
+
+<A HREF="https://lists.sti2.org/mailman/listinfo/eswc2014-semsa-challenge">https://lists.sti2.org/mailman/listinfo/eswc2014-semsa-challenge</A>
+
+
+IMPORTANT DATES
+
+* EXTENDED to March 21, 2014, 23:59 CET: Submission due
+* April 9, 2014, 23:59 CET: Notification of acceptance
+* May 27-29, 2014: The Challenge takes place at ESWC-14
+
+
+PROGRAM COMMITTEE
+
+* Newton Howard, MIT Media Laboratory (USA)
+* Cheng Xiang Zhai, University of Illinois at Urbana-Champaign (USA)
+* Rada Mihalcea, University of North Texas (USA)
+* Ping Chen, University of Houston-Downtown (USA)
+* Yongzheng Zhang, LinkedIn Inc. (USA)
+* Giuseppe Di Fabbrizio, Amazon Inc. (USA)
+* Rui Xia, Nanjing University of Science and Technology (China)
+* Rafal Rzepka, Hokkaido University (Japan)
+* Amir Hussain, University of Stirling (UK)
+* Alexander Gelbukh, National Polytechnic Institute (Mexico)
+* Bjoern Schuller, Technical University of Munich (Germany)
+* Amitava Das, Samsung Research India (India)
+* Dipankar Das, National Institute of Technology (India)
+* Carlo Strapparava, Fondazione Bruno Kessler (Italy)
+* Stefano Squartini, Marche Polytechnic University (Italy)
+* Cristina Bosco, University of Torino (Italy)
+* Paolo Rosso, Technical University of Valencia (Spain)
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000625.html">[open-linguistics] ESWC 2014 Final Call for Challenge [Deadline Extension]: Concept-Level Sentiment Analysis
+</A></li>
+	<LI>Next message: <A HREF="000634.html">[open-linguistics] [SenticNet] Deadline Extension: ESWC'14 Challenge on Concept-Level Sentiment Analysis
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2167">[ date ]</a>
+              <a href="thread.html#2167">[ thread ]</a>
+              <a href="subject.html#2167">[ subject ]</a>
+              <a href="author.html#2167">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

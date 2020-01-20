@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%09SPARQL%20BIND%20statement%3F&In-Reply-To=%3CB70AF52F-4D86-4836-AC0A-7CD9F235AD9B%40w3.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002689.html">
+   <LINK REL="Next"  HREF="002693.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?</H1>
+    <B>Felix Sasaki</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%09SPARQL%20BIND%20statement%3F&In-Reply-To=%3CB70AF52F-4D86-4836-AC0A-7CD9F235AD9B%40w3.org%3E"
+       TITLE="[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?">fsasaki at w3.org
+       </A><BR>
+    <I>Mon Mar 14 21:37:50 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002689.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+        <LI>Next message: <A HREF="002693.html">[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2690">[ date ]</a>
+              <a href="thread.html#2690">[ thread ]</a>
+              <a href="subject.html#2690">[ subject ]</a>
+              <a href="author.html#2690">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>
+&gt;<i> Am 13.03.2016 um 12:09 schrieb Christian Chiarcos &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>&gt;:
+</I>&gt;<i> 
+</I>&gt;<i> Dear all,
+</I>&gt;<i> 
+</I>&gt;<i> this is a general technical question, albeit one specific to working with multilinguality issues in multiple lemon/ontolex dictionaries, hence I'm asking here in the first place.
+</I>&gt;<i> 
+</I>&gt;<i> Imagine the following situation: I use the Russian DBnary (provided in a slightly extended variant of the old lemon) and an ontolex dictionary for Chalkan (with Russian glosses). Both provided by third parties, and I do not want to manipulate the data prior to querying. Now, I want to use DBnary to retrieve an English gloss for the Chalkan words in a single SPARQL query.
+</I>&gt;<i> 
+</I>&gt;<i> If both dictionaries use the same xml:lang representation, this works rather well (I skip the query for reasons of brevity): I bind the Russian gloss from the Chalkan dictionary to variable ?ru and start searching DBnary for a data property that assigns ?ru as literal.
+</I>&gt;<i> 
+</I>&gt;<i> It is more complicated, though, if both files use different language codes, e.g., ISO-639-3 (rus) and ISO-639-2 (ru) for Russian, or if a language code with region sub-tag is used (e.g., ru-RU). Is there any way to use, say, BIND to bind the string value of ?ru to a new variable which uses ISO-639-2 codes instead of the original ISO-639-3 (resp. ISO-639-2+ISO-3166) code?
+</I>
+
+xml:lang allows only for BCP 47 language tags, and here the options you describe (e.g. ISO-639-3 vs. IS0-639-2) are not available. So if you use a language tag validator you can at least detect that an xml:lang value is not valid.
+E.g. validate
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; &gt;
+     &lt;title&gt;Test&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+Via
+<A HREF="https://validator.w3.org/#validate_by_input">https://validator.w3.org/#validate_by_input</A>
+now validate the same with 
+&lt;html lang=&quot;rus&quot;&gt;
+and you get an error. 
+Of course in your workflow you don&#8217;t want to integrate the HTML validator as your language tag validator. But the underlying library
+<A HREF="https://about.validator.nu/">https://about.validator.nu/</A> &lt;<A HREF="https://about.validator.nu/">https://about.validator.nu/</A>&gt;
+has a class to validate language tags on its own.
+
+Best,
+
+Felix
+
+&gt;<i> 
+</I>&gt;<i> At the moment, I see only one way to solve this problem, i.e., using FILTER, str() and a string comparison of both variables. This should be fairly inefficient, though, as I presume the FILTER is applied only after all potential bindings for both variables for Russian terms have been determined.
+</I>&gt;<i> 
+</I>&gt;<i> Am I overlooking anything?
+</I>&gt;<i> 
+</I>&gt;<i> Best,
+</I>&gt;<i> Christian
+</I>&gt;<i> -- 
+</I>&gt;<i> Prof. Dr. Christian Chiarcos
+</I>&gt;<i> Applied Computational Linguistics
+</I>&gt;<i> Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+</I>&gt;<i> 60054 Frankfurt am Main, Germany
+</I>&gt;<i> 
+</I>&gt;<i> office: Robert-Mayer-Str. 10, #401b
+</I>&gt;<i> mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+</I>&gt;<i> web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+</I>&gt;<i> tel: +49-(0)69-798-22463
+</I>&gt;<i> fax: +49-(0)69-798-28931
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20160314/d0cbd317/attachment-0002.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20160314/d0cbd317/attachment-0002.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002689.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+	<LI>Next message: <A HREF="002693.html">[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2690">[ date ]</a>
+              <a href="thread.html#2690">[ thread ]</a>
+              <a href="subject.html#2690">[ subject ]</a>
+              <a href="author.html#2690">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

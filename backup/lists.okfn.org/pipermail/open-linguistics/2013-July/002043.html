@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Categories for data in the LLOD Cloud Diagram
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Categories%20for%20data%20in%20the%20LLOD%20Cloud%20Diagram&In-Reply-To=%3Cop.wz31v8tzyoucrc%40christian-pc%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002042.html">
+   <LINK REL="Next"  HREF="002044.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Categories for data in the LLOD Cloud Diagram</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Categories%20for%20data%20in%20the%20LLOD%20Cloud%20Diagram&In-Reply-To=%3Cop.wz31v8tzyoucrc%40christian-pc%3E"
+       TITLE="[open-linguistics] Categories for data in the LLOD Cloud Diagram">christian.chiarcos at web.de
+       </A><BR>
+    <I>Fri Jul 12 13:17:58 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002042.html">[open-linguistics] Categories for data in the LLOD Cloud Diagram
+</A></li>
+        <LI>Next message: <A HREF="002044.html">[open-linguistics] Categories for data in the LLOD Cloud Diagram
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2043">[ date ]</a>
+              <a href="thread.html#2043">[ thread ]</a>
+              <a href="subject.html#2043">[ subject ]</a>
+              <a href="author.html#2043">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>&gt;<i> This seems to be a pretty strait forward kind of taxonomy. I like  
+</I>&gt;<i> straight forward.
+</I>
++1
+
+&gt;<i> I would encourage a path forward where this sort of taxonomy development  
+</I>&gt;<i> would push on the OLAC community to revise or revisit the type  
+</I>&gt;<i> declaration recommendation for linguistic resources. You can see at the  
+</I>&gt;<i> link below there are only three resources.  
+</I>&gt;<i> <A HREF="http://www.language-archives.org/REC/type.html">http://www.language-archives.org/REC/type.html</A> Perhaps these types as  
+</I>&gt;<i> defined by OLAC are not sufficient for the purposes here, but rather  
+</I>&gt;<i> than crating another taxonomy, why not alter one already in existence so  
+</I>&gt;<i> that many of the resources already curated in many meta-data systems can  
+</I>&gt;<i> immediately be typed?
+</I>
+Sure, at least both categorizations should be put in relation to each  
+other, even though their goal and scope is quite different. The idea here  
+is primarily to find an organization for the LLOD cloud diagram (unless  
+anyone proposes to go beyond that, at least). For example, we also have to  
+consider that this will be translated into a graph coloring of the LLOD  
+diagram, so the number of groups should be small, and about equally sized.  
+Furthermore, this only applies to potential LLOD resources, usually with a  
+complex and formal structure, whereas OLAC also includes publications that  
+are designed to be human-readable rather than machine-readable (say,  
+books). So, it's a little like apples and pies.
+
+Nevertheless, some ideas about aligning OLAC and the proposed categories:
+
+olac:lexicon
+~ Terminology and lexicon resources (tag: lexical)
+	[we should probably adopt the OLAC term]
+
+olac:primary_text
+~ Translation Memories and Bitext (tag: bitext)
+~ Annotated Corpora (tag: annotated-corpus)
+~ Multimodal resources (tag: multimodal-corpus)
+	[in the categorization we had in May last year,
+	all of these were grouped together as &quot;corpus&quot;,
+	but I would advise not to adopt the OLAC term
+	&quot;primary_text&quot;, because here we only talk
+	about text plus annotations or alignments
+	(plain text is out of our scope), and
+	the primary data is not necessarily textual]
+
+olac:language_description
+~ Typological Databases (tag: typological)
+	[considering something like WALS as a
+	prototype,  this is a very rough equivalence,
+	but actually, &quot;language_description&quot; may be
+	a more appropriate term ?]
+
+
+linguistic-metadata
+Of course, the OLAC metadata specifications  
+(<A HREF="http://www.language-archives.org/OLAC/metadata.html">http://www.language-archives.org/OLAC/metadata.html</A>) themselves could be  
+an instance of this, but I don't think that &quot;Metadata and linguistic  
+categories (tag: linguistic-metadata)&quot; fits any of the categories. In  
+particular, it is not language_description. Rather, linguistic-metadata  
+resources provide the vocabulary that can be used (within another  
+resource) to express linguistic information. The actual description is  
+*specified by the linking* and hence &quot;between&quot; LLOD bubbles rather than  
+&quot;within&quot; any of them.
+
+&gt;<i> I have two questions, which if someone can confirm or deny my  
+</I>&gt;<i> assertions, would help me determine if I am understanding the proposed  
+</I>&gt;<i> taxonomy.
+</I>&gt;<i>
+</I>&gt;<i> True :: A published journal paper discussing a grammatical feature of a  
+</I>&gt;<i> minority language would be typed as a bitext.
+</I>
+This category is primarily thought of for translation memories, i.e.,  
+parallel text (usually without annotations). I am not sure whether it  
+makes sense to represent linguistic papers as LLOD resources (i.e.,  
+modelling them completely in RDF[a] rather than using a simple TEI-based  
+XML format). Of course, we can embed information RDFa metadata (from any  
+of the categories above) within HTML, but I wouldn't try to apply our  
+classification to papers.
+
+&gt;<i> True :: A website where one could look up characters used in any  
+</I>&gt;<i> orthography in the world would be typed as typological.
+</I>
+I have no strong intuitions with respect to this. Maybe, this could also  
+be seen as a phonological/orthographical lexicon, in particular, if it  
+contains additional information about the character (like, e.g.,  
+<A HREF="http://de.wiktionary.org/wiki/%F0%92%80%AD">http://de.wiktionary.org/wiki/%F0%92%80%AD</A>). Any ideas from the  
+typologists? Should we rename &quot;typological&quot; to &quot;language description&quot; to  
+make that clearer?
+
+Just my 5 cent.
+
+Christian
+-- 
+Christian Chiarcos
+Applied Computational Linguistics
+Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+60054 Frankfurt am Main, Germany
+
+office: Robert-Mayer-Str. 10, #401b
+mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+tel: +49-(0)69-798-22463
+fax: +49-(0)69-798-28931
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002042.html">[open-linguistics] Categories for data in the LLOD Cloud Diagram
+</A></li>
+	<LI>Next message: <A HREF="002044.html">[open-linguistics] Categories for data in the LLOD Cloud Diagram
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2043">[ date ]</a>
+              <a href="thread.html#2043">[ thread ]</a>
+              <a href="subject.html#2043">[ subject ]</a>
+              <a href="author.html#2043">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

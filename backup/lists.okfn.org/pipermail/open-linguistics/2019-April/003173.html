@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] CfP: Grammar Data Mining (GDM): Extracting Linguistic Features From Grammatical Descriptions, September 5-6, 2019 - Varna, Bulgaria
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20CfP%3A%20Grammar%20Data%20Mining%20%28GDM%29%3A%20Extracting%0A%20Linguistic%20Features%20From%20Grammatical%20Descriptions%2C%20September%205-6%2C%0A%202019%20-%20Varna%2C%20Bulgaria&In-Reply-To=%3C12f667fb-de89-607a-0e0f-5aac852fae26%40glottotopia.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="003179.html">
+   <LINK REL="Next"  HREF="003174.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] CfP: Grammar Data Mining (GDM): Extracting Linguistic Features From Grammatical Descriptions, September 5-6, 2019 - Varna, Bulgaria</H1>
+    <B>Sebastian Nordhoff</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20CfP%3A%20Grammar%20Data%20Mining%20%28GDM%29%3A%20Extracting%0A%20Linguistic%20Features%20From%20Grammatical%20Descriptions%2C%20September%205-6%2C%0A%202019%20-%20Varna%2C%20Bulgaria&In-Reply-To=%3C12f667fb-de89-607a-0e0f-5aac852fae26%40glottotopia.de%3E"
+       TITLE="[open-linguistics] CfP: Grammar Data Mining (GDM): Extracting Linguistic Features From Grammatical Descriptions, September 5-6, 2019 - Varna, Bulgaria">sebastian.nordhoff at glottotopia.de
+       </A><BR>
+    <I>Fri Apr  5 06:59:31 UTC 2019</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="003179.html">[open-linguistics] Two fully-funded PhD positions in natural language processing for minority and historical languages
+</A></li>
+        <LI>Next message: <A HREF="003174.html">[open-linguistics] Real-Time Intelligent Systems 2019
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3173">[ date ]</a>
+              <a href="thread.html#3173">[ thread ]</a>
+              <a href="subject.html#3173">[ subject ]</a>
+              <a href="author.html#3173">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Call for papers
+
+Grammar Data Mining (GDM): Extracting Linguistic Features From
+Grammatical Descriptions
+
+September 5-6, 2019 - Varna, Bulgaria
+
+Submission deadline: 30 June 2019
+
+Link: <A HREF="https://spraakbanken.gu.se/lsi/sharedtask/">https://spraakbanken.gu.se/lsi/sharedtask/</A>
+
+Description
+-----------
+
+The present Workshop/Shared Task seeks to transform a large set of
+digitized publications describing the grammars of the languages of the
+world into structured databases that will enable comparison of
+different languages at an unprecedented breadth and depth.
+
+There are some 6 500 languages in the world and information about
+their grammatical characteristics is available in book-form for over
+4 000 of them. Until recently, extraction of information from grammars
+has been done exclusively through manual collection. This procedure is
+naturally bounded by the limits of human capacities, and as such can
+only target a relatively small amount of languages/characteristics at
+a substantial time investment in a given time.
+
+We are now entering a phase where it is practical to use NLP tools for
+a number of similar tasks. A computer may minimally infer some
+characteristics of the language described simply by counting words
+used in a grammatical description, e.g., a high-frequency of the term
+&#8217;suffix&#8217; likely indicates that the language being described uses a lot
+of suffixes. Further, there are less straightforward or more detailed
+characteristics traditionally of interest to linguists, such as where
+the verb is placed in then sentence (beginning, middle, end), the
+existence and use of participles, possessive constructions,
+evidentiality and so on. Any techniques from the NLP toolbox such as
+td-idf-weighting, tagging, parsing and vector spaces may be used in
+combination and as input in more sophisticated Machine Learning
+approaches.
+
+In this shared task we provide a subset of the World Atlas of Language
+Structures (WALS, <A HREF="http://wals.info">http://wals.info</A>) along with the digitized sources
+from which the features were drawn. Sources are provided in raw text
+form. The task is to infer WALS datapoints from the raw text data of
+the digitized grammatical descriptions.
+
+Training Data
+-------------
+10 000 datapoints spanning 191 languages and 100 features along with their
+value and source(s) are given as training in the following form:
+
+
+Language ISO 639-3 Feature	                 Value	             Source
+----------------------------------------------------------------------------------------
+Macushi  mbc	   31A Sex-based and             Non-sex-based
+Abbott-1991[105-106]
+                   Non-sex-based Gender Systems
+Macushi  mbc       57A Position of Pronominal    Possessive prefixes
+Abbott-1991[85,101];
+                   Possessive Affixes
+Williams-1932[61];
+		                                                     Carson-1982[104-106]
+E. Oromo hae       118A Predicative Adjectives   Mixed
+Owens-1985
+E. Oromo hae       9A The Velar Nasal            No velar nasal
+Owens-1985[10]
+...      ...       ...                           ...                 ...
+
+
+Features and values are defined as per WALS
+(<A HREF="http://wals.info">http://wals.info</A>). Sources are semi-colon separated and optionally
+indicate a page range in square brackets. Each source maps uniquely to
+an entry with bibliographical details in a bibtex-file and to a
+full-text of the source in question. The full-text is an OCR of a scan
+of the original source (varying quality) and contains no
+formatting. OCR errors are present, especially for IPA- or
+non-ascii-script text in a vernacular.  There is a total of 443 source
+texts supplied.
+
+The training data can be downloaded at
+<A HREF="http://stp.lingfil.uu.se/~harald/grammar-data-mining.zip">http://stp.lingfil.uu.se/~harald/grammar-data-mining.zip</A>
+
+Task
+----
+
+The task is to provide the Value for an unseen Language-Feature-Source
+triple.
+
+No language-specific data source external to the training data
+(such as the classifcation of a language, other sources for a language
+etc.) may be used. However, other open generic linguistic data sources
+may be utilized (such as the raw text of the corresponding WALS
+chapter, a list of linguistic terms etc.).
+
+Not every possible value for every feature is attested in the training
+data set but systems should nevertheless strive to potentially output
+any of the possible values for a features as defined in WALS. It is
+not obligatory that the training set values are utilized at all.
+
+Submission Instructions
+-----------------------
+
+Authors should submit a paper of up to 8 pages conforming to the RANLP
+style guidelines (see <A HREF="http://lml.bas.bg/ranlp2019/submissions.php">http://lml.bas.bg/ranlp2019/submissions.php</A>)
+describing their technical solution to the specific task. The
+submission should contain a link to a runnable version (e.g. on
+github.com) of the authors&#8217; solution. This runnable should output a
+Value (and nothing else) upon running the system: e.g. Given a
+language-code, the feature of interest, and the source document, the
+system should output the feature value as examplified below:
+
+&gt;&gt;&gt;<i>python grammar-data-mining.py &quot;hae&quot; &quot;118A Predicative Adjectives&quot;
+</I>&quot;Owens-1985; Heine 1981&quot;
+Mixed
+
+Submission is electronic, using the Softconf submission system for the
+Grammar Data Mining Workshop at <A HREF="https://www.softconf.com/ranlp2019/GDM/">https://www.softconf.com/ranlp2019/GDM/</A>
+
+Papers must be written in English.
+
+Submitted papers will be peer-reviewed by three experts from a related
+field.
+
+At least one author of each accepted paper is required to register for
+the RANLP 2019 conference, attend the workshop, and present the paper.
+
+
+Important Dates
+---------------
+
+Workshop paper submission deadline:     30 June 2019
+Workshop paper acceptance notification: 28 July 2019
+Workshop paper camera-ready version:    20 August 2019
+Workshop:                               5-6 September 2019
+
+
+Evaluation
+----------
+
+Each submission will be evaluated against a test set of 1000 random
+datapoints drawn from the same origin as the training data set. The
+test set will not be made available until after submission. Other
+aspects than accuracy (such as running time) will not be evaluated.
+
+
+Programme Committee
+-------------------
+
+Guillaume Segerer (CNRS, LLACAN, France)
+Harald Hammarstr&#246;m (Department of Linguistics and Philology, Uppsala
+University, Sweden)
+Markus Forsberg (Spr&#229;kbanken, University of Gothenburg, Sweden)
+S&#248;ren Wichmann (Leiden University Centre for Linguistics, Netherlands)
+Shafqat Mumtaz Virk (Spr&#229;kbanken, University of Gothenburg, Sweden)
+Zeljko Agic (IT University of Copenhagen, Denmark)
+Erich Round (University of Queensland, Australia)
+Sebastian Nordhoff (LangSci Press, Germany)
+
+Venue
+-----
+
+The workshop will be co-located with RANLP <A HREF="http://lml.bas.bg/ranlp2019">http://lml.bas.bg/ranlp2019</A>
+in Bulgaria
+and take place in Hotel &quot;Cherno More&quot;, Varna, the main RANLP-2019
+conference venue.
+
+</PRE>
+
+
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="003179.html">[open-linguistics] Two fully-funded PhD positions in natural language processing for minority and historical languages
+</A></li>
+	<LI>Next message: <A HREF="003174.html">[open-linguistics] Real-Time Intelligent Systems 2019
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3173">[ date ]</a>
+              <a href="thread.html#3173">[ thread ]</a>
+              <a href="subject.html#3173">[ subject ]</a>
+              <a href="author.html#3173">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] CfP: Entity Extraction and Linking Challenge	(#Microposts2014 @ WWW2014)
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20CfP%3A%20Entity%20Extraction%20and%20Linking%20Challenge%0A%09%28%23Microposts2014%20%40%20WWW2014%29&In-Reply-To=%3CCAA-57Jpq64nZ9Z4k2g0K9XX4vrDL4CVoVNZ71MD9Ch5ODCBTWw%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000581.html">
+   <LINK REL="Next"  HREF="000582.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] CfP: Entity Extraction and Linking Challenge	(#Microposts2014 @ WWW2014)</H1>
+    <B>ampaeli cano</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20CfP%3A%20Entity%20Extraction%20and%20Linking%20Challenge%0A%09%28%23Microposts2014%20%40%20WWW2014%29&In-Reply-To=%3CCAA-57Jpq64nZ9Z4k2g0K9XX4vrDL4CVoVNZ71MD9Ch5ODCBTWw%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] CfP: Entity Extraction and Linking Challenge	(#Microposts2014 @ WWW2014)">ampaeli at gmail.com
+       </A><BR>
+    <I>Sat Dec 21 14:49:39 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000581.html">[open-linguistics] LingHub - moving away from DataHub,	but keeping the good things
+</A></li>
+        <LI>Next message: <A HREF="000582.html">[open-linguistics] CfP: 3rd Workshop on Linked Data in Linguistics (LDL-2014) - Multilingual Knowledge Resources and NLP @ LREC2014
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#583">[ date ]</a>
+              <a href="thread.html#583">[ thread ]</a>
+              <a href="subject.html#583">[ subject ]</a>
+              <a href="author.html#583">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>=======================================================================
+              Entity Extraction and Linking Challenge
+           at the 4th Making Sense of Microposts Workshop
+                   (#Microposts2014) @ WWW 2014
+   <A HREF="http://www.scc.lancs.ac.uk/microposts2014/challenge/index.html">http://www.scc.lancs.ac.uk/microposts2014/challenge/index.html</A>
+            7 April 2014, Seoul, Republic of Korea
+=======================================================================
+
+Microposts are a highly popular medium to share facts, opinions or
+emotions. They are an invaluable wealth of data, ready to be mined for
+training predictive modelings. This year the #Microposts 2014 Workshop will
+host an &quot;Entity Extraction and Linking Challenge&quot;.
+The overall task of the challenge is to automatically extract entities from
+English microposts, and link them to the corresponding English DBpedia v3.9
+resources (if the linkage exists). As linking stage we aim to to
+disambiguate
+expressions that are formed by discrete (and typically short) sequences of
+words.
+Existing entity linking tools are intended for use over news corpora and
+similar document-based corpora with relatively long length. We organise
+this challenge to foster research into novel, more accurate solutions for
+the automatic entity linking in (much shorter) micropost data.
+We will ask the participants to automatically extract entities (e.g.,
+Obama, London, Rakuten)  belonging to all entity types (e.g., Person,
+Location, Organisation) from a collection of microposts. Participants will
+have to automatically provide context-relevant DBpedia resources for each
+entity in a micropost.
+
+DATASET
+-------
+The dataset comprises of 3.5K tweets extracted from a much larger
+collection of over 18 million tweets. This collection, provided by the
+Redites project (<A HREF="http://demeter.inf.ed.ac.uk/redites/">http://demeter.inf.ed.ac.uk/redites/</A>), covers
+event-annotated tweets collected for the period of 15th July 2011 to 15th
+August 2011 (31 days). It extends over multiple noteworthy events including
+the death of Amy Winhehouse, the London Riots and the Oslo bombing. Since
+the task of this challenge is to automatically extract and link entities,
+we have built our dataset considering both event and non-event tweets.
+While event tweets are more likely to contain entities, non-event tweets
+enable us to evaluate the performance of the system in avoiding false
+positives in the entity extraction phase.
+
+The dataset has been split into a training (70%) and testing (30%) sets.
+Following the Twitter TOS we will only provide tweet IDs and annotations
+for the training set; and tweet IDs for the test set. We will also provide
+a common framework to mine these datasets from Twitter.
+
+The training set will be released as tsv file where each line consists of :
+- tweet_id
+- entity_mention_1
+- entity_uri_1
+&#8230;
+- entity_mention_n
+- entity_uri_n
+Tokens are separated by TABs. Entity mentions and uris are listed according
+to their appearance order in the tweet.
+
+We will timely advertise the release of the data sets on the workshop
+mailing list. Please subscribe to <A HREF="https://groups.google.com/d/">https://groups.google.com/d/</A>
+forum/microposts2014. More information about dates are available in the
+Challenge website.
+
+EVALUATION
+----------
+The evaluation consists of two separated stages:
+1.- Paper peer review : A community of experts of the domain will judge the
+quality and applicability of the approaches taken, to provide useful
+insights on your research;
+2.- Precision and Recall:  F1 (F-measure with beta = 1) will be computed on
+a gold standard manually created from the test set. The automatically
+extracted entities and links will be both matched against this ground truth.
+
+All submissions will be only ranked according to the F1 of each best
+submission.
+
+SUBMISSIONS
+-----------
+Submissions should be provided as a zip file using your system name as the
+file name (e.g. 'awesome.zip'), containing:
+
+1. a TSV file with your system name (e.g. 'awesome.tsv'). We accept up to 3
+different submissions, and we will consider *only* the best. If you do so
+you must specify clearly in your paper the modifications applied to each
+labelled submission. In this case the submission should contain each of up
+to 3 TSV files with the tool/system name with &quot;_n&quot; appended to each (e.g.
+awesome_1.tsv, awesome_2.tsv, awesome_3 ).
+In order to evaluate your submissions we require you to submit a tsv file
+following the format in which the training set is provided.
+
+2. a paper of 6 pages describing your approach and how you tuned/tested it
+using the training split. All submissions must be in English. Submissions
+must be in PDF formatted in the style of the Springer Publications format
+for Lecture Notes in Computer Science (LNCS) [<A HREF="http://www.springer.com/">http://www.springer.com/</A>
+computer/lncs?SGWID=0-164-6-793341-0]. For details on the LNCS style, see
+Springer&#8217;s Author Instructions. All submissions are not anonymous. Please
+send us your submission before the deadline through Easychair [
+<A HREF="https://www.easychair.org/conferences/?conf=microposts2014">https://www.easychair.org/conferences/?conf=microposts2014</A>]. All accepted
+submissions will be invited for short presentations during the
+#Microposts2014 workshop and will be published independently from the
+workshop proceedings on the challenge page and on CEUR [<A HREF="http://ceur-ws.org/">http://ceur-ws.org/</A>]
+(note that a minimum number of papers should be submitted in order to be
+able to publish them on CEUR).
+
+IMPORTANT DATES
+---------------
+Intent to participate: 13 Jan 2014 (soft)
+Release of training set: 14 Jan 2014
+Release of test set: 17 Feb 2014
+Challenge Submission deadline: 21 Feb 2014 (hard)
+Challenge Notification: 14 Mar 2014  (hard)
+Challenge camera-ready deadline: 24 Mar 2014 (hard)
+
+Workshop program issued: 15 Mar 2014
+Challenge proceedings to be published via CEUR
+Workshop - 07 Apr 2014 (Registration open to all)
+(All deadlines 23:59 Hawaii Time)
+
+PRIZE
+-----
+to be announced
+
+CONTACT
+-------
+E-mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">microposts2014 at easychair.org</A>
+Facebook Group: <A HREF="http://www.facebook.com/#!/home.php?sk=group_180472611974910">http://www.facebook.com/#!/home.php?sk=group_180472611974910</A>
+Facebook Public Event page: <A HREF="http://www.facebook.com/events/116134955169543">http://www.facebook.com/events/116134955169543</A>
+Google group : <A HREF="https://groups.google.com/forum/#!forum/microposts2014">https://groups.google.com/forum/#!forum/microposts2014</A>
+Twitter hashtag: #microposts2014challenge
+Twitter account: @Microposts2014
+W3C Microposts Community Group: <A HREF="http://www.w3.org/community/microposts">http://www.w3.org/community/microposts</A>
+
+Challenge Organizers:
+------------------------------
+Challenge Chair:
+A. Elizabeth Cano, Aston University, UK
+Giuseppe Rizzo,  Universit&#224; di Torino, Italy
+
+Dataset  Chair:
+Andrea Varga, The University of Sheffield, UK
+
+Challenge  Committee:
+---------------------
+Ebrahim Bagheri, Ryerson University, Canada
+Pierpaolo Basile, Dipartimento di Informatica - University of Bari, Italy
+Uldis Bojars, SIOC Project
+&#211;scar Corcho, Universidad Polit&#233;cnica de Madrid, Spain
+Leon Derczynski, The University of Sheffield, UK
+Guillaume Er&#233;t&#233;o, Orange Labs
+Miriam Fernandez, Knowledge Media Institute, The Open University, UK
+Andr&#233;s Garc&#237;a-Silva, Ontology Engineering Group, Facultad de Inform&#225;tica,
+Univesidad Polit&#233;cnica de Madrid, Spain
+Anna Lisa Gentile, The University of Sheffield, UK
+Robert J&#228;schke, L3S Research Center, Germany
+Diana Maynard,  The University of Sheffield, UK
+Jos&#233; M. Morales-Del-Castillo, El Colegio de M&#233;xico, Mexico
+Georgios Paltoglou, University of Wolverhampton, UK
+Bernardo Pereira Nunes, PUC-Rio, Brazil
+Daniel Preo&#355;iuc-Pietro, The University of Sheffield, UK
+Rapha&#235;l Troncy, EURECOM, France
+Mischa Tuffield, PeerIndex
+Victoria Uren, Aston University, UK
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.okfn.org/pipermail/open-linguistics/attachments/20131221/609f30f4/attachment-0001.html">https://lists.okfn.org/pipermail/open-linguistics/attachments/20131221/609f30f4/attachment-0001.html</A>&gt;
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000581.html">[open-linguistics] LingHub - moving away from DataHub,	but keeping the good things
+</A></li>
+	<LI>Next message: <A HREF="000582.html">[open-linguistics] CfP: 3rd Workshop on Linked Data in Linguistics (LDL-2014) - Multilingual Knowledge Resources and NLP @ LREC2014
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#583">[ date ]</a>
+              <a href="thread.html#583">[ thread ]</a>
+              <a href="subject.html#583">[ subject ]</a>
+              <a href="author.html#583">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

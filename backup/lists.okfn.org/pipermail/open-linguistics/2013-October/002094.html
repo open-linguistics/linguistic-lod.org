@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%20datahub%20%3F&In-Reply-To=%3Cop.w4upm1hcyoucrc%40christian-pc%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002093.html">
+   <LINK REL="Next"  HREF="002080.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at datahub ?</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%20datahub%20%3F&In-Reply-To=%3Cop.w4upm1hcyoucrc%40christian-pc%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at datahub ?">christian.chiarcos at web.de
+       </A><BR>
+    <I>Sat Oct 12 17:02:51 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002093.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+        <LI>Next message: <A HREF="002080.html">[open-linguistics] edting wordpress
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2094">[ date ]</a>
+              <a href="thread.html#2094">[ thread ]</a>
+              <a href="subject.html#2094">[ subject ]</a>
+              <a href="author.html#2094">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear Bettina,
+
+thank you very much for your initiative, and in particular, your offer to  
+actually work your way through the current data sets. If you can attend  
+the telco on Monday, it would be great to see where this goes, and maybe  
+come to a joint recommendation with respect to a set of categories that  
+you can start working with.
+
+I like your classification, and the argument of helping linguists to find  
+resources in the LLOD cloud should certainly be the primary guideline of  
+our decisions. But could I ask you to add it to  
+<A HREF="http://wiki.okfn.org/Llod-categories">http://wiki.okfn.org/Llod-categories</A> so that we all work on the same  
+document ?
+
+Wrt. the classes themselves, I think that raw data is not really necessary  
+for the LLOD cloud (though it very well is for the Working Group) unless  
+anyone suggests to put raw data actually on the cloud. Using, say, NIF,  
+that would be possible, but without actual annotations (=&gt; corpus) or  
+other additional information (=&gt; database ?), we would not gain anything  
+by representing the data in RDF, would we?
+
+With respect to databases, we should probably refer to it as &quot;linguistic  
+databases&quot;. Otherwise, bibliographical data and general knowledge bases  
+(think of DBpedia) would be covered by the term to.
+
+With respect to &quot;Meta Data&quot;, I would like to distinguish bibliographical  
+data (as all your subcategories seem to be) from terminology repositories  
+(your &quot;linguistic topics&quot;, say, lexvo, ISOcat). This is partly because  
+there is a large amount of bibliography data (which we assume to be  
+linguistic by nature, even if not created by linguists, as it is about  
+language in any case) available, but also because the function is very  
+different: A resource in a bibliographical database provides a pointer to  
+a resource, a terminology repository provides identifiers that other  
+resources may refer to. As I understand it, Glottolog combines both  
+aspects, but the bibliographical component is also referred to  
+individually as Langdoc, right?
+
+In general, I'm a little bit pessimistic that we will ever arrive at truly  
+shared definitions, but I'm not sure whether we actually have to. We can  
+simply provide an informal description and an extensional definition  
+consisting of selected examples for resources for each group, maybe ranked  
+with respect to their popularity (i.e., number of resources linked with  
+it). In this way, there won't be terminological warfare, and if you like  
+to see a particular resource as a definitory example, then just add more  
+links to it! If all of this is generated out of tags (and not a fixed  
+attribute), then it is also easy to redefine the visualization by chosing  
+a different set of tags for visualization.
+
+The reason here is that different communities are involved, with very  
+different intuitions, but similar terms. And we need to stick to popular  
+and apparently intuitive terms such as &quot;lexicon&quot; and &quot;corpus&quot; as a means  
+of communication with linguists and to promote our work. That's also the  
+motivation to adopt existing terminologies to the extent possible. But any  
+classification arising out of this will be deficient, in any case, so it  
+can approximate the linguistic or technical reality of terms only to a  
+very limited extend.
+As an example, I would never have thought of DBpedia as being a &quot;lexicon&quot;  
+in any strict sense; any lexicographer would immediately refuse this idea,  
+but it is used like one in NLP: URIs provide &quot;sense&quot; identifiers and each  
+sense identifier is coupled with (something like) a definition. In this  
+way, it certainly is some kind of &quot;lexical-semantic resource&quot; and  
+&quot;lexicon&quot; was the shorthand we discussed to use for these. I recently had  
+a conversation with a terminologist criticising my use of &quot;terminology  
+repository&quot; for ISOcat for very similar reasons (it does provide  
+information about terminology, but not the information and the level of  
+detail a terminologist would expect; her notion of &quot;terminology  
+repository&quot; would actually be an instance of &quot;lexicon&quot; as we used it for  
+the September diagram). And she was right, of course. (I guess with the  
+term &quot;meta data&quot; there are similar problems, but at the moment, this would  
+be my preferred label for that category.)
+
+But let's talk about it on Monday.
+
+Best,
+Christian
+
+On Fri, 11 Oct 2013 22:37:08 +0200, Bettina Klimek  
+&lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">bettina.klimek at uni-leipzig.de</A>&gt; wrote:
+
+&gt;<i> Dear all,
+</I>&gt;<i>
+</I>&gt;<i> I was thinking about how to categorize the data sets in the LLOD cloud  
+</I>&gt;<i> as well. To me, a classification should be oriented on the people who  
+</I>&gt;<i> are particularly interested in the data: linguists. Therefore it makes  
+</I>&gt;<i> sense to find categories which are broad enough to cover 5-6 category  
+</I>&gt;<i> labels in order to get a first holistic overview over the kinds of data  
+</I>&gt;<i> being in the cloud, and narrow enough to allow for an exhaustive and  
+</I>&gt;<i> unambiguous classification. That way linguists are capable of finding  
+</I>&gt;<i> the kind of data sets they are looking for at one sight and one could  
+</I>&gt;<i> avoid having mixed categories which make it hard to assign data sets to  
+</I>&gt;<i> come to a certain category.
+</I>&gt;<i>
+</I>&gt;<i> I agree with everyone that the third category ?language description? is  
+</I>&gt;<i> too broad and includes ? as Christian already mentioned ? various kinds  
+</I>&gt;<i> of data, which would create a somewhat fuzzy category. Besides,  
+</I>&gt;<i> linguists have a different understanding of ?language description? as  
+</I>&gt;<i> Sebastian (N) pointed out. The idea of setting up definitions for the  
+</I>&gt;<i> categories seems very useful. In the context of the LLOD cloud however,  
+</I>&gt;<i> I think that reusing already existing definitions is problematic,  
+</I>&gt;<i> because they might not serve the specific needs of the field of  
+</I>&gt;<i> linguistic data. Following Sebastian?s (H) idea, establishing our own  
+</I>&gt;<i> definitions would be a good way of creating a coherent and homogenous  
+</I>&gt;<i> classification of different linguistic data sets. This is what I tried  
+</I>&gt;<i> to establish and what you can see on this Google document:  
+</I>&gt;<i> <A HREF="https://docs.google.com/document/d/1skUbkYlM5Y6UiettCj7-hImdKandl3TsqFDiVTRlthE/edit?usp=drive_web.">https://docs.google.com/document/d/1skUbkYlM5Y6UiettCj7-hImdKandl3TsqFDiVTRlthE/edit?usp=drive_web.</A>
+</I>&gt;<i>
+</I>&gt;<i> The 5 categories I propose here are well known in the field of  
+</I>&gt;<i> linguistics and might be the kinds of data a linguist might like to work  
+</I>&gt;<i> with. I also introduced some subcategories here, because it is obvious  
+</I>&gt;<i> that there are many more kinds of data and not each data type can be  
+</I>&gt;<i> highlighted with a color in the cloud. I tried to solve this problem by  
+</I>&gt;<i> assuming that these 5 categories could be treated as default categories  
+</I>&gt;<i> to which each data set must be assigned at the highest level. The  
+</I>&gt;<i> subcategories here can be extended and adjusted to any data set  
+</I>&gt;<i> depending on the data it represents. Beyond that the subcategories are  
+</I>&gt;<i> also a means for the people who would like to contribute their data set  
+</I>&gt;<i> to the cloud, because they know best whether their data is a database or  
+</I>&gt;<i> a corpus. Establishing a second category layer under the default  
+</I>&gt;<i> categories will also lead to a finer grained classification. I do not  
+</I>&gt;<i> know if it is possible, but I can imagine that the subcategories are  
+</I>&gt;<i> visualized in a sub-cloud as well. That means in detail, if someone  
+</I>&gt;<i> clicks on the database category for example a new cloud will be opened  
+</I>&gt;<i> showing all data sets which include databases only and these bubbles  
+</I>&gt;<i> could be colored as well according to the subcategories ?lexical  
+</I>&gt;<i> database?, ?typological database? and so on. That way the data cloud  
+</I>&gt;<i> stays really open, because the subcategory layer can be extended with  
+</I>&gt;<i> new types of data sets. At the same time the main cloud can keep the  
+</I>&gt;<i> default categories, because they include all the subcategories. From a  
+</I>&gt;<i> linguist point of view this seems really useful since a typologist for  
+</I>&gt;<i> instance might not want to see all data sets containing databases but  
+</I>&gt;<i> all data sets including only typological databases.
+</I>&gt;<i>
+</I>&gt;<i> Up to now this is only a first draft and it will have to be adjusted.  
+</I>&gt;<i> Right now I am going through all data sets in the cloud to find out what  
+</I>&gt;<i> kinds of data exist and if this classification could work out. I am  
+</I>&gt;<i> happy to hear your opinions for improvement.
+</I>&gt;<i>
+</I>&gt;<i> With kind regards,
+</I>&gt;<i> Bettina
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> ----------------------------------------------------------------
+</I>&gt;<i> This message was sent using IMP, the Internet Messaging Program.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> open-linguistics mailing list
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;<i> <A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i> Unsubscribe: <A HREF="http://lists.okfn.org/mailman/options/open-linguistics">http://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>&gt;<i>
+</I>
+
+-- 
+Christian Chiarcos
+Applied Computational Linguistics
+Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+60054 Frankfurt am Main, Germany
+
+office: Robert-Mayer-Str. 10, #401b
+mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+tel: +49-(0)69-798-22463
+fax: +49-(0)69-798-28931
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002093.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+	<LI>Next message: <A HREF="002080.html">[open-linguistics] edting wordpress
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2094">[ date ]</a>
+              <a href="thread.html#2094">[ thread ]</a>
+              <a href="subject.html#2094">[ subject ]</a>
+              <a href="author.html#2094">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

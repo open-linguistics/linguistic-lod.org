@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] LLOD in LOD
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20LLOD%20in%20LOD&In-Reply-To=%3CCAC1YGdg9H4j1-eczbEcp8pi0sOLXFvkjG9EnyzhvOeENB%2Bk6DQ%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002283.html">
+   <LINK REL="Next"  HREF="000738.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] LLOD in LOD</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20LLOD%20in%20LOD&In-Reply-To=%3CCAC1YGdg9H4j1-eczbEcp8pi0sOLXFvkjG9EnyzhvOeENB%2Bk6DQ%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] LLOD in LOD">christian.chiarcos at web.de
+       </A><BR>
+    <I>Mon Aug 11 14:42:08 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002283.html">[open-linguistics] [Corpora-List] WordNet vs Ontology
+</A></li>
+        <LI>Next message: <A HREF="000738.html">[open-linguistics] Industry talks and Hackathon @ MLODE 2014, Sept. 1-2 in Leipzig, Germany
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#737">[ date ]</a>
+              <a href="thread.html#737">[ thread ]</a>
+              <a href="subject.html#737">[ subject ]</a>
+              <a href="author.html#737">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear all,
+
+please find a message below regarding the status of LLOD resources in the
+LOD.
+
+If your data set is not classified as &quot;linked data&quot; in the attached file,
+it may be to one the following reasons:
+
+(a) For some resources, we need to discuss their status as being ontologies
+or not.
+
+(b) Check availability. Some datasets, e.g., eurosentiment and
+lemonwordnet, appear to be offline.
+
+(c) Check robots.txt and make sure that your data can be crawled.
+
+(d) Check your datahub metadata: Note that we could only update resources
+directly associated with the owlg organization at datahub. This is not the
+case for all resources, including a few important ones such as PanLex or
+BabelNet.
+
+If you have only an issue with metada and you want your datasets to be
+included, you can either
+
+(a) add the tags &quot;llod&quot;, &quot;lod&quot;, &quot;linguistics&quot; and set the attributes
+&quot;triples&quot; and &quot;links:...&quot; according to
+<A HREF="https://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/DataSets/CKANmetainformation,">https://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/DataSets/CKANmetainformation,</A>
+or
+
+(b) write one of the admins of <A HREF="http://datahub.io/de/organization/about/owlg">http://datahub.io/de/organization/about/owlg</A>
+(e.g., Bettina or me) and ask to be invited to the organization. Then, we
+should be able to update your metadata.
+
+If these issues are fixed, please send an email to Max (in CC) to include
+your dataset.
+
+Best,
+Christian
+
+---------- Forwarded message ----------
+From: Max Schmachtenberg &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">max at informatik.uni-mannheim.de</A>&gt;
+Date: 2014-08-05 15:29 GMT+02:00
+Subject: Re: AW: Updated LOD Cloud Diagram - Please enter your linked
+datasets into the datahub.io catalog for inclusion.
+To: Christian Chiarcos &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">christian.chiarcos at web.de</A>&gt;
+
+
+ Hello Christian,
+
+I analysed the datasets in your group. In the attached tsv, you can find my
+results.
+
+Regarding datasets with linked data (unlinke those that are offline or
+where I could not fined linked data, hence named &quot;no linked data&quot;), there
+are either those that are:
+
+- in our crawl
+- an ontology (which we do not include)
+- were disallowed to be crawled (&quot;was disallowed&quot;) or
+-&quot;linked data&quot;, which should be included to the next cloud.
+
+If you disagree with my analysis in any of the datasets, please let me know.
+
+Regards
+Max
+
+
+
+
+On 08/04/2014 06:28 PM, Christian Chiarcos wrote:
+
+Dear Chris, dear Max,
+
+ by now, most of our datasets should have the tags &quot;lod&quot; and &quot;llod&quot;, and
+can be retrieved from datahub via the organization (owlg). Not all owlg
+datasets are actually linked data, but those that specify size and links
+are. If you consider these datasets (including some already in the diagram,
+but currently under cross-domain) as being substantial enough, a name like
+&quot;language resources&quot; would be ideal, I think.
+
+ Please let me know if there are any further questions. (Though I'll be
+sporadically online only until end of August).
+
+ Thanks a lot, and best regards,
+Christian
+
+On 24.07.2014, at 14:49, &quot;Christian Bizer&quot; &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chris at bizer.de</A>&gt; wrote:
+
+  Dear Christian and Max
+
+
+
+thank you very much for pointing us at this group.  We will include the
+datasets that set links into the diagram.
+
+
+
+If we have a decent number of linguistic datasets that we can include into
+the cloud, I would be happy with adding an additional category.
+
+
+
+Max: Could you please note the datasets from the group that set links for
+inclusion into the diagram.
+
+
+
+Cheers,
+
+
+
+Chris
+
+
+
+
+
+*Von:* <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">christian.chiarcos at googlemail.com</A> [
+mailto:<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">christian.chiarcos at googlemail.com</A> &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">christian.chiarcos at googlemail.com</A>&gt;]
+*Im Auftrag von *Christian Chiarcos
+*Gesendet:* Donnerstag, 24. Juli 2014 16:34
+*An:* Christian Bizer
+*Betreff:* Re: Updated LOD Cloud Diagram - Please enter your linked
+datasets into the datahub.io catalog for inclusion.
+
+
+
+Dear Chris,
+
+thank you for your efforts, great to have an updated diagram.
+
+I would like to point out to you the existence of the datasets compiled by
+the Open Linguistics Working Group (OWLG) of the OKFN. We have been
+promoting a Linguistic Linked Open Data (LLOD) (sub-)cloud in the last few
+years with great success in the NLP and linguistics communities, and it
+would be great to these datasets also included in the LOD cloud. While all
+our metadata is stored on datahub.io, its specifications are not (yet)
+conformant to LOD requirements, but we're working on that. In any case,
+there would be about 30-50 new data sets (hard to quantify because of the
+overlap between current LOD and LLOD) and I was wondering whether this
+would not justify a new category for the diagram, say &quot;Linguistic Linked
+Open Data&quot;. Most LLOD data sets that already are in the LOD diagram (e.g.,
+those maintained at AKSW) are tagged as &quot;cross-domain&quot; which I personally
+find somewhat dissatisfying.
+
+Most of our datasets can be found under <A HREF="http://datahub.io/organization/owlg,">http://datahub.io/organization/owlg,</A>
+(L)LOD data sets are those with the triples and links:... tags. We try to
+add the &quot;lod&quot; tag, but it will take a while because there is no way of
+doing global modifications on datahub.io.
+
+We have a hard time synchronizing the metadata, so different tags have been
+used to identify resources that are in the LLOD but maintained by other
+organizations, most noteably using the tags &quot;llod&quot;, &quot;linguistic&quot; or
+&quot;linguistics&quot;. Sorting these out will take time and I'm not sure whether
+we'll make it until August 8th. Any ideas when the next diagram after the
+August version will be compiled ?
+
+Best regards,
+Christian
+
+-- 
+
+Prof. Dr. Christian Chiarcos
+Applied Computational Linguistics
+Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+60054 Frankfurt am Main, Germany
+
+office: Robert-Mayer-Str. 10, #401b
+mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+tel: +49-(0)69-798-22463
+fax: +49-(0)69-798-28931
+
+
+
+-- 
+Max Schmachtenberg
+Chair of Information Systems V
+Web-based Systems Group
+Universit&#228;t Mannheim
+B6, 26, Room C1.07
+D-68159 Mannheim
+Phone: +49 621 181 3705
+Mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">max at informatik.uni-mannheim.de</A>
+Web: dws.informatik.uni-mannheim.de
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20140811/2783d095/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20140811/2783d095/attachment.html</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: owlgGroupPackagesStatuses.tsv
+Type: text/tab-separated-values
+Size: 2305 bytes
+Desc: not available
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20140811/2783d095/attachment.tsv">http://lists.okfn.org/pipermail/open-linguistics/attachments/20140811/2783d095/attachment.tsv</A>&gt;
+</PRE>
+
+
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002283.html">[open-linguistics] [Corpora-List] WordNet vs Ontology
+</A></li>
+	<LI>Next message: <A HREF="000738.html">[open-linguistics] Industry talks and Hackathon @ MLODE 2014, Sept. 1-2 in Leipzig, Germany
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#737">[ date ]</a>
+              <a href="thread.html#737">[ thread ]</a>
+              <a href="subject.html#737">[ subject ]</a>
+              <a href="author.html#737">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

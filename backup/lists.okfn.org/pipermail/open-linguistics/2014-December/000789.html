@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] UBY 0.6.0 - A Large-Scale Unified Lexical-Semantic Resource Based on LMF
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20UBY%200.6.0%20-%20A%20Large-Scale%20Unified%0A%20Lexical-Semantic%20Resource%20Based%20on%20LMF&In-Reply-To=%3CE784E2416BE3574BAA33F3AA2FDAFF7F0135263E93%40AMY.ukp.informatik.tu-darmstadt.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000790.html">
+   <LINK REL="Next"  HREF="000791.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] UBY 0.6.0 - A Large-Scale Unified Lexical-Semantic Resource Based on LMF</H1>
+    <B>Christian Meyer</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20UBY%200.6.0%20-%20A%20Large-Scale%20Unified%0A%20Lexical-Semantic%20Resource%20Based%20on%20LMF&In-Reply-To=%3CE784E2416BE3574BAA33F3AA2FDAFF7F0135263E93%40AMY.ukp.informatik.tu-darmstadt.de%3E"
+       TITLE="[open-linguistics] UBY 0.6.0 - A Large-Scale Unified Lexical-Semantic Resource Based on LMF">meyer at ukp.informatik.tu-darmstadt.de
+       </A><BR>
+    <I>Fri Dec  5 14:31:29 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000790.html">[open-linguistics] CFP: the 5th Making Sense of Microposts Workshop	(#Microposts2015) at WWW 2015
+</A></li>
+        <LI>Next message: <A HREF="000791.html">[open-linguistics] Guidelines for Linked Data generation of	Language Resources
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#789">[ date ]</a>
+              <a href="thread.html#789">[ thread ]</a>
+              <a href="subject.html#789">[ subject ]</a>
+              <a href="author.html#789">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>[Apologies for X-posting]
+
+We are pleased to announce the release of UBY 0.6.0.
+Project homepage: <A HREF="http://code.google.com/p/uby/">http://code.google.com/p/uby/</A>
+
+
+== Changes ==
+
+Highlights of UBY 0.6.0
+* Integration of new UBY lexicon OntoWiktionary (Meyer/Gurevych, 2012).
+* Major revision of the lexicon converters including.
+** Standardization of syntactic labels.
+** Standardization of external references.
+* Support for embedded H2 databases.
+* Support for using Maven-packaged H2 databases in a UIMA pipeline.
+* Numerous fixes and performance improvements.
+
+
+References:
+Christian M. Meyer and Iryna Gurevych: OntoWiktionary - Constructing an Ontology from the Collaborative Online Dictionary Wiktionary, chapter 6 in M. T. Pazienza and A. Stellato (Eds.): Semi-Automatic Ontology Development: Processes and Resources, p. 131-161, Hershey, PA: IGI Global, February 2012.
+
+
+== Project summary ==
+UBY is a linked lexical-semantic resource for natural language processing
+based on the ISO standard Lexical Markup Framework (LMF). It combines a
+wide range of information from ten expert-constructed and collaboratively
+constructed resources for English and German:
+
+* English WordNet, Wiktionary, Wikipedia, FrameNet, and VerbNet,
+* German Wikipedia, Wiktionary, GermaNet, and IMSLex-Subcat, as well as
+* multilingual OmegaWiki.
+
+A subset of these resources is inter-linked at the word sense level. UBY is
+a valuable resources for many knowledge-based NLP applications. Get more
+information on the UBY website: <A HREF="http://www.ukp.tu-darmstadt.de/uby/">http://www.ukp.tu-darmstadt.de/uby/</A>
+
+UBY is a research project at the Ubiquitous Knowledge Processing (UKP) Lab of
+the Technische Universit&#228;t Darmstadt, Germany. The following people have
+mainly contributed to this project (in alphabetical order):
+Richard Eckart de Castilho, Judith Eckle-Kohler, Iryna Gurevych,
+Silvana Hartmann, Michael Matuschek, Christian M. Meyer, Tristan Miller,
+and Tri-Duc Nghiem.
+
+== Publications ==
+A more detailed description of UBY is available in our scientific articles:
+
+* Iryna Gurevych, Judith Eckle-Kohler, Silvana Hartmann, Michael Matuschek,
+  Christian M. Meyer, and Christian Wirth: UBY - A Large-Scale Unified
+  Lexical-Semantic Resource Based on LMF, in: Proceedings of the 13th
+  Conference of the European Chapter of the Association for Computational
+  Linguistics (EACL), p. 580-590, April 2012. Avignon, France.
+
+* Judith Eckle-Kohler, Iryna Gurevych, Silvana Hartmann, Michael Matuschek,
+  and Christian M. Meyer: UBY-LMF - A Uniform Model for Standardizing
+  Heterogeneous Lexical-Semantic Resources in ISO-LMF, in: Proceedings of
+  the 8th International Conference on Language Resources and
+  Evaluation (LREC), p. 275-282, May 2012. Istanbul, Turkey.
+
+Please cite our EACL paper if you use UBY in your work. Please cite the LREC
+paper if you use the lexicon model UBY-LMF.
+
+
+== License and Availability ==
+The latest version of UBY is available from our Google code page:
+<A HREF="https://code.google.com/p/uby/">https://code.google.com/p/uby/</A>
+
+Besides the lexicon access and creation code, you can find tutorials and
+precompiled UBY database dumps on this homepage.
+UBY is available as open source software under the Apache License 2.0 (ASL)
+and the GNU General Public License (GPL). Please see LICENSE.txt for details.
+
+== Contact ==
+Please direct any questions or suggestions to
+  <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">uby-developers at googlegroups.com</A>&lt;mailto:<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">uby-developers at googlegroups.com</A>&gt;
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20141205/ccebc12c/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20141205/ccebc12c/attachment.html</A>&gt;
+</PRE>
+
+
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000790.html">[open-linguistics] CFP: the 5th Making Sense of Microposts Workshop	(#Microposts2015) at WWW 2015
+</A></li>
+	<LI>Next message: <A HREF="000791.html">[open-linguistics] Guidelines for Linked Data generation of	Language Resources
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#789">[ date ]</a>
+              <a href="thread.html#789">[ thread ]</a>
+              <a href="subject.html#789">[ subject ]</a>
+              <a href="author.html#789">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

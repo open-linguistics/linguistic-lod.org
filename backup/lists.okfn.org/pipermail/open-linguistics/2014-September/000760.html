@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] [Corpora-List] WordNet vs Ontology
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BCorpora-List%5D%20WordNet%20vs%20Ontology&In-Reply-To=%3CCANOmEAA%3DG%3DYL48xFY--d9FnRXhJUPWFpJLrUwcs3zf0Lcj0XmA%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000759.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] [Corpora-List] WordNet vs Ontology</H1>
+    <B>Jim Fidelholtz</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BCorpora-List%5D%20WordNet%20vs%20Ontology&In-Reply-To=%3CCANOmEAA%3DG%3DYL48xFY--d9FnRXhJUPWFpJLrUwcs3zf0Lcj0XmA%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] [Corpora-List] WordNet vs Ontology">fidelholtz at gmail.com
+       </A><BR>
+    <I>Tue Sep 30 00:51:36 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000759.html">[open-linguistics] Research Associate/Assistant Post at the	Knowledge Media Institute at The Open University
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#760">[ date ]</a>
+              <a href="thread.html#760">[ thread ]</a>
+              <a href="subject.html#760">[ subject ]</a>
+              <a href="author.html#760">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi, All,
+
+Just a comment. I'm not sure if it's a straw man, a white elephant or a
+Trojan horse (or even irrelevant), but I hope it would be taken as an
+attempt to clarify at least a subset of the notions discussed during this
+thread. I take it as referring to lexical aspects more than anything else,
+including MWFs. The gist is that, in my probably undereducated view, nearly
+all polysemy (in the usual sense of 'all the definitions under the same
+headword') originates in metaphor. Now, this brings up the problem that we
+don't seem to understand precisely what metaphor is, or perhaps we just
+don't agree on what it is; but I believe once we have some sort of handle
+on metaphor and its role in the semantics/pragmatics of language use, many
+of the Kilgarriff et al. complaints about 'word senses' will be found to be
+at least partially resolvable. Then again, I'm an optimist.
+
+Jim
+
+James L. Fidelholtz
+Posgrado en Ciencias del Lenguaje
+Instituto de Ciencias Sociales y Humanidades
+Benem&#233;rita Universidad Aut&#243;noma de Puebla, M&#201;XICO
+
+On Wed, Aug 13, 2014 at 4:25 AM, Yannick Versley &lt;
+<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">versley at cl.uni-heidelberg.de</A>&gt; wrote:
+
+&gt;<i> Dear Sebastian,
+</I>&gt;<i>
+</I>&gt;<i> First, let me say that throughout my work, we've used these
+</I>&gt;<i> dictionary-and-ontology things (let's call them lexicalized ontologies),
+</I>&gt;<i> sometimes more than one of them, and it's easy to see why
+</I>&gt;<i> - a common representation (in terms of a data model such as triples)
+</I>&gt;<i> - a common name space (such as URI senses)
+</I>&gt;<i> ..makes a lot of sense.
+</I>&gt;<i> In that sense, Cyc/CycL and microtheories, recent work to provide a
+</I>&gt;<i> uniform wrapper around multiple wordnets (UBY-LMF) or RDF representations
+</I>&gt;<i> of wordnets are all instances of one good idea which, if/when it fully
+</I>&gt;<i> works, would get us a huge step farther.
+</I>&gt;<i> &quot;If it works&quot;, in this case, means:
+</I>&gt;<i> - certain kinds of inference (such as: is this element linked to that
+</I>&gt;<i> element via multiple ISA steps, or, what is/are the least common
+</I>&gt;<i> ancestor(s)) can be supported very effectively
+</I>&gt;<i>   by in-memory data structures with the right kind of indexing. It's very
+</I>&gt;<i> hard to do with an SQL database (because their data model is far more
+</I>&gt;<i> general) but might be efficiently
+</I>&gt;<i>   supported by an RDF database that understands the subclass/superclass
+</I>&gt;<i> hierarchy. (With the caveat that Wordnet's hyponymy/hypernymy is not
+</I>&gt;<i> modeled as subclass/superclass
+</I>&gt;<i>   for reasons that make sense ontologically, but may be frustrating in
+</I>&gt;<i> practice)
+</I>&gt;<i>
+</I>&gt;<i> In the RDF world, we believe in URI senses. I agree, that RDF does not add
+</I>&gt;&gt;<i> anything to the content of the original data. However, I would argue, that
+</I>&gt;&gt;<i> it restructures the resource and makes the modeling explicit, transparent
+</I>&gt;&gt;<i> and re-usable. Also discoverability of data is increased.
+</I>&gt;&gt;<i>
+</I>&gt;<i> I fully agree that RDF's way of adding namespaces through URIs is the way
+</I>&gt;<i> to go. And TurtleRDF's way of declaring prefixes
+</I>&gt;<i> means that you can use URIs with a lot less verbosity, i.e.
+</I>&gt;<i> wn:n0001234 lemon:broader wn:n0002345
+</I>&gt;<i> intead of having the full URIs in there.
+</I>&gt;<i>
+</I>&gt;<i>  RDF is a Framework to Describe Resources such as WordNet. At the end of
+</I>&gt;&gt;<i> the day, it should be easier to answer the question, which part of WordNet
+</I>&gt;&gt;<i> is on ontology (and can be used as such) and what part is merely a
+</I>&gt;&gt;<i> dictionary.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Seeing the full lemon spec, it's not always clear to me where the ontology
+</I>&gt;<i> stops and &quot;the lemon creators shoehorning things such as syntax trees into
+</I>&gt;<i> an RDF notation&quot; starts.
+</I>&gt;<i> In a sense, this is an artefact of lemon's creators both trying to capture
+</I>&gt;<i> commonsensical constructs that everyone will use and doing new exciting
+</I>&gt;<i> things at the same time.
+</I>&gt;<i> I find Miller's original intuition of &quot;let's add an ontological component
+</I>&gt;<i> to a dictionary so you can look up things by meaning&quot; more useful here if
+</I>&gt;<i> we want an intuition
+</I>&gt;<i> on WordNet. Other resources (such as VerbNet or FrameNet) share the idea
+</I>&gt;<i> of having a dictionary joined with some conceptual data model, but have a
+</I>&gt;<i> focus on information
+</I>&gt;<i> that is closer to linguistic properties than the sense relations of
+</I>&gt;<i> wordnets.
+</I>&gt;<i>
+</I>&gt;<i> I believe, that essentially my community is trying to understand, what is
+</I>&gt;&gt;<i> currently going on and then model this in OWL, which is similar to UML or
+</I>&gt;&gt;<i> ER-diagrams.
+</I>&gt;&gt;<i>
+</I>&gt;<i> ... which is, again, commonsensical. If you want to model one resource in
+</I>&gt;<i> another framework, having a meta-model of the data helps. (meta-model
+</I>&gt;<i> sounds weird here because
+</I>&gt;<i> usually the model is some SQL or class diagram, and the meta-model is the
+</I>&gt;<i> one that describes the structure of UML or ER models, again in a
+</I>&gt;<i> description formalism that could
+</I>&gt;<i> be translated into UML or ER.)
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> Once you have it in OWL, you can mix and merge and transform it into more
+</I>&gt;&gt;<i> efficient structures like SQL (As John mentioned, Cyc is also providing
+</I>&gt;&gt;<i> these mappings and it is easy to go down from rich knowledge). The quest
+</I>&gt;&gt;<i> therefore is to encode human-knowledge into the data on a meta-level, i.e.
+</I>&gt;&gt;<i> describing the data/resources not the world.
+</I>&gt;&gt;<i>
+</I>&gt;<i> I fully agree. (And, just to be extra-cautious, will point to the
+</I>&gt;<i> difference between  meta-data and meta-models for linguistic models).
+</I>&gt;<i>
+</I>&gt;<i> We are in dire need of expert input, however. Hence my attempt to
+</I>&gt;&gt;<i> cross-post.
+</I>&gt;&gt;<i>
+</I>&gt;<i> For my two cents: I think that many of the practical problems we're facing
+</I>&gt;<i> (as in: after we've got our data in RDF, can we query the data efficiently
+</I>&gt;<i> and do we get the answers that we'd intuitively want), the general
+</I>&gt;<i> problems in knowledge-based AI have been around since ages, but now we have
+</I>&gt;<i> specific instances of the problem that can tell us more about what kind of
+</I>&gt;<i> solution can be workable in practice, and where we'll certainly see a
+</I>&gt;<i> pattern
+</I>&gt;<i> of early adopters (e.g. the WSD community, because having  all your data
+</I>&gt;<i> in one place is great and you need some kind of graph but no reasoning in
+</I>&gt;<i> a more extensive sense) and late adopters (e.g. people who make extensive
+</I>&gt;<i> use of relatedness measures or techniques that are both complicated and
+</I>&gt;<i> performance-sensitive enough that it makes little sense to include them in
+</I>&gt;<i> a generic database).
+</I>&gt;<i>
+</I>&gt;<i> Best wishes,
+</I>&gt;<i> Yannick
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> All the best,
+</I>&gt;&gt;<i> Sebastian
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On 08.08.2014 09:52, <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">yversley at gmail.com</A> wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Dear Sebastian,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  let me start out by saying that including that I&#8217;m not sure if
+</I>&gt;&gt;<i> broadening an already diffuse discussion by adding more people to it is
+</I>&gt;&gt;<i> helpful in the sense of achieving a better signal-to-noise ratio.
+</I>&gt;&gt;<i> Corpora-List is (in)famous for occasionally having discussions between
+</I>&gt;&gt;<i> people with very different background assumptions (e.g. Ramesh&#8217;s insistence
+</I>&gt;&gt;<i> that language is best seen as behaviour vs. the point that language is a
+</I>&gt;&gt;<i> tool to get meanings across). This can be both good and bad, and lots of
+</I>&gt;&gt;<i> people who are only interested in factual information did or will hit
+</I>&gt;&gt;<i> the &#8220;Mute thread&quot; button (or moral equivalent) in the process.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Your whole post seems to boil down to a claim that only RDF-encoded
+</I>&gt;&gt;<i> data should count as ontology. This seems to be a bit near-sighted to me,
+</I>&gt;&gt;<i> as LemonRDF&#8217;s encoding of WordNet is just that, an encoding which is very
+</I>&gt;&gt;<i> convenient but which adds nothing to the existing semantics.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  I completely agree that using a powerful database (be it RDF or SQL or
+</I>&gt;&gt;<i> anything else) is better than using the 90s infrastructure that was once
+</I>&gt;&gt;<i> designed for Wordnet, and that linking datasets together is much easier
+</I>&gt;&gt;<i> with a common format thst reduces the m:n problem to an 1:n problem.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  We already established earlier that WordNet is a combination between a
+</I>&gt;&gt;<i> dictionary and an ontological component, which is exactly why it&#8217;s more
+</I>&gt;&gt;<i> useful for NLP than the ontologies that were part of the original
+</I>&gt;&gt;<i> conception of the Semantic Web. Fortunately for us though, people woke up
+</I>&gt;&gt;<i> to that idea and resources such as DBPedia now also include dictionary
+</I>&gt;&gt;<i> entries that mediate between natural-language strings and the concepts of
+</I>&gt;&gt;<i> the respective ontology.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Saying that some people think that &#8220;the ontology is already in the
+</I>&gt;&gt;<i> text&quot; is unnecessarily putting up a strawman. No one claimed this, and
+</I>&gt;&gt;<i> you&#8217;d do better by understanding the actual arguments put forward - for
+</I>&gt;&gt;<i> example, that in the absence of a central authority, as with marriage or
+</I>&gt;&gt;<i> taxonomies in Biology, ontologies are conceptualizations that are
+</I>&gt;&gt;<i> intersubjective rather than purely objective. E.g. Kafka may be a German
+</I>&gt;&gt;<i> writer in one ontology and a Czech writer in another, yet either of these
+</I>&gt;&gt;<i> ontologies would be useful and intuitively plausible. (This creates a
+</I>&gt;&gt;<i> tension/incompatibility between the perspective that ontologies are logical
+</I>&gt;&gt;<i> things and that you should be able to reason with them, and the view that
+</I>&gt;&gt;<i> you should be able to freely combine ontologies on related things.)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Your discussion of layers is absolutely orthogonal to that - modeling
+</I>&gt;&gt;<i> text, annotations, metadata, and ontology in one database is surely
+</I>&gt;&gt;<i> convenient if you can make it work in a sense that's practically relevant
+</I>&gt;&gt;<i> but it doesn&#8217;t add anything to the discussion we&#8217;re having here.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Best wishes,
+</I>&gt;&gt;<i> Yannick
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  *Von:* Sebastian Hellmann &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">hellmann at informatik.uni-leipzig.de</A>&gt;
+</I>&gt;&gt;<i> *Gesendet:* &#8206;Freitag&#8206;, &#8206;8&#8206;. &#8206;August&#8206; &#8206;2014 &#8206;09&#8206;:&#8206;35
+</I>&gt;&gt;<i> *An:* John F Sowa &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">sowa at bestweb.net</A>&gt;, corpora &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">corpora at uib.no</A>&gt;, A list
+</I>&gt;&gt;<i> for those interested in open data in linguistics.
+</I>&gt;&gt;<i> &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>&gt;, nlp2rdf
+</I>&gt;&gt;<i> &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">nlp2rdf at lists.informatik.uni-leipzig.de</A>&gt;
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  Dear all,
+</I>&gt;&gt;<i> (I included some more lists to ping them, discussion started here:
+</I>&gt;&gt;<i> <A HREF="http://mailman.uib.no/public/corpora/2014-August/020939.html">http://mailman.uib.no/public/corpora/2014-August/020939.html</A>)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I see that there are many viewpoints on this issue in this thread.
+</I>&gt;&gt;<i> So let me add my personal biased view.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> In the broadest sense, we start to create an ontology by stating facts:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> married (a, b) .
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Imho we have an ontology, solely for the reason, that we start to relate
+</I>&gt;&gt;<i> a to b with &quot;married&quot; . Even if there is not an explicit ontology defining
+</I>&gt;&gt;<i> &quot;married&quot;, it is still used in an &quot;ontological&quot; way, just not explicit.
+</I>&gt;&gt;<i> There are other aspects missing, which have been discussed throughout the
+</I>&gt;&gt;<i> literature (i.e. the fact that it must be &quot;shared&quot; by Gruber), but in the
+</I>&gt;&gt;<i> broadest sense, it qualifies.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Regarding language technology and this discussion, I would say that we
+</I>&gt;&gt;<i> should be careful not to mix levels. This is done by lexical-semantic
+</I>&gt;&gt;<i> resources, i.e. WordNet, but we could separate it again.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> In my view, we have these different layers:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> 1. the content, i.e. the characters (html, plaintext), e.g in  unicode.
+</I>&gt;&gt;<i> 2. the container of the content, i.e. document or tweet
+</I>&gt;&gt;<i> 3. annotations on the content
+</I>&gt;&gt;<i> 4. metadata on the container, e.g. the tweeter or author for context
+</I>&gt;&gt;<i> 5. collection of content (with or without annotations) i.e. the corpora
+</I>&gt;&gt;<i> 6. ontologies and data describing language, i.e. lexica, dictionaries,
+</I>&gt;&gt;<i> terminologies, etc. such as WordNet
+</I>&gt;&gt;<i> 7. factual databases inluding their taxonomies, i.e. the DBpedia
+</I>&gt;&gt;<i> knowledge graph <A HREF="http://dbpedia.org">http://dbpedia.org</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> (@John: I hope you are noticing, that I am trying to be keep all of it as
+</I>&gt;&gt;<i> underspecified as possible)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Then in addition, there are ontologies on a meta-level that try to
+</I>&gt;&gt;<i> capture all seven layers. Some examples (more below): NIF, lemon, ITS, NERD
+</I>&gt;&gt;<i> [1]
+</I>&gt;&gt;<i> which we are trying to combine in the <A HREF="http://nlp2rdf.org">http://nlp2rdf.org</A> and
+</I>&gt;&gt;<i> <A HREF="http://lider-project.eu">http://lider-project.eu</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> We can model WordNet using the lemon ontology:
+</I>&gt;&gt;<i> <A HREF="http://datahub.io/dataset/lemonwordnet">http://datahub.io/dataset/lemonwordnet</A>
+</I>&gt;&gt;<i> However for certain purposes, it makes sense to transform WordNet to
+</I>&gt;&gt;<i> become a taxonomy as YAGO is doing:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/">https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I am not fixed upon any of the definitions I gave above, as I am aware
+</I>&gt;&gt;<i> that you can and should! transform one in the other (with some effort, e.g.
+</I>&gt;&gt;<i> corpora to dictionary, fact extraction, language generation).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> If we are talking about extracting ontologies from text, there might be
+</I>&gt;&gt;<i> philosophical people who might want to argue that the ontology is already
+</I>&gt;&gt;<i> in the text. Discussion can be endless, if you take the wrong linguistic
+</I>&gt;&gt;<i> turn.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> If we are focusing on engineering of information machines, then things
+</I>&gt;&gt;<i> are much clearer.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> All the best,
+</I>&gt;&gt;<i> Sebastian
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> [1] related to the different layers:
+</I>&gt;&gt;<i> 1. NIF: <A HREF="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#</A>
+</I>&gt;&gt;<i> 2. (there is a gap here, Dublin Core or Foaf are not enough imho)
+</I>&gt;&gt;<i> 3 a) MARL: <A HREF="http://www.gi2mo.org/marl/0.1/ns.html">http://www.gi2mo.org/marl/0.1/ns.html</A>
+</I>&gt;&gt;<i>    b) ITS: Docu: <A HREF="http://www.w3.org/TR/its20/">http://www.w3.org/TR/its20/</A> , RDF:
+</I>&gt;&gt;<i> <A HREF="http://www.w3.org/2005/11/its/rdf#">http://www.w3.org/2005/11/its/rdf#</A>
+</I>&gt;&gt;<i>    c) OLIA: <A HREF="http://purl.org/olia/">http://purl.org/olia/</A>
+</I>&gt;&gt;<i> 4. a) Dublin Core: <A HREF="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</A>
+</I>&gt;&gt;<i>     b) Prov-O: <A HREF="http://www.w3.org/TR/prov-o/">http://www.w3.org/TR/prov-o/</A>
+</I>&gt;&gt;<i> 5. also NIF:
+</I>&gt;&gt;<i> <A HREF="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#</A>
+</I>&gt;&gt;<i> 6. lemon: <A HREF="http://lemon-model.net/">http://lemon-model.net/</A>
+</I>&gt;&gt;<i> 7. a) DCAT and DataId: <A HREF="http://wiki.dbpedia.org/coop/DataIDUnit">http://wiki.dbpedia.org/coop/DataIDUnit</A>
+</I>&gt;&gt;<i>    b) NERD: <A HREF="http://nerd.eurecom.fr/ontology">http://nerd.eurecom.fr/ontology</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On 08.08.2014 06:11, John F Sowa wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On 8/7/2014 10:57 PM, Ken Litkowski wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It would seem to me that our goal should be a classification
+</I>&gt;&gt;<i> of all existing things (not to exclude the narrower types).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Yes, but note the slides I suggested in my first note:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>    <A HREF="http://www.jfsowa.com/talks/kdptut.pdf">http://www.jfsowa.com/talks/kdptut.pdf</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Slides 7 to 9:  Cyc project.  30 years of work (since 1984).
+</I>&gt;&gt;<i> After the first 25 years, 100 million dollars and 1000 person-years
+</I>&gt;&gt;<i> of work (one person-millennium!), 600,000 concepts, defined by
+</I>&gt;&gt;<i> 5,000,000 axioms, organized in 6,000 microtheories -- and counting.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Slide 10:  2300 years of universal ontology schemes -- and counting.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The Brandeis Shallow Ontology attempts to do this, and incidentally
+</I>&gt;&gt;<i> is being used to characterize arguments of verbs in Patrick Hanks
+</I>&gt;&gt;<i> corpus pattern analysis, i.e., in the imperfect world of language.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I strongly believe in shallow, underspecified ontologies -- especially
+</I>&gt;&gt;<i> when they're supplemented with lots of lexical information about verbs
+</I>&gt;&gt;<i> and their characteristic patterns.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> But I also believe that the key to having an open-ended variety of
+</I>&gt;&gt;<i> specialized ontologies is to make the computers do what people do:
+</I>&gt;&gt;<i> extend their ontologies automatically by reading books.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Lenat made the mistake of assuming that you need to hand-code
+</I>&gt;&gt;<i> a huge amount of knowledge before a system can start to read
+</I>&gt;&gt;<i> by itself.  But that's wrong.  You need to design a system that
+</I>&gt;&gt;<i> can automatically augment its ontology every step of the way.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> John
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> _______________________________________________
+</I>&gt;&gt;<i> UNSUBSCRIBE from this page: <A HREF="http://mailman.uib.no/options/corpora">http://mailman.uib.no/options/corpora</A>
+</I>&gt;&gt;<i> Corpora mailing list
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">Corpora at uib.no</A>
+</I>&gt;&gt;<i> <A HREF="http://mailman.uib.no/listinfo/corpora">http://mailman.uib.no/listinfo/corpora</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> --
+</I>&gt;&gt;<i> Sebastian Hellmann
+</I>&gt;&gt;<i> AKSW/NLP2RDF research group
+</I>&gt;&gt;<i> Insitute for Applied Informatics (InfAI) and DBpedia Association
+</I>&gt;&gt;<i> Events:
+</I>&gt;&gt;<i> * *Sept. 1-5, 2014* Conference Week in Leipzig, including
+</I>&gt;&gt;<i> ** *Sept 2nd*, MLODE 2014 &lt;<A HREF="http://mlode2014.nlp2rdf.org/">http://mlode2014.nlp2rdf.org/</A>&gt;
+</I>&gt;&gt;<i> ** *Sept 3rd*, 2nd DBpedia Community Meeting
+</I>&gt;&gt;<i> &lt;<A HREF="http://wiki.dbpedia.org/meetings/Leipzig2014">http://wiki.dbpedia.org/meetings/Leipzig2014</A>&gt;
+</I>&gt;&gt;<i> ** *Sept 4th-5th*, SEMANTiCS (formerly i-SEMANTICS)
+</I>&gt;&gt;<i> &lt;<A HREF="http://semantics.cc/">http://semantics.cc/</A>&gt;
+</I>&gt;&gt;<i> Venha para a Alemanha como PhD: <A HREF="http://bis.informatik.uni-leipzig.de/csf">http://bis.informatik.uni-leipzig.de/csf</A>
+</I>&gt;&gt;<i> Projects: <A HREF="http://dbpedia.org,">http://dbpedia.org,</A> <A HREF="http://nlp2rdf.org,">http://nlp2rdf.org,</A>
+</I>&gt;&gt;<i> <A HREF="http://linguistics.okfn.org,">http://linguistics.okfn.org,</A> <A HREF="https://www.w3.org/community/ld4lt">https://www.w3.org/community/ld4lt</A>
+</I>&gt;&gt;<i> &lt;<A HREF="http://www.w3.org/community/ld4lt">http://www.w3.org/community/ld4lt</A>&gt;
+</I>&gt;&gt;<i> Homepage: <A HREF="http://aksw.org/SebastianHellmann">http://aksw.org/SebastianHellmann</A>
+</I>&gt;&gt;<i> Research Group: <A HREF="http://aksw.org">http://aksw.org</A>
+</I>&gt;&gt;<i> Thesis:
+</I>&gt;&gt;<i> <A HREF="http://tinyurl.com/sh-thesis-summary">http://tinyurl.com/sh-thesis-summary</A>
+</I>&gt;&gt;<i> <A HREF="http://tinyurl.com/sh-thesis">http://tinyurl.com/sh-thesis</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> --
+</I>&gt;&gt;<i> Sebastian Hellmann
+</I>&gt;&gt;<i> AKSW/NLP2RDF research group
+</I>&gt;&gt;<i> Insitute for Applied Informatics (InfAI) and DBpedia Association
+</I>&gt;&gt;<i> Events:
+</I>&gt;&gt;<i> * *Sept. 1-5, 2014* Conference Week in Leipzig, including
+</I>&gt;&gt;<i> ** *Sept 2nd*, MLODE 2014 &lt;<A HREF="http://mlode2014.nlp2rdf.org/">http://mlode2014.nlp2rdf.org/</A>&gt;
+</I>&gt;&gt;<i> ** *Sept 3rd*, 2nd DBpedia Community Meeting
+</I>&gt;&gt;<i> &lt;<A HREF="http://wiki.dbpedia.org/meetings/Leipzig2014">http://wiki.dbpedia.org/meetings/Leipzig2014</A>&gt;
+</I>&gt;&gt;<i> ** *Sept 4th-5th*, SEMANTiCS (formerly i-SEMANTICS)
+</I>&gt;&gt;<i> &lt;<A HREF="http://semantics.cc/">http://semantics.cc/</A>&gt;
+</I>&gt;&gt;<i> Venha para a Alemanha como PhD: <A HREF="http://bis.informatik.uni-leipzig.de/csf">http://bis.informatik.uni-leipzig.de/csf</A>
+</I>&gt;&gt;<i> Projects: <A HREF="http://dbpedia.org,">http://dbpedia.org,</A> <A HREF="http://nlp2rdf.org,">http://nlp2rdf.org,</A>
+</I>&gt;&gt;<i> <A HREF="http://linguistics.okfn.org,">http://linguistics.okfn.org,</A> <A HREF="https://www.w3.org/community/ld4lt">https://www.w3.org/community/ld4lt</A>
+</I>&gt;&gt;<i> &lt;<A HREF="http://www.w3.org/community/ld4lt">http://www.w3.org/community/ld4lt</A>&gt;
+</I>&gt;&gt;<i> Homepage: <A HREF="http://aksw.org/SebastianHellmann">http://aksw.org/SebastianHellmann</A>
+</I>&gt;&gt;<i> Research Group: <A HREF="http://aksw.org">http://aksw.org</A>
+</I>&gt;&gt;<i> Thesis:
+</I>&gt;&gt;<i> <A HREF="http://tinyurl.com/sh-thesis-summary">http://tinyurl.com/sh-thesis-summary</A>
+</I>&gt;&gt;<i> <A HREF="http://tinyurl.com/sh-thesis">http://tinyurl.com/sh-thesis</A>
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> UNSUBSCRIBE from this page: <A HREF="http://mailman.uib.no/options/corpora">http://mailman.uib.no/options/corpora</A>
+</I>&gt;<i> Corpora mailing list
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">Corpora at uib.no</A>
+</I>&gt;<i> <A HREF="http://mailman.uib.no/listinfo/corpora">http://mailman.uib.no/listinfo/corpora</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20140929/de6ff086/attachment-0001.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20140929/de6ff086/attachment-0001.html</A>&gt;
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000759.html">[open-linguistics] Research Associate/Assistant Post at the	Knowledge Media Institute at The Open University
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#760">[ date ]</a>
+              <a href="thread.html#760">[ thread ]</a>
+              <a href="subject.html#760">[ subject ]</a>
+              <a href="author.html#760">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Categories for data in the LLOD Cloud Diagram
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Categories%20for%20data%20in%20the%20LLOD%20Cloud%20Diagram&In-Reply-To=%3C7EC5CE2D-39F2-4F8B-8C64-008E245A1B64%40thejourneyler.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002045.html">
+   <LINK REL="Next"  HREF="002054.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Categories for data in the LLOD Cloud Diagram</H1>
+    <B>Hugh Paterson III</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Categories%20for%20data%20in%20the%20LLOD%20Cloud%20Diagram&In-Reply-To=%3C7EC5CE2D-39F2-4F8B-8C64-008E245A1B64%40thejourneyler.org%3E"
+       TITLE="[open-linguistics] Categories for data in the LLOD Cloud Diagram">hugh at thejourneyler.org
+       </A><BR>
+    <I>Sun Jul 14 05:11:39 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002045.html">[open-linguistics] Categories for data in the LLOD Cloud Diagram
+</A></li>
+        <LI>Next message: <A HREF="002054.html">[open-linguistics] OLAC-LLOD
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2048">[ date ]</a>
+              <a href="thread.html#2048">[ thread ]</a>
+              <a href="subject.html#2048">[ subject ]</a>
+              <a href="author.html#2048">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>As the conversation progresses I would like to add two quick remarks, and a thought or two following:
+
+1. OLAC definitions of &quot;corpus&quot; does not exclude video and audio based corpora (that is, OLAC is not only referencing text based corpora). 
+2. Primary resources in minority languages can be written texts. - Minority language authors can write texts. So, let's not assume that primary sources must be video or audio to the exclusion of text based resources.
+
+At this point I am not sure that I am following the rational for the proposed taxonomy, as I was not a participant in the online meeting. (So, perhaps I am writing amiss.)
+
+However, my background is in archiving and dealing with the archive record and the resource to which it pertains. With these kinds of records (which it is encouraging to see in the diagram that MARC records are included) a MIME Type is usually included. OLAC [<A HREF="http://www.language-archives.org/NOTE/usage-20080711.html#Type">http://www.language-archives.org/NOTE/usage-20080711.html#Type</A>]  uses DCMI type declarations [<A HREF="http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=dcam#">http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=dcam#</A>] to show if an object is multi-media this vocabulary would include the elements: Collection , Dataset , Event , Image , InteractiveResource , MovingImage , PhysicalObject , Service , Software , Sound , StillImage , Text. If this vocabulary is used to describe all resources then wouldn't 'Multimodal resources' be some sub-set of that? This vocabulary also already is part of the Linnked Data Cloud as it is part of Dublin Core. - One less thing to define with a URI.
+
+In the archiving of resources, the archive I work at, has a metadata data field which is used for the language of authorship and a second field which is subject language(s). It would seem that a deductive process could tell us that a resources is multi-lingual has two language values in the content language language field. This may not be applicable or efficient in all use cases, but has it been considered as a method to address the issue of bi-lingual resources? i.e. the association of two ISO 639-3 codes, or other system of languid encoding to a single resource.
+
+In general I don't see OLAC vocabularies as part of the linked data diagram linked to in the original post. I wonder if it should be. Would there be something gained by adding it? This may mean that there needs to be some infrastructure change in the OLAC website. But the potential gain would be that the records of resources in the Linked Data cloud would be larger in the order of the number of records added by participating archives. (Obviously there are many used for Linked Data, and Records are only part of that.) But would there be great gain by adding Linked Data endpoints to the OLAC record sets and ontologies?
+
+- hugh
+
+On Jul 12, 2013, at 10:37 AM, John McCrae wrote:
+
+&gt;<i> Hi
+</I>&gt;<i> 
+</I>&gt;<i> Dave you raise some very good points, perhaps the best idea is just to have a tag that is 'multilingual'? This would also work nicely as it could be used to identify other multilingual linked resources, which may be of interest to the BPM-LOD group (<A HREF="http://www.w3.org/community/bpmlod/">http://www.w3.org/community/bpmlod/</A>)
+</I>&gt;<i> 
+</I>&gt;<i> Regards,
+</I>&gt;<i> John
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> On Fri, Jul 12, 2013 at 4:48 PM, Dave Lewis &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">dave.lewis at cs.tcd.ie</A>&gt; wrote:
+</I>&gt;<i> Hi Hugh, all,
+</I>&gt;<i> 
+</I>&gt;&gt;<i> True :: A published journal paper discussing a grammatical feature of a minority language would be typed as a bitext.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> I'd presume this would not be true as bi-text, as usually this denotes a set of aligned pairs of source and translation sentences, phrases or words that are the outcome of some translation process. 
+</I>&gt;<i> 
+</I>&gt;<i> It raises an interesting question of whether bi-text should be a classification by itself, or is a characterization of the _link_ between two monolingual resources. The latter would be a bit more in-line with how ELRA characteristes resources, (e.g.  <A HREF="http://catalog.elra.info/index.php?language=en">http://catalog.elra.info/index.php?language=en</A> ). They supporting both monolingual and multilingual version of lexica, corpora and terminology  - though not speech and multimodal/multimedia resoruces.
+</I>&gt;<i> 
+</I>&gt;<i> Also, for multilingual resources the tag 'bitext' might be a bit misleading, as there could be links in multilingual corpora from source text to translation in more than one other language.
+</I>&gt;<i> 
+</I>&gt;<i> Another question is the classification of comparable text, i.e.  text in two languages that wouldn't yield a clean bi-text alignment as it does not result from a sentence by sentence translation process, e.g. wikipedia pages on the same topic authored in different languages, or transcreation of marketting material
+</I>&gt;<i> 
+</I>&gt;<i> cheers,
+</I>&gt;<i> Dave
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;&gt;<i> On Jul 11, 2013, at 11:13 AM, John McCrae wrote:
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> Hi all,
+</I>&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> It was discussed today generating categories on the current LLOD diagram as here
+</I>&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> <A HREF="https://raw.github.com/jmccrae/llod-cloud.py/master/llod-cloud.july2013.png">https://raw.github.com/jmccrae/llod-cloud.py/master/llod-cloud.july2013.png</A>
+</I>&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> The proposal is that we should divide language resources into 6 broad categories 
+</I>&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> Terminology and lexicon resources (tag: lexical)
+</I>&gt;&gt;&gt;<i> e.g., Wiktionary derived resources
+</I>&gt;&gt;&gt;<i> Typological Databases (tag: typological)
+</I>&gt;&gt;&gt;<i> e.g., WALS
+</I>&gt;&gt;&gt;<i> Translation Memories and Bitext (tag: bitext)
+</I>&gt;&gt;&gt;<i> e.g., JRC Names
+</I>&gt;&gt;&gt;<i> Annotated Corpora (tag: annotated-corpus)
+</I>&gt;&gt;&gt;<i> e.g., Alpino
+</I>&gt;&gt;&gt;<i> Multimodal resources (tag: multimodal-corpus)
+</I>&gt;&gt;&gt;<i> Not sure if we have any examples as of yet
+</I>&gt;&gt;&gt;<i> Metadata and linguistic categories (tag: linguistic-metadata)
+</I>&gt;&gt;&gt;<i> e.g., ISOcat
+</I>&gt;&gt;&gt;<i> Does this seems like a sufficient division that would clarify the relative spread of the LLOD data, and does anyone have any other general comments?
+</I>&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> Regards,
+</I>&gt;&gt;&gt;<i> John
+</I>&gt;<i> 
+</I>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20130714/5be7061a/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20130714/5be7061a/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002045.html">[open-linguistics] Categories for data in the LLOD Cloud Diagram
+</A></li>
+	<LI>Next message: <A HREF="002054.html">[open-linguistics] OLAC-LLOD
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2048">[ date ]</a>
+              <a href="thread.html#2048">[ thread ]</a>
+              <a href="subject.html#2048">[ subject ]</a>
+              <a href="author.html#2048">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec, Demo and Reference Implementation
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20ANN%3A%20NLP%20Interchange%20Format%20%28NIF%29%201.0%20Spec%2C%0A%20Demo%20and%20Reference%20Implementation&In-Reply-To=%3C4ED4F39A.1000704%40informatik.uni-leipzig.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001699.html">
+   <LINK REL="Next"  HREF="001703.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec, Demo and Reference Implementation</H1>
+    <B>Sebastian Hellmann</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20ANN%3A%20NLP%20Interchange%20Format%20%28NIF%29%201.0%20Spec%2C%0A%20Demo%20and%20Reference%20Implementation&In-Reply-To=%3C4ED4F39A.1000704%40informatik.uni-leipzig.de%3E"
+       TITLE="[open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec, Demo and Reference Implementation">hellmann at informatik.uni-leipzig.de
+       </A><BR>
+    <I>Tue Nov 29 15:00:42 UTC 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001699.html">[open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec,	Demo and Reference Implementation
+</A></li>
+        <LI>Next message: <A HREF="001703.html">[open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec, Demo and Reference Implementation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1700">[ date ]</a>
+              <a href="thread.html#1700">[ thread ]</a>
+              <a href="subject.html#1700">[ subject ]</a>
+              <a href="author.html#1700">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Yes, Emily sent it with another email address, I guess.
+I had to manually confirm it today, but the date of the email is 
+yesterday(11/28/2011 09:59 PM), so it should be sorted accordingly in 
+your email client, albeit pushed down by intermittent emails.
+Sebastian
+
+
+
+On 11/29/2011 03:50 PM, Nancy Ide wrote:
+&gt;<i> Hi Christian and all,
+</I>&gt;<i>
+</I>&gt;<i> Thanks for this nice and extensive explanation! There are a few comments I would make (some because there are some misconceptions and inaccuracies about GrAF, as there have been changes that are not yet published), but maybe this can wait until March at the workshop. I also think there are some &quot;big picture&quot; notions missing here, and as a result, I've decided to change the topic of my invited talk in March to address this question of relationship among various schemes and approaches, which I hope will be of interest (and spark a lot of discussion I'm sure!).
+</I>&gt;<i>
+</I>&gt;<i> BTW I did not receive the original query from Emily--was it on this list?
+</I>&gt;<i>
+</I>&gt;<i> Best,
+</I>&gt;<i> Nancy
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> On Nov 29, 2011, at 5:46 AM, Christian Chiarcos wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Dear Emily,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> (I'm answering for Sebastian, because we're working together on scaling up
+</I>&gt;&gt;<i> NIF to a more generic formalism.)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The key difference is a difference of technologies employed: the standard
+</I>&gt;&gt;<i> linearization of GrAF is by means of standoff XML (with known
+</I>&gt;&gt;<i> disadvantages such as limited readability and the need to develop an
+</I>&gt;&gt;<i> infrastructure [API, data bases, query language, etc.] from scratch),
+</I>&gt;&gt;<i> whereas NIF uses RDF and OWL (not necessarily better readable, but with
+</I>&gt;&gt;<i> infrastructures provided by the Semantic Web community). Also, both differ
+</I>&gt;&gt;<i> in scope: The goal behing NIF was to develop NLP pipelines that make use
+</I>&gt;&gt;<i> of RDF as interchange format, whereas GrAF is primarily concerned with
+</I>&gt;&gt;<i> modeling linguistic corpora. Further, GrAF allows only to model a single
+</I>&gt;&gt;<i> resource, RDF also allows to interlink it with other resources (e.g., for
+</I>&gt;&gt;<i> PropBanking or parallel corpora). Both approaches augment each other, and
+</I>&gt;&gt;<i> it is possible that they converge in the future to a certain extent -
+</I>&gt;&gt;<i> maybe, this could be a topic to discuss at the LDL where we invited Nancy
+</I>&gt;&gt;<i> Ide as keynote speaker.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On the more detailed level, NIF is a relatively pragmatic approach to
+</I>&gt;&gt;<i> represent the output of several typical NLP tools, i.e., tokenizers,
+</I>&gt;&gt;<i> lemmatizers, POS taggers, and constituent parsers, by means of RDF.
+</I>&gt;&gt;<i> (Higher-level annotations, say, alignment, bridging, or discourse
+</I>&gt;&gt;<i> structure, cannot be adequately represented by NIF at the moment.) As
+</I>&gt;&gt;<i> compared to this, GrAF was developed as a means to represent any kind of
+</I>&gt;&gt;<i> linguistic annotation, and in particular, annotated corpora. So, it comes
+</I>&gt;&gt;<i> with a certain theoretical overhead. GrAF is based on a graph-theoretic
+</I>&gt;&gt;<i> model and just uses labeled directed graphs as data model (without any
+</I>&gt;&gt;<i> more specific constraints on the data model). Of course, RDF can also be
+</I>&gt;&gt;<i> understood as being based on labeled directed graphs. In that sense, both
+</I>&gt;&gt;<i> are building on similar conceptions of linguistic annotations as directed
+</I>&gt;&gt;<i> (acyclic) (hyper-) graphs, as others did before (cf. Bird&amp;  Liberman 2001).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> NIF comprises means to address strings (this roughly corresponds to the
+</I>&gt;&gt;<i> segmentation in LAF, which is, however, not directly a part of GrAF [Ide&amp;
+</I>&gt;&gt;<i> Suderman 2007 describe the introduction of &quot;dummy nodes&quot; which do not seem
+</I>&gt;&gt;<i> to be proper nodes in the GrAF graph]). Differently from GrAF, these
+</I>&gt;&gt;<i> strings are addressed by URIs, so it allows references from other
+</I>&gt;&gt;<i> resources directly into a corpus/document.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Further, NIF contains the String Ontology and the Structured Sentence
+</I>&gt;&gt;<i> Ontology that provide data types for annotation, but from a very
+</I>&gt;&gt;<i> surface-oriented perspective (Sentences, Phrases and Words as defined in
+</I>&gt;&gt;<i> the Structured Sentence Ontology serve as units of annotation, all would
+</I>&gt;&gt;<i> be specializations of a GrAF node; a String as defined in the String
+</I>&gt;&gt;<i> Ontology, however, would be more general than a GrAF node, because a GrAF
+</I>&gt;&gt;<i> node is - implicitly - required to be a meaningful unit of linguistic
+</I>&gt;&gt;<i> annotation, whereas a string is just a sequence of characters.) One
+</I>&gt;&gt;<i> important difference is that a GrAF node can be discontinuous, whereas a
+</I>&gt;&gt;<i> NIF String is continuous.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> An important practical difference is that NIF allows to handle structural
+</I>&gt;&gt;<i> interoperability (comparable formats) for linguistic annotations, but also
+</I>&gt;&gt;<i> conceptual interoperability (interpretable annotations), *within the same
+</I>&gt;&gt;<i> formalism*. In GrAF, ISOcat can be used to define reference categories,
+</I>&gt;&gt;<i> but at the moment, the integration of ISOcat in GrAF does not seem to be
+</I>&gt;&gt;<i> solved. (Although there may have been recent developments that I am not
+</I>&gt;&gt;<i> aware of.) In NIF, the OLiA ontologies can be used which provide an OWL
+</I>&gt;&gt;<i> wrapper for ISOcat (and other terminology repositories). Same for metadata
+</I>&gt;&gt;<i> (using lexvo/lingvoj).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> So far, NIF covers only selected levels of annotation, for higher levels,
+</I>&gt;&gt;<i> additional data types would have to be introduced, and these will be based
+</I>&gt;&gt;<i> on the LAF, either directly on GrAF, or on its sibling format PAULA
+</I>&gt;&gt;<i> (originating from early LAF sketches, Ide&amp;  Romary 2004). At least two
+</I>&gt;&gt;<i> people (Nancy Ide and myself) wrote earlier on the list that they could
+</I>&gt;&gt;<i> provide RDF representations of such generic formalisms, and this
+</I>&gt;&gt;<i> information will be the input to carry the development of NIF further.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> In the longer perspective, we plan to develop means to represent
+</I>&gt;&gt;<i> linguistic annotations such that GrAF annotations can be rendered
+</I>&gt;&gt;<i> appropriately in RDF and/or OWL, with NIF for NLP pipelines and POWLA for
+</I>&gt;&gt;<i> linguistic corpora.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Best,
+</I>&gt;&gt;<i> Christian
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On Mon, 28 Nov 2011 21:59:51 +0100, Emily M. Bender&lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">ebender at uw.edu</A>&gt;  wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Dear Sebastian,
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> How does NIF relate to/compare to GrAF?
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Emily
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> On Sun, Nov 27, 2011 at 11:34 PM, Sebastian Hellmann
+</I>&gt;&gt;&gt;<i> &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">hellmann at informatik.uni-leipzig.de</A>&gt;  wrote:
+</I>&gt;&gt;&gt;&gt;<i> The Natural Language Processing Interchange Format (NIF) is an RDF/OWL-based
+</I>&gt;&gt;&gt;&gt;<i> format that aims to achieve interoperability between Natural Language
+</I>&gt;&gt;&gt;&gt;<i> Processing (NLP) tools, language resources and annotations. The core of NIF
+</I>&gt;&gt;&gt;&gt;<i> consists of a vocabulary, which can represent Strings as RDF resources. A
+</I>&gt;&gt;&gt;&gt;<i> special URI Design is used to pinpoint annotations to a part of a document.
+</I>&gt;&gt;&gt;&gt;<i> These URIs can then be used to attach arbitrary annotations to the
+</I>&gt;&gt;&gt;&gt;<i> respective character sequence. Employing these URIs, annotations can be
+</I>&gt;&gt;&gt;&gt;<i> published on the Web as Linked Data and interchanged between different NLP
+</I>&gt;&gt;&gt;&gt;<i> tools and applications.
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> In order to simplify the combination of tools, improve their
+</I>&gt;&gt;&gt;&gt;<i> interoperability and facilitating the use of Linked Data we developed the
+</I>&gt;&gt;&gt;&gt;<i> NLP Interchange Format (NIF). NIF addresses the interoperability problem on
+</I>&gt;&gt;&gt;&gt;<i> three layers: the structural, conceptual and access layer. NIF is based on a
+</I>&gt;&gt;&gt;&gt;<i> Linked Data enabled URI scheme for identifying elements in (hyper-) texts
+</I>&gt;&gt;&gt;&gt;<i> (structural layer) and a comprehensive ontology for describing common NLP
+</I>&gt;&gt;&gt;&gt;<i> terms and concepts (conceptual layer). NIF-aware applications will produce
+</I>&gt;&gt;&gt;&gt;<i> output (and possibly also consume input) adhering to the NIF ontology as
+</I>&gt;&gt;&gt;&gt;<i> REST services (access layer). Other than more centralized solutions such as
+</I>&gt;&gt;&gt;&gt;<i> UIMA and GATE, NIF enables the creation of heterogeneous, distributed and
+</I>&gt;&gt;&gt;&gt;<i> loosely coupled NLP applications, which use the Web as an integration
+</I>&gt;&gt;&gt;&gt;<i> platform. Another benefit is, that a NIF wrapper has to be only created once
+</I>&gt;&gt;&gt;&gt;<i> for a particular tool, but enables the tool to interoperate with a
+</I>&gt;&gt;&gt;&gt;<i> potentially large number of other
+</I>&gt;&gt;&gt;&gt;<i> tools without additional adaptations. Ultimately, we envision an ecosystem
+</I>&gt;&gt;&gt;&gt;<i> of NLP tools and services to emerge using NIF for exchanging and integrating
+</I>&gt;&gt;&gt;&gt;<i> rich annotations.
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> We designed NIF to be very light-weight and to reduce the amount of triples
+</I>&gt;&gt;&gt;&gt;<i> to achieve better scalability. The following triples in N3 Syntax express
+</I>&gt;&gt;&gt;&gt;<i> that the string &#8220;W3C&#8221; on <A HREF="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</A>
+</I>&gt;&gt;&gt;&gt;<i> (index 22849 to 22852) is linked to the DBpedia resource of
+</I>&gt;&gt;&gt;&gt;<i> &#8220;World_Wide_Web_Consortium&#8221;:
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> @prefix ld:&lt;<A HREF="http://www.w3.org/DesignIssues/LinkedData.html#">http://www.w3.org/DesignIssues/LinkedData.html#</A>&gt;  .
+</I>&gt;&gt;&gt;&gt;<i> @prefix str:&lt;<A HREF="http://nlp2rdf.lod2.eu/schema/string/">http://nlp2rdf.lod2.eu/schema/string/</A>&gt;  .
+</I>&gt;&gt;&gt;&gt;<i> @prefix dbo:&lt;<A HREF="http://dbpedia.org/ontology/">http://dbpedia.org/ontology/</A>&gt;  .
+</I>&gt;&gt;&gt;&gt;<i> @prefix scms:&lt;<A HREF="http://ns.aksw.org/scms/">http://ns.aksw.org/scms/</A>&gt;  .
+</I>&gt;&gt;&gt;&gt;<i> @prefix nerd:&lt;<A HREF="http://nerd.eurecom.fr/ontology#">http://nerd.eurecom.fr/ontology#</A>&gt;  .
+</I>&gt;&gt;&gt;&gt;<i> ld:offset_22849_22852_W3C str:anchorOf &quot;W3C&quot; .
+</I>&gt;&gt;&gt;&gt;<i> ld:offset_22849_22852_W3C scms:means dbpedia:World_Wide_Web_Consortium .
+</I>&gt;&gt;&gt;&gt;<i> ld:offset_22849_22852_W3C a dbo:Organisation , nerd:Organization .
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> NIF already incorporates the Ontologies of Linguistic Annotation (OLiA,
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://nachhalt.sfb632.uni-potsdam.de/owl/">http://nachhalt.sfb632.uni-potsdam.de/owl/</A>) and the Named Entity Recognition
+</I>&gt;&gt;&gt;&gt;<i> and Disambiguation (NERD, <A HREF="http://nerd.eurecom.fr/ontology/">http://nerd.eurecom.fr/ontology/</A>) ontology. Please
+</I>&gt;&gt;&gt;&gt;<i> get in contact, if you know of further NLP ontologies, which we can reuse
+</I>&gt;&gt;&gt;&gt;<i> and integrate in NIF.
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> This release consists of the following items:
+</I>&gt;&gt;&gt;&gt;<i> 1. The specification of NIF 1.0 ( <A HREF="http://nlp2rdf.org/nif-1-0">http://nlp2rdf.org/nif-1-0</A> ) This document
+</I>&gt;&gt;&gt;&gt;<i> will guide the further implementation of NIF-enabled services. An average
+</I>&gt;&gt;&gt;&gt;<i> wrapper requires around 200-500 lines of code. The spec integrates several
+</I>&gt;&gt;&gt;&gt;<i> domain ontologies (OLiA, NERD) and will be extended in the future to cover
+</I>&gt;&gt;&gt;&gt;<i> more domains.
+</I>&gt;&gt;&gt;&gt;<i> 2. A community portal ( <A HREF="http://nlp2rdf.org">http://nlp2rdf.org</A> )
+</I>&gt;&gt;&gt;&gt;<i> -- mailing list (<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">nlp2rdf at lists.informatik.uni-leipzig.de</A> ) -
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://lists.informatik.uni-leipzig.de/mailman/listinfo/nlp2rdf">http://lists.informatik.uni-leipzig.de/mailman/listinfo/nlp2rdf</A>
+</I>&gt;&gt;&gt;&gt;<i> -- Read how to get involved (<A HREF="http://nlp2rdf.org/get-involved">http://nlp2rdf.org/get-involved</A> )
+</I>&gt;&gt;&gt;&gt;<i> 3. A reference implementations of NIF 1.0 in Java
+</I>&gt;&gt;&gt;&gt;<i> -- Release 1.2 (
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://code.google.com/p/nlp2rdf/downloads/detail?name=nlp2rdf-1.2.tar.gz">http://code.google.com/p/nlp2rdf/downloads/detail?name=nlp2rdf-1.2.tar.gz</A> )
+</I>&gt;&gt;&gt;&gt;<i> -- Source code ( <A HREF="http://code.google.com/p/nlp2rdf/">http://code.google.com/p/nlp2rdf/</A> )
+</I>&gt;&gt;&gt;&gt;<i> 4. Wrapper implementations for Stanford CoreNLP, SnowballStemmer, OpenNLP,
+</I>&gt;&gt;&gt;&gt;<i> MontyLingua, DBpedia Spotlight, UIMA, Gate (for ANNIE and also generic
+</I>&gt;&gt;&gt;&gt;<i> output), Mallet (alpha)
+</I>&gt;&gt;&gt;&gt;<i> -- Demo GUI (with links to implementations): <A HREF="http://nlp2rdf.lod2.eu/demo.php">http://nlp2rdf.lod2.eu/demo.php</A>
+</I>&gt;&gt;&gt;&gt;<i> -- List of implementations: <A HREF="http://nlp2rdf.org/implementations">http://nlp2rdf.org/implementations</A>
+</I>&gt;&gt;&gt;&gt;<i> 5. Tutorials and Tutorial Challenges (
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://nlp2rdf.org/tutorials-challenge">http://nlp2rdf.org/tutorials-challenge</A> )
+</I>&gt;&gt;&gt;&gt;<i> -- Tutorial: How to call a NIF web service with your favorite SemWeb library
+</I>&gt;&gt;&gt;&gt;<i> -
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://nlp2rdf.org/tutorials/tutorial-how-to-call-a-nif-webservice-with-your-favorite-semweb-library">http://nlp2rdf.org/tutorials/tutorial-how-to-call-a-nif-webservice-with-your-favorite-semweb-library</A>
+</I>&gt;&gt;&gt;&gt;<i> -- Tutorial Challenge: Semantic Search -
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://nlp2rdf.org/tutorial-challenges/tutorial-challenge-semantic-search/">http://nlp2rdf.org/tutorial-challenges/tutorial-challenge-semantic-search/</A>
+</I>&gt;&gt;&gt;&gt;<i> -- Tutorial Challenge: Multilingual Part-Of-Speech Tagger -
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://nlp2rdf.org/tutorial-challenges/tutorial-challenge-multilingual-part-of-speech-tagger">http://nlp2rdf.org/tutorial-challenges/tutorial-challenge-multilingual-part-of-speech-tagger</A>
+</I>&gt;&gt;&gt;&gt;<i> -- Tutorial Challenge: Semantic Yellow Pages -
+</I>&gt;&gt;&gt;&gt;<i> <A HREF="http://nlp2rdf.org/tutorial-challenges/tutorial-challenge-semantic-yellow-pages">http://nlp2rdf.org/tutorial-challenges/tutorial-challenge-semantic-yellow-pages</A>
+</I>&gt;&gt;&gt;&gt;<i> 6. Slides - <A HREF="http://www.slideshare.net/kurzum/nif-version-10">http://www.slideshare.net/kurzum/nif-version-10</A>
+</I>&gt;&gt;&gt;&gt;<i> 7. A technical report <A HREF="http://svn.aksw.org/papers/2012/WWW_NIF/public.pdf">http://svn.aksw.org/papers/2012/WWW_NIF/public.pdf</A>
+</I>&gt;&gt;&gt;&gt;<i> including some evaluation.
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> We would like to thank our colleagues from AKSW (<A HREF="http://aksw.org">http://aksw.org</A>) research
+</I>&gt;&gt;&gt;&gt;<i> group and the LOD2 (<A HREF="http://lod2.eu">http://lod2.eu</A>) project for their helpful comments and
+</I>&gt;&gt;&gt;&gt;<i> inspiring discussions during the development of NIF. Especially, we would
+</I>&gt;&gt;&gt;&gt;<i> like to thank Christian Chiarcos
+</I>&gt;&gt;&gt;&gt;<i> (<A HREF="http://www.sfb632.uni-potsdam.de/~chiarcos/">http://www.sfb632.uni-potsdam.de/~chiarcos/</A>) for his support while using
+</I>&gt;&gt;&gt;&gt;<i> OLiA, the members of the Working Group on Open Data in Linguistics
+</I>&gt;&gt;&gt;&gt;<i> (<A HREF="http://linguistics.okfn.org/">http://linguistics.okfn.org/</A>) and the students that participated in the NIF
+</I>&gt;&gt;&gt;&gt;<i> field study: Markus Ackermann, Martin Br&#252;mmer, Didier Cherix, Marcus
+</I>&gt;&gt;&gt;&gt;<i> Nitzschke, Robert Schulze.
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;&gt;<i> Regards,
+</I>&gt;&gt;&gt;&gt;<i> Sebastian Hellmann, Jens Lehmann and S&#246;ren Auer
+</I>&gt;&gt;<i> _______________________________________________
+</I>&gt;&gt;<i> open-linguistics mailing list
+</I>&gt;&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;&gt;<i> <A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> open-linguistics mailing list
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;<i> <A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i>
+</I>
+
+-- 
+Dipl. Inf. Sebastian Hellmann
+Department of Computer Science, University of Leipzig
+Projects: <A HREF="http://nlp2rdf.org">http://nlp2rdf.org</A> , <A HREF="http://dbpedia.org">http://dbpedia.org</A>
+Homepage: <A HREF="http://bis.informatik.uni-leipzig.de/SebastianHellmann">http://bis.informatik.uni-leipzig.de/SebastianHellmann</A>
+Research Group: <A HREF="http://aksw.org">http://aksw.org</A>
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001699.html">[open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec,	Demo and Reference Implementation
+</A></li>
+	<LI>Next message: <A HREF="001703.html">[open-linguistics] ANN: NLP Interchange Format (NIF) 1.0 Spec, Demo and Reference Implementation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1700">[ date ]</a>
+              <a href="thread.html#1700">[ thread ]</a>
+              <a href="subject.html#1700">[ subject ]</a>
+              <a href="author.html#1700">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

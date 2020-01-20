@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] [Second Call for Participation] SemEval-2015 task 13: Multilingual All-Words Sense Disambiguation and Entity Linking
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BSecond%20Call%20for%20Participation%5D%20SemEval-2015%0A%20task%2013%3A%20Multilingual%20All-Words%20Sense%20Disambiguation%20and%20Entity%20Linking&In-Reply-To=%3CCAAEd8zKJ2gF2ki%3DSFL5h8dHebjN_w0vGupLCrBmQGp-3LdKL1Q%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000771.html">
+   <LINK REL="Next"  HREF="000773.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] [Second Call for Participation] SemEval-2015 task 13: Multilingual All-Words Sense Disambiguation and Entity Linking</H1>
+    <B>Andrea Moro</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BSecond%20Call%20for%20Participation%5D%20SemEval-2015%0A%20task%2013%3A%20Multilingual%20All-Words%20Sense%20Disambiguation%20and%20Entity%20Linking&In-Reply-To=%3CCAAEd8zKJ2gF2ki%3DSFL5h8dHebjN_w0vGupLCrBmQGp-3LdKL1Q%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] [Second Call for Participation] SemEval-2015 task 13: Multilingual All-Words Sense Disambiguation and Entity Linking">andrea8moro at gmail.com
+       </A><BR>
+    <I>Tue Oct 28 08:48:08 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000771.html">[open-linguistics] Extended CFP:  CSCESM2014 - Greece
+</A></li>
+        <LI>Next message: <A HREF="000773.html">[open-linguistics] SemEval-2015 Task 4: TimeLine: Second Call for	Participation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#772">[ date ]</a>
+              <a href="thread.html#772">[ thread ]</a>
+              <a href="subject.html#772">[ subject ]</a>
+              <a href="author.html#772">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>*Second Call for Participation*
+
+*Multilingual All-Words Sense Disambiguation and Entity Linking*
+
+SemEval-2015 task 13
+
+<A HREF="http://alt.qcri.org/semeval2015/task13/">http://alt.qcri.org/semeval2015/task13/</A>
+
+
+
+*Introduction*
+
+The automatic understanding of the meaning of text has been a major goal of
+research in computational linguistics and related areas for several
+decades, with ambitious challenges, such as Machine Reading (Etzioni, 2006)
+and the quest for knowledge (Schubert, 2006). Two key Natural Language
+Processing tasks that need to be tackled as steps towards achieving the
+goal of automatic understanding of text are Word Sense Disambiguation (WSD)
+and Entity Linking (EL). WSD (Navigli, 2009) is a historical task aimed at
+explicitly assigning meanings to single-word and multi-word occurrences
+within text, a task which is today more alive than ever in the research
+community. EL (Erbs et al., 2011; Cornolti et al., 2013; Rao et al., 2013)
+is a more recent task which aims at discovering mentions of entities within
+a text and linking them to the most suitable entry in a knowledge base. The
+two main differences between WSD and EL lie in the kind of inventory used,
+i.e., dictionary vs. encyclopedia, and the assumption that the mention is
+complete or potentially partial, respectively. For instance, a named entity
+such as &#8220;European Medicines Agency&#8221; may be referred to within a text as
+simply &#8220;Medicines Agency&#8221;, the meaning of which, however, can be inferred
+thanks to the context. Notwithstanding these differences, the tasks are
+pretty similar in nature, in that they both involve the disambiguation of
+textual fragments according to a reference inventory. However, the research
+community has hitherto tended to tackle the two tasks separately, often
+duplicating efforts and solutions.
+
+In contrast to this trend, research in knowledge acquisition is heading
+towards the seamless integration of encyclopedic and lexicographic
+knowledge within structured language resources (Hovy et al., 2013), and the
+main representative of this new direction is undoubtedly BabelNet
+<A HREF="http://babelnet.org">http://babelnet.org</A> (Navigli and Ponzetto, 2012). Therefore these resources
+seem to provide a common ground for the two tasks of WSD and EL. Only very
+recently a joint approach, called Babelfy (<A HREF="http://babelfy.org">http://babelfy.org</A>), has been
+proposed for both the tasks of WSD and EL (Moro et al., 2014).
+
+*Task description*
+
+In this task, our goal is to promote research in the direction of joint
+word sense and named entity disambiguation, so as to focus research efforts
+on the aspects that differentiate these two tasks without duplicating
+research for common problems within the two tasks. However, we will also
+allow systems that perform only one of the two tasks to participate, and
+even systems which tackle one particular setting of WSD, such as all-words
+sense disambiguation or on any subset of part-of-speech tags. Moreover,
+given the recent upsurge of interest in multilingual approaches, we will
+release our dataset in three different languages (English, Italian,
+Spanish) on parallel corpora which will be independently and manually
+annotated by different native/fluent speakers. In contrast to the
+SemEval-2013 task 12, Multilingual Word Sense Disambiguation (Navigli et
+al., 2013), our focus in this task is to present a dataset focused on both
+kinds of inventories (i.e., named entities and word senses) in the specific
+domain of biomedicine, in the attempt to further mitigate the distance
+between research efforts regarding the dichotomy EL vs. WSD and those
+regarding the dichotomy open domain vs. closed domain (i.e., biomedical
+Information Extraction). For this reason we encourage submissions from all
+these lines of research, in order that we can evaluate the distance between
+approaches that exploit both kinds of knowledge (i.e., lexicographic and
+encyclopedic) and approaches that work on both kinds of domain granularity
+(i.e., open and closed).
+
+*Word Senses and Named Entities inventory*
+
+The evaluation will use BabelNet 2.5, available at <A HREF="http://babelnet.org/">http://babelnet.org/</A> which
+contains WordNet, Wikipedia, Wiktionary, OmegaWiki, Wikidata and the Open
+MultilingualWordNet.
+*Important Dates*
+
+
+   - Trial data ready: May 30, 2014
+   - Training data ready: July 30, 2014 (there will be no training data)
+   - Evaluation period starts: December 5, 2014
+   - Evaluation period ends: December 20, 2014
+   - Paper submission due: January 30, 2015
+   - Paper reviews due: February 28, 2015
+   - Camera ready due: March 30, 2015
+   - SemEval workshop: Summer 2015
+
+Organizers
+
+   - Andrea Moro &lt;<A HREF="http://wwwusers.di.uniroma1.it/~moro/">http://wwwusers.di.uniroma1.it/~moro/</A>&gt;,* Sapienza
+   University of Rome*;
+   - Roberto Navigli &lt;<A HREF="http://wwwusers.di.uniroma1.it/~navigli/">http://wwwusers.di.uniroma1.it/~navigli/</A>&gt;, *Sapienza
+   University of Rome*.
+
+*Google Group*
+
+Please register to the following Google group:
+
+&quot;SemEval-2015 Task 13: Multilingual all-words WSD and EL
+&lt;<A HREF="https://groups.google.com/forum/?hl=en#%21forum/semeval-2015-task-13">https://groups.google.com/forum/?hl=en#%21forum/semeval-2015-task-13</A>&gt;&quot;
+
+
+*References*
+
+Marco Cornolti, Paolo Ferragina, and Massimiliano Ciaramita. 2013. A
+framework for benchmarking entity-annotation systems. In Proc. of WWW,
+pages 249&#8211;260.
+
+Nicolai Erbs, Torsten Zesch, and Iryna Gurevych. 2011. Link discovery: A
+comprehensive analysis. In Proc. of ICSC, pages 83&#8211;86.
+
+Oren Etzioni, Michele Banko, and Michael J Cafarella. 2006. Machine
+Reading. In Proc. of AAAI, pages 1517&#8211;1519.
+
+Eduard H. Hovy, Roberto Navigli, and Simone P. Ponzetto. 2013.
+Collaboratively built semi-structured content and Arti&#64257;cial Intelligence:
+The story so far. Arti&#64257;cial Intelligence, 194:2&#8211;27.
+
+Andrea Moro, Alessandro Raganato, and Roberto Navigli. 2014. Entity
+Linking meets
+Word Sense Disambiguation: a Unified Approach. Transactions of the
+Association for Computational Linguistics, 2, pages 231&#8722;244.
+
+Roberto Navigli. 2009. Word Sense Disambiguation: A survey. ACM Computing
+Surveys, 41(2):1&#8211;69.
+
+Roberto Navigli, David Jurgens, and Daniele Vannella. 2013. SemEval-2013
+Task 12: Multilingual Word Sense Disambiguation. In Proc. of SemEval-2013,
+pages 222&#8211;231.
+
+Roberto Navigli and Simone Paolo Ponzetto. 2012. BabelNet: The automatic
+construction, evaluation and application of a wide-coverage
+multilingual semantic
+network. Artificial Intelligence, 193:217&#8211;250.
+
+Delip Rao, Paul McNamee, and Mark Dredze. 2013. Entity Linking: Finding
+Extracted Entities in a Knowledge Base. In Multi-source, Multilingual
+Information
+Extraction and Summarization, Theory and Applications of Natural Language
+Processing, pages 93&#8211;115. Springer Berlin Heidelberg.
+
+Lenhart K. Schubert. 2006. Turing&#8217;s dream and the knowledge challenge. In
+Proc. of NCAI, pages 1534&#8211;1538.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20141028/8faf06c0/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20141028/8faf06c0/attachment.html</A>&gt;
+</PRE>
+
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000771.html">[open-linguistics] Extended CFP:  CSCESM2014 - Greece
+</A></li>
+	<LI>Next message: <A HREF="000773.html">[open-linguistics] SemEval-2015 Task 4: TimeLine: Second Call for	Participation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#772">[ date ]</a>
+              <a href="thread.html#772">[ thread ]</a>
+              <a href="subject.html#772">[ subject ]</a>
+              <a href="author.html#772">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

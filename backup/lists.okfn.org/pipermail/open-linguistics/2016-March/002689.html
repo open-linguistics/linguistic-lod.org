@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%20SPARQL%20BIND%20statement%3F&In-Reply-To=%3CCAGDmdGg%2B%3DdMZjQY7_e%2Be79%2BL4-to_4vQ6ot9947vUgnNwaKCbQ%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002687.html">
+   <LINK REL="Next"  HREF="002690.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?</H1>
+    <B>Manuel Fiorelli</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%20SPARQL%20BIND%20statement%3F&In-Reply-To=%3CCAGDmdGg%2B%3DdMZjQY7_e%2Be79%2BL4-to_4vQ6ot9947vUgnNwaKCbQ%40mail.gmail.com%3E"
+       TITLE="[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?">manuel.fiorelli at gmail.com
+       </A><BR>
+    <I>Sun Mar 13 21:33:32 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002687.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+        <LI>Next message: <A HREF="002690.html">[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2689">[ date ]</a>
+              <a href="thread.html#2689">[ thread ]</a>
+              <a href="subject.html#2689">[ subject ]</a>
+              <a href="author.html#2689">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>2016-03-13 20:40 GMT+01:00 Christian Chiarcos &lt;
+<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>&gt;:
+
+&gt;<i> Am .03.2016, 19:24 Uhr, schrieb Manuel Fiorelli &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">manuel.fiorelli at gmail.com</A>
+</I>&gt;<i> &gt;:
+</I>&gt;<i>
+</I>&gt;<i> Hi John, All
+</I>&gt;<i>
+</I>&gt;<i> In the SPARQL 1.1 specification, I found some functions that could be
+</I>&gt;<i> useful to Dr. Christian Chiarcos.
+</I>&gt;<i>
+</I>&gt;<i> STRLANG (<A HREF="https://www.w3.org/TR/sparql11-query/#func-strlang">https://www.w3.org/TR/sparql11-query/#func-strlang</A>) allows to
+</I>&gt;<i> construct an RDF literal from its literal form and language tag, such as:
+</I>&gt;<i>
+</I>&gt;<i> bind(strlang(&quot;Mais&quot;, &quot;it&quot;) as ?aLiteral)
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Yes, strlang() was precisely what I was looking for. I felt I was missing
+</I>&gt;<i> something obvious, and I cannot quite explain how I missed that when I
+</I>&gt;<i> consulted the page. Thanks!
+</I>&gt;<i>
+</I>
+I'm happy to have been helpful.
+
+
+&gt;<i> As for *fully automated* conversion, we can simply strip region subtags
+</I>&gt;<i> from the language tag and then consult lexvo (e.g.,
+</I>&gt;<i> <A HREF="http://www.lexvo.org/page/iso639-3/rus">http://www.lexvo.org/page/iso639-3/rus</A>) to retrieve the iso639-2 tag
+</I>&gt;<i> which is then assigned to the string via strlang().
+</I>&gt;<i>
+</I>
+I haven't thought at lexvo. Thank you. In fact, after reading your original
+question a second time, I realized that probably I misunderstood your
+needs: it seems to me that in your use case you know beforehand which
+language tags are involved, so that you can probably hard code the relevant
+codes in the query.
+
+
+Best Regards
+Manuel Fiorelli
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20160313/dd11c3f7/attachment-0002.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20160313/dd11c3f7/attachment-0002.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002687.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+	<LI>Next message: <A HREF="002690.html">[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2689">[ date ]</a>
+              <a href="thread.html#2689">[ thread ]</a>
+              <a href="subject.html#2689">[ subject ]</a>
+              <a href="author.html#2689">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

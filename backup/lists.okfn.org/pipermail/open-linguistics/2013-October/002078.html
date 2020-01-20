@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at	datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C09aa664c-b862-4ce7-99c1-5ebde1c5fbc6%40email.android.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002077.html">
+   <LINK REL="Next"  HREF="002079.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at	datahub ?</H1>
+    <B>hellmann at informatik.uni-leipzig.de</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C09aa664c-b862-4ce7-99c1-5ebde1c5fbc6%40email.android.com%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at	datahub ?">hellmann at informatik.uni-leipzig.de
+       </A><BR>
+    <I>Sun Oct  6 11:37:39 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002077.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+        <LI>Next message: <A HREF="002079.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2078">[ date ]</a>
+              <a href="thread.html#2078">[ thread ]</a>
+              <a href="subject.html#2078">[ subject ]</a>
+              <a href="author.html#2078">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Let a thousand ontologies blossom!
+
+I am in favor of creating several different colorings with the potential to add your own. 
+
+This can be modelled by:
+A dimension/aspect of the coloring.
+Then we need an assignment value-&gt;color. 
+
+The reason for this is that I would like to make diagrams with different colors. One aspect could be for hosting/boasting purposes, e.g. which institute/company is hosting the data to give credit.
+
+This gives us pretty good features, i.e. we can make a heat map with nr of described languages as dimension. 
+
+Furthermore, I am a big opponent of classifications and a great fan of criteria. One clear criteria is whether the dataset contains primary data. This would qualify it partially as a corpus in my opinion. There are some fringe cases of course, i.e. dictionaries citing sentences from newspapers as example. So based on the 'contains primary data property', corpora could be defined as 'datasets that have primary data and annotations relating to this primary data' 
+
+Lexica 'may or may not contain primary data, but the primary data is an annotation for the main content, i.e. the entries in a dictionary are annotated by newspaper examples.
+
+
+We probably should discuss it on this level ,i.e. what kind of differently colored clouds do we like to have, what dimensions or aspects do we need and what kind of metadata do we need to collect. 
+
+Other than that I would prefer prettiness as a main criteria for the official LLOD cloud. Let's say 4-6 colors which are pleasing to the eye ;) We probably do not have to make a science out of it and leave it fuzzy for now. 
+
+@Hugh: we should aim at creating a consentual framework for resource classification eventually...
+
+--Sebastian
+
+
+
+
+Sebastian Nordhoff &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">sebastian_nordhoff at eva.mpg.de</A>&gt; wrote:
+&gt;<i>On Sat, 05 Oct 2013 12:26:43 +0200, Christian Chiarcos  
+</I>&gt;<i>&lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">christian.chiarcos at web.de</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Dear all,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> earlier, we discussed categories for coloring the LLOD diagram. The  
+</I>&gt;&gt;<i> diagram we prepared for LDL-2013 was based on a something like the  
+</I>&gt;&gt;<i> minimal consensus:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> - lexicon (= LREMap lexicon, olac:lexicon)
+</I>&gt;&gt;<i> - corpus (= LREMap corpus, ~ olac:primary data)
+</I>&gt;&gt;<i> - language_description (basically everything else, ~  
+</I>&gt;&gt;<i> olac:language_description)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I guess the first two are unproblematic, but the third is very  
+</I>&gt;&gt;<i> heterogeneous, it includes
+</I>&gt;&gt;<i> - terminology repositories
+</I>&gt;&gt;<i> - typological databases
+</I>&gt;&gt;<i> - bibliographical databases
+</I>&gt;&gt;<i> In a way, all of these &quot;describe language&quot; (information about
+</I>&gt;<i>languages,  
+</I>&gt;&gt;<i> information about concepts relevant to the description of language,  
+</I>&gt;&gt;<i> information about collections of language data), but honestly, I
+</I>&gt;<i>would  
+</I>&gt;&gt;<i> prefer the label &quot;other&quot;, because this is very different from what I 
+</I>&gt;<i>
+</I>&gt;&gt;<i> think an olac:language_description is meant to be.
+</I>&gt;<i>
+</I>&gt;<i>As far as I can see, a language description would be a (sketch) grammar
+</I>&gt;<i>or  
+</I>&gt;<i>a learner's manual or similar. I think we have none of those in the
+</I>&gt;<i>LLOD  
+</I>&gt;<i>cloud (though we might in the future). olac:language_description does
+</I>&gt;<i>not  
+</I>&gt;<i>seem to be a good choice there.
+</I>&gt;<i>
+</I>&gt;<i>I agree with Christian that there is not a lot of internal coherence in
+</I>&gt;<i> 
+</I>&gt;<i>group 3. What would be the reason against having 5 groups, rather than
+</I>&gt;<i>3?  
+</I>&gt;<i>The typological databases group nicely, and I intend to add some more  
+</I>&gt;<i>typological databases over the next months.  Terminology repositories
+</I>&gt;<i>can  
+</I>&gt;<i>also be grouped. This only leaves Glottolog as the odd one out, and we
+</I>&gt;<i>can  
+</I>&gt;<i>call it &quot;other&quot;.
+</I>&gt;<i>
+</I>&gt;<i>I suppose we will have to have some labels for groups 3a and 3b, which 
+</I>&gt;<i>
+</I>&gt;<i>should be dereferenceable. Is there not something like xyz:tabulardata
+</I>&gt;<i>for  
+</I>&gt;<i>typological databases which we could subclass?
+</I>&gt;<i>
+</I>&gt;<i>Best
+</I>&gt;<i>Sebastian
+</I>&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Two questions
+</I>&gt;&gt;<i> - Is this general classification acceptable ?
+</I>&gt;&gt;<i> - How shall we encode the categories ? Using tags &quot;lexicon&quot;,
+</I>&gt;<i>&quot;corpus&quot;,  
+</I>&gt;&gt;<i> etc. ? Or using a custom field &quot;LLOD category&quot; ? Unless anyone
+</I>&gt;<i>protests,  
+</I>&gt;&gt;<i> I would suggest to use tags for &quot;lexicon&quot; and &quot;corpus&quot; and classify  
+</I>&gt;&gt;<i> everything without such a tag as &quot;language_description&quot;.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Best,
+</I>&gt;&gt;<i> Christian
+</I>&gt;<i>
+</I>&gt;<i>_______________________________________________
+</I>&gt;<i>open-linguistics mailing list
+</I>&gt;<i><A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;<i><A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i>Unsubscribe: <A HREF="http://lists.okfn.org/mailman/options/open-linguistics">http://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>
+-- 
+Diese Nachricht wurde von meinem Android-Mobiltelefon mit K-9 Mail gesendet.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20131006/2bfa86d1/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20131006/2bfa86d1/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002077.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+	<LI>Next message: <A HREF="002079.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2078">[ date ]</a>
+              <a href="thread.html#2078">[ thread ]</a>
+              <a href="subject.html#2078">[ subject ]</a>
+              <a href="author.html#2078">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at	datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C18D3905C-B4E1-4326-97E2-36FA958F5FAC%40thejourneyler.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002075.html">
+   <LINK REL="Next"  HREF="002081.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at	datahub ?</H1>
+    <B>Hugh Paterson III</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%09datahub%20%3F&In-Reply-To=%3C18D3905C-B4E1-4326-97E2-36FA958F5FAC%40thejourneyler.org%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at	datahub ?">hugh at thejourneyler.org
+       </A><BR>
+    <I>Sat Oct  5 17:32:53 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002075.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+        <LI>Next message: <A HREF="002081.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2076">[ date ]</a>
+              <a href="thread.html#2076">[ thread ]</a>
+              <a href="subject.html#2076">[ subject ]</a>
+              <a href="author.html#2076">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>This division makes sense given the stated problem.
+
+I think that the original OLAC division was mostly aimed at the Himmelmann 1998 division between Descriptive linguistics and Documentary linguistics, and OLAC was focused on resources produced and housed in archives which were part of the documentary enterprise. - at least that is how I have understood it. (I am still not sure if what is being proposed here is just for the LLOD diagram or a larger framework for connecting linked data. If it is just for the LLOD diagram then what I have to say may not be maximally helpful.)
+
+If we introduce terms like &quot;lexicon&quot; and &quot;corpus&quot; the we should also introduce a definition with them. I was rapidly looking for some definitions for these terms so I turned to project GOLD to see if the terms were at all defined. &quot;lexicon&quot; does have a definition [<A HREF="http://linguistics-ontology.org/gold/2010/Lexicon">http://linguistics-ontology.org/gold/2010/Lexicon</A>] , but &quot;corpus&quot; is not listed.  Though Project GOLD does introduce us to the variation in the use of the term &quot;Lexicon&quot; - I suppose in the LLOD context we are saying that it is a resource like a dictionary, wordlist, etc. But what is a &quot;corpus&quot;? - is it a cohesive work or is it just a collection of all known works on a language? Perhaps we need an addition to Project GOLD - if it is going to continue to be useful.
+
+
+
+- Hugh
+
+
+
+On Oct 5, 2013, at 3:26 AM, Christian Chiarcos wrote:
+
+&gt;<i> Dear all,
+</I>&gt;<i> 
+</I>&gt;<i> earlier, we discussed categories for coloring the LLOD diagram. The diagram we prepared for LDL-2013 was based on a something like the minimal consensus:
+</I>&gt;<i> 
+</I>&gt;<i> - lexicon (= LREMap lexicon, olac:lexicon)
+</I>&gt;<i> - corpus (= LREMap corpus, ~ olac:primary data)
+</I>&gt;<i> - language_description (basically everything else, ~ olac:language_description)
+</I>&gt;<i> 
+</I>&gt;<i> I guess the first two are unproblematic, but the third is very heterogeneous, it includes
+</I>&gt;<i> - terminology repositories
+</I>&gt;<i> - typological databases
+</I>&gt;<i> - bibliographical databases
+</I>&gt;<i> In a way, all of these &quot;describe language&quot; (information about languages, information about concepts relevant to the description of language, information about collections of language data), but honestly, I would prefer the label &quot;other&quot;, because this is very different from what I think an olac:language_description is meant to be.
+</I>&gt;<i> 
+</I>&gt;<i> Two questions
+</I>&gt;<i> - Is this general classification acceptable ?
+</I>&gt;<i> - How shall we encode the categories ? Using tags &quot;lexicon&quot;, &quot;corpus&quot;, etc. ? Or using a custom field &quot;LLOD category&quot; ? Unless anyone protests, I would suggest to use tags for &quot;lexicon&quot; and &quot;corpus&quot; and classify everything without such a tag as &quot;language_description&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> Best,
+</I>&gt;<i> Christian
+</I>&gt;<i> -- 
+</I>&gt;<i> Christian Chiarcos
+</I>&gt;<i> Applied Computational Linguistics
+</I>&gt;<i> Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+</I>&gt;<i> 60054 Frankfurt am Main, Germany
+</I>&gt;<i> 
+</I>&gt;<i> office: Robert-Mayer-Str. 10, #401b
+</I>&gt;<i> mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+</I>&gt;<i> web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+</I>&gt;<i> tel: +49-(0)69-798-22463
+</I>&gt;<i> fax: +49-(0)69-798-28931
+</I>&gt;<i> 
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> open-linguistics mailing list
+</I>&gt;<i> <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">open-linguistics at lists.okfn.org</A>
+</I>&gt;<i> <A HREF="http://lists.okfn.org/mailman/listinfo/open-linguistics">http://lists.okfn.org/mailman/listinfo/open-linguistics</A>
+</I>&gt;<i> Unsubscribe: <A HREF="http://lists.okfn.org/mailman/options/open-linguistics">http://lists.okfn.org/mailman/options/open-linguistics</A>
+</I>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20131005/dbca57ec/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20131005/dbca57ec/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002075.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+	<LI>Next message: <A HREF="002081.html">[open-linguistics] How to represent LLOD diagram categories at	datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2076">[ date ]</a>
+              <a href="thread.html#2076">[ thread ]</a>
+              <a href="subject.html#2076">[ subject ]</a>
+              <a href="author.html#2076">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

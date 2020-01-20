@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] First Call for Participation: SemEval - Task 4: TimeLine: Cross-Document Event Ordering (pilot task)
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20First%20Call%20for%20Participation%3A%20SemEval%20-%20Task%204%3A%0A%20TimeLine%3A%20Cross-Document%20Event%20Ordering%20%28pilot%20task%29&In-Reply-To=%3C3FEB9A76-2D62-49C1-BCB3-84564B137A5E%40vu.nl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000722.html">
+   <LINK REL="Next"  HREF="000724.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] First Call for Participation: SemEval - Task 4: TimeLine: Cross-Document Event Ordering (pilot task)</H1>
+    <B>Erp, M.G.J. van</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20First%20Call%20for%20Participation%3A%20SemEval%20-%20Task%204%3A%0A%20TimeLine%3A%20Cross-Document%20Event%20Ordering%20%28pilot%20task%29&In-Reply-To=%3C3FEB9A76-2D62-49C1-BCB3-84564B137A5E%40vu.nl%3E"
+       TITLE="[open-linguistics] First Call for Participation: SemEval - Task 4: TimeLine: Cross-Document Event Ordering (pilot task)">marieke.van.erp at vu.nl
+       </A><BR>
+    <I>Mon Jul 28 13:31:23 UTC 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000722.html">[open-linguistics] LATA 2015: 1st call for papers
+</A></li>
+        <LI>Next message: <A HREF="000724.html">[open-linguistics] open-linguistics Digest, Vol 45, Issue 9
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#723">[ date ]</a>
+              <a href="thread.html#723">[ thread ]</a>
+              <a href="subject.html#723">[ subject ]</a>
+              <a href="author.html#723">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>SemEval-2015 Task 4: TimeLine: Cross-Document Event Ordering (pilot task)
+First Call for Participation 
+
+
+Website: <A HREF="http://alt.qcri.org/semeval2015/task4">http://alt.qcri.org/semeval2015/task4</A> 
+Google Group: <A HREF="https://groups.google.com/forum/#!forum/semeval-task4-timeline">https://groups.google.com/forum/#!forum/semeval-task4-timeline</A>
+Evaluation period: November 15 - 30, 2014
+Paper submission: January 2015 
+
+*Introduction*
+In any domain, professionals need to have access to knowledge in order to take well-informed decisions. An insightful way of presenting information in an easily updatable and complete manner is to present it on a timeline that is continuously updated with new information. The aim of the task is to build timelines from written news in English. More specifically, the goal is to order on a timeline all the events in which a target entity is involved. We focus mainly on cross-document event coreference resolution and cross-document temporal relation extraction.
+
+Temporal relation extraction has been the topic of the three past TempEval tasks as part of SemEval:
+	&#8226; TempEval-1 (2007): Temporal Relation Identification
+	&#8226; TempEval-2 (2010): Evaluating Events, Time Expressions, and Temporal Relations
+	&#8226; TempEval-3 (2013): Temporal Annotation
+In addition, temporal relation extraction has been the focus of the 6th i2b2 NLP Challenge for clinical records but the cross-document aspect, has not been often explored. At RANLP 2009 there was a cross-document temporal relation extraction task, in which the goal was to link pre-defined events involving the same centroid entities (i.e. entities frequently participating in events) on a timeline. Nominal coreference resolution has been the topic of SemEval 2010 Task on Coreference Resolution in Multiple Languages.
+
+Partially motivated by the work in the NewsReader project (<A HREF="http://www.newsreader-project.eu">http://www.newsreader-project.eu</A>), TimeLine goes beyond the these tasks by addressing coreference resolution for events and temporal relation identification across documents.
+
+*Task Description*
+Given a set of documents and a target entity, the task is to build an event TimeLine related  to that entity, i.e. to detect, anchor in time and order the events involving the target entity.
+
+As input data, we provide a set of documents and a set of target entities (people, organization, product or financial entity); only entities of interest will be selected as target entities, i.e. entities involved in many events across different documents and for which it is relevant to build a timeline. 
+
+There are two tracks in this task based on the data used as input. For Track A only raw text is provided to the participants, while for Track B gold-standard event mentions are also given.
+
+For both tracks the expected output is one TimeLine for each target entity. Each TimeLine consists of an ordered list of events in which each event is associated to a time anchor.
+
+For both tracks a sub-track in which the events are not associated to a time anchor is proposed.
+
+Participants can choose to participate in any track and subtrack.
+Participants can submit up to two runs for each track/subtrack.
+
+*Data*
+The trial data consists of a set of 30 documents collected from Wikinews (<A HREF="http://en.wikinews.org">http://en.wikinews.org</A>) about Apple Inc. A set of target entities (input) and the corresponding ordered list of events (the output timeline) is provided with the set of documents.
+
+The trial data have been annotated with the extents of event mentions and are available from <A HREF="http://alt.qcri.org/semeval2015/task4/index.php?id=data-and-tools.">http://alt.qcri.org/semeval2015/task4/index.php?id=data-and-tools.</A> The evaluation tool can also be found there.
+
+The evaluation data will consist of 3 sets of documents annotated with event mentions and a set of target entities. Each set will contain around 30 documents from Wikinews,  totalling around 30,000 tokens. For each set of documents, one file is provided containing the list of target entities.
+
+No training corpus will be provided for this task.
+
+*Evaluation Methodology*
+Participants will submit the TimeLines produced by their system for all target entities. Systems will be ranked based on their temporal awareness.
+
+*More information*
+See <A HREF="http://alt.qcri.org/semeval2015/task4/">http://alt.qcri.org/semeval2015/task4/</A> for further information about the task, data formats, examples, data downloads, tools and registration information.
+
+*Important dates*
+	&#8226; Evaluation period starts: November 15, 2014
+	&#8226; Evaluation period ends: November 30, 2014
+	&#8226; Paper submission due: January 30, 2015
+	&#8226; Paper notification: Early March, 2015
+	&#8226; Camera-ready due: March 30, 2015
+	&#8226; SemEval workshop: Summer 2015
+
+*Organisers*
+	&#8226; Anne-Lyse Minard, Fondazione Bruno Kessler, Italy
+	&#8226; Eneko Agirre, The University of the Basque Country, Spain
+	&#8226; Itziar Aldabe, The University of the Basque Country, Spain
+	&#8226; Marieke van Erp, VU University Amsterdam, Netherlands
+	&#8226; Bernardo Magnini, Fondazione Bruno Kessler, Italy
+	&#8226; German Rigau, The University of the Basque Country, Spain
+	&#8226; Manuela Speranza, Fondazione Bruno Kessler, Italy
+	&#8226; Rub&#233;n Urizar, The University of the Basque Country, Spain
+
+
+--
+Computational Lexicology &amp; Terminology Lab (CLTL)
+The Network Institute, VU University Amsterdam
+
+De Boelelaan 1105
+1081 HV  Amsterdam, The Netherlands
+<A HREF="http://www.mariekevanerp.com">http://www.mariekevanerp.com</A>
+<A HREF="http://www.newsreader-project.eu">http://www.newsreader-project.eu</A> 
+
+
+</PRE>
+
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000722.html">[open-linguistics] LATA 2015: 1st call for papers
+</A></li>
+	<LI>Next message: <A HREF="000724.html">[open-linguistics] open-linguistics Digest, Vol 45, Issue 9
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#723">[ date ]</a>
+              <a href="thread.html#723">[ thread ]</a>
+              <a href="subject.html#723">[ subject ]</a>
+              <a href="author.html#723">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

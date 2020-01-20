@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%09SPARQL%20BIND%20statement%3F&In-Reply-To=%3CFA7639A2-EF15-43FD-A6B3-C223D44C8B5A%40w3.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002693.html">
+   <LINK REL="Next"  HREF="001149.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?</H1>
+    <B>Felix Sasaki</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%09SPARQL%20BIND%20statement%3F&In-Reply-To=%3CFA7639A2-EF15-43FD-A6B3-C223D44C8B5A%40w3.org%3E"
+       TITLE="[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?">fsasaki at w3.org
+       </A><BR>
+    <I>Thu Mar 17 13:38:14 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002693.html">[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+</A></li>
+        <LI>Next message: <A HREF="001149.html">[open-linguistics] 13th ESWC 2016 - Call for EU Project Networking
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2694">[ date ]</a>
+              <a href="thread.html#2694">[ thread ]</a>
+              <a href="subject.html#2694">[ subject ]</a>
+              <a href="author.html#2694">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>
+&gt;<i> Am 17.03.2016 um 12:20 schrieb Christian Chiarcos &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>&gt;:
+</I>&gt;<i> 
+</I>&gt;<i> Hi Felix,
+</I>&gt;<i> 
+</I>&gt;<i> thanks for correcting me, I was oversimplifying with a hypothetical example, and wrongly, actually. In fact, BCP 47 states that 
+</I>&gt;<i> 
+</I>&gt;<i>  &quot;When languages have both an ISO 639-1 two-character code and a three-
+</I>&gt;<i> character code (assigned by ISO 639-2, ISO 639-3, or ISO 639-5), only
+</I>&gt;<i> the ISO 639-1 two-character code is defined in the IANA registry.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> xml:lang allows only for BCP 47 language tags, and here the options you describe (e.g. ISO-639-3 vs. IS0-639-2) are not available. So if you use a language tag validator you can at least detect that an xml:lang value is not valid.
+</I>&gt;<i> 
+</I>&gt;<i> The conversion issue, however, remains with BCP 47, as soon as extended language subtags are involved:
+</I>&gt;<i> 
+</I>&gt;<i> &quot;Extended language subtags are used to identify certain specially selected languages that, for various historical and compatibility reasons, are closely identified with or tagged using an existing primary language subtag. Extended language subtags are always used with their enclosing primary language subtag (indicated with a 'Prefix' field in the registry) when used to form the language tag. ...
+</I>&gt;<i> For example, the macrolanguage Chinese ('zh') encompasses a number of languages. For compatibility reasons, each of these languages has both a primary and extended language subtag in the registry. A few selected examples of these include Gan Chinese ('gan'), Cantonese Chinese ('yue'), and Mandarin Chinese ('cmn'). Each is encompassed by the macrolanguage 'zh' (Chinese). Therefore, they each have the prefix &quot;zh&quot; in their registry records. Thus, Gan Chinese is represented with tags beginning &quot;zh-gan&quot; or &quot;gan&quot;, Cantonese with tags beginning either &quot;yue&quot; or &quot;zh-yue&quot;, and Mandarin Chinese with &quot;zh-cmn&quot; or &quot;cmn&quot;.&quot; 
+</I>&gt;<i> 
+</I>&gt;<i> Quotes from <A HREF="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">http://www.rfc-editor.org/rfc/bcp/bcp47.txt</A> &lt;<A HREF="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">http://www.rfc-editor.org/rfc/bcp/bcp47.txt</A>&gt; (resp.  <A HREF="https://tools.ietf.org/html/rfc5646">https://tools.ietf.org/html/rfc5646</A> &lt;<A HREF="https://tools.ietf.org/html/rfc5646">https://tools.ietf.org/html/rfc5646</A>&gt;).
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="https://validator.w3.org/#validate_by_input">https://validator.w3.org/#validate_by_input</A> &lt;<A HREF="https://validator.w3.org/#validate_by_input">https://validator.w3.org/#validate_by_input</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> The validator actually complains about &quot;zh-gan&quot;: &quot;Potentially bad value zh-gan for attribute lang on element html &lt;<A HREF="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-html-element">http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-html-element</A>&gt;: The language tag zh-gan is deprecated. Use gan instead.&quot; (This might be incorrect as it refers to the very text from which I got it as recommendation, see above.)
+</I>
+
+Yes, that is correct. zh-gan is falling into the category of redundant subtags
+<A HREF="https://tools.ietf.org/html/bcp47#section-2.2.8">https://tools.ietf.org/html/bcp47#section-2.2.8</A> &lt;<A HREF="https://tools.ietf.org/html/bcp47#section-2.2.8">https://tools.ietf.org/html/bcp47#section-2.2.8</A>&gt;
+at 
+<A HREF="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry</A> &lt;<A HREF="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry</A>&gt;
+you find an entry for zh-gan 
+%%
+Type: redundant
+Tag: zh-gan
+Description: Kan or Gan
+Added: 1999-12-18
+Deprecated: 2009-07-29
+Preferred-Value: gan
+%%
+
+the validator.nu library processes that information and produces the warning. This is not an error, the language tag is still valid.
+
+Best,
+
+Felix 
+
+&gt;<i> 
+</I>&gt;<i> But anyway, there is a 3-letter-to-2-letter conversion required, if we want to treat lexical forms from sub-varieties of Chinese (like gan) like &quot;ordinary&quot; zh.
+</I>&gt;<i> 
+</I>&gt;<i> But the underlying library
+</I>&gt;<i> <A HREF="https://about.validator.nu/">https://about.validator.nu/</A> &lt;<A HREF="https://about.validator.nu/">https://about.validator.nu/</A>&gt;
+</I>&gt;<i> has a class to validate language tags on its own.
+</I>&gt;<i> 
+</I>&gt;<i> That will certainly help. Thanks to all for responding, I have a much clearer picture of language tags now.
+</I>&gt;<i> 
+</I>&gt;<i> Thanks a lot,
+</I>&gt;<i> Christian
+</I>&gt;<i> -- 
+</I>&gt;<i> Prof. Dr. Christian Chiarcos
+</I>&gt;<i> Applied Computational Linguistics
+</I>&gt;<i> Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+</I>&gt;<i> 60054 Frankfurt am Main, Germany
+</I>&gt;<i> 
+</I>&gt;<i> office: Robert-Mayer-Str. 10, #401b
+</I>&gt;<i> mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A> &lt;mailto:<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>&gt;
+</I>&gt;<i> web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A> &lt;<A HREF="http://acoli.cs.uni-frankfurt.de/">http://acoli.cs.uni-frankfurt.de/</A>&gt;
+</I>&gt;<i> tel: +49-(0)69-798-22463
+</I>&gt;<i> fax: +49-(0)69-798-28931
+</I>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20160317/d0eee887/attachment-0002.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20160317/d0eee887/attachment-0002.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002693.html">[open-linguistics] Question: replacing language codes in a	SPARQL BIND statement?
+</A></li>
+	<LI>Next message: <A HREF="001149.html">[open-linguistics] 13th ESWC 2016 - Call for EU Project Networking
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2694">[ date ]</a>
+              <a href="thread.html#2694">[ thread ]</a>
+              <a href="subject.html#2694">[ subject ]</a>
+              <a href="author.html#2694">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

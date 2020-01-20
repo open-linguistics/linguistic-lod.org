@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%20datahub%20%3F&In-Reply-To=%3Cop.w64bergoyoucrc%40christian-pc.sitecomwlr2100%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002114.html">
+   <LINK REL="Next"  HREF="002116.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at datahub ?</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%20datahub%20%3F&In-Reply-To=%3Cop.w64bergoyoucrc%40christian-pc.sitecomwlr2100%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at datahub ?">christian.chiarcos at web.de
+       </A><BR>
+    <I>Mon Nov 25 18:38:41 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002114.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+        <LI>Next message: <A HREF="002116.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2115">[ date ]</a>
+              <a href="thread.html#2115">[ thread ]</a>
+              <a href="subject.html#2115">[ subject ]</a>
+              <a href="author.html#2115">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear all,
+
+I very much like John's question approach. A very linguistic methodology,  
+actually. Some ideas to elaborate it below. A category is applicable if  
+any of the questions applies.
+
+a) LEXICON: &quot;information about words and semantic concepts&quot;
+    Q: Is the resource organized around individual words and their meaning  
+? Could I expect to find an entry (page) for a single lemma word (e.g.,  
+&quot;cat&quot;?)
+    Q: Does the resource provide identifiers for terms ? (Could this  
+resource be reduced to a list of terms ?)
+
+b) CORPUS: &quot;information about texts and their linguistic organization&quot;
+    (footnote: &quot;includes text fragments, e.g., to account for corpora  
+composed out of scrambled, isolated sentences&quot;)
+    Q: Does this resource consists primarily of sentences?
+    Q: Does this resource include annotations directly applied on sentences?
+
+c) LANGUAGE_DATABASE: &quot;information about languages&quot;
+    Q: Does this resource describe inventories of linguistic features for  
+entire languages ?
+    Q: Does this resource describe languages (instead of words in that  
+language)?
+
+d) REFERENCE: &quot;information about linguistic data sources&quot; (bibliographical  
+part of #5)
+    Q: Does this resource provide information where to find linguistically  
+relevant resources (e.g., text data) ?
+    Q: Does this resource provide information how to identify  
+linguistically relevant resources ?
+
+e) METADATA: &quot;information about the description of linguistic data&quot;  
+(non-bibliographical part of #5)
+   (this is the classical definition of metadata, and it fits vocabularies,  
+schemes and terminology repositories)
+    Q: Does this resource define what labels to use to describe linguistic  
+resources ?
+
+f) OTHER &quot;information being derived from linguistic data or linguistically  
+relevant datasets not directly containing linguistic data&quot; (= #6+#4)
+    Q: Does none of the other categories apply despite a consensus to  
+consider this a relevant resource ? (Can the latter be confirmed by asking  
+the people on the mailing list ?)
+
+I still do think that the categories do not need to be mutually exclusive!  
+We only need to provide a preference ranking for the visualization, say:
+
+LEXICON &gt; CORPUS &gt; LANGUAGE_DATABASE &gt; REFERENCE &gt; METADATA &gt; OTHER
+
+(or any other ranking)
+
+We still need to define what &quot;linguistically relevant&quot; means. A first,  
+broad proposal:
+
+&quot;A resource is linguistically relevant if either
+(a) it represents results or basis of research in linguistics,
+(b) it can be used to develop tools and resources that facilitate  
+linguistic analyses of natural language (NLP), or
+(c) it is used to provide information about any of the resources in (a) or  
+(b) or necessary pre-requisites to create them&quot;
+
+(a) applies to LEXICON, CORPUS, LANGUAGE_DATABASE, maybe METADATA and OTHER
+(b) applies to LEXICON, CORPUS, METADATA, maybe REFERENCE and OTHER
+(c) applies to REFERENCE, METADATA, LANGUAGE_DATABASE, maybe OTHER
+
+Best,
+Christian
+
+On Mon, 25 Nov 2013 19:14:51 +0100, Christian Chiarcos  
+&lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">christian.chiarcos at web.de</A>&gt; wrote:
+
+&gt;<i> Dear Bettina, dear John,
+</I>&gt;<i>
+</I>&gt;<i> first of all, thanks to Bettina for her review of the data sets. I  
+</I>&gt;<i> probably missed a part of the conversation, but please find my two cents  
+</I>&gt;<i> below:
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i>     LLOD data set categories:
+</I>&gt;&gt;&gt;<i>     1) Data representing words = Lexicon
+</I>&gt;&gt;&gt;<i>     2) Data representing texts = Corpus
+</I>&gt;&gt;&gt;<i>     3) Data representing information about languages = Language  
+</I>&gt;&gt;&gt;<i> Database
+</I>&gt;&gt;&gt;<i>     4) Data derived derived from but conserving original data =  
+</I>&gt;&gt;&gt;<i> Ontology
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> &#194; How is this an &quot;ontology&quot;? I would call it something like
+</I>&gt;&gt;&gt;<i> &quot;statistical data&quot;
+</I>&gt;&gt;<i>
+</I>&gt;<i> ...
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i>     5) Data representing further knowledge about the data (such as
+</I>&gt;&gt;&gt;<i>     bibliographical references) = Meta Data
+</I>&gt;&gt;&gt;<i>     6) maybe: category for further relevant data sets not directly
+</I>&gt;&gt;&gt;<i>     concerned with linguistic data
+</I>&gt;<i>
+</I>&gt;<i> On #1: Given the fact that we now have FrameNet (through uby), and that  
+</I>&gt;<i> some of our lexicons do not really deal with words, but more with  
+</I>&gt;<i> concepts, we should probably extend the definition to information beyond  
+</I>&gt;<i> words:
+</I>&gt;<i>
+</I>&gt;<i> #1 &quot;information about words and semantic concepts&quot;
+</I>&gt;<i>
+</I>&gt;<i> On #2 vs. #4: I feel that an LLOD definition of &quot;corpus&quot; should allow  
+</I>&gt;<i> for a standoff solution, i.e., a corpus where the annotations are  
+</I>&gt;<i> provided, but the source data isn't (this is to be expected as the  
+</I>&gt;<i> ultimate goal of a developmental trajectory that we see manifested in  
+</I>&gt;<i> generalized formats such as GrAF). Actually, NIF explicitly allows us to  
+</I>&gt;<i> do so. But with only annotations being in RDF and the original text in,  
+</I>&gt;<i> say, HTML or TEI, possibly with some RDFa attributes, the linked open  
+</I>&gt;<i> data component does not really *represent* the text, but only the  
+</I>&gt;<i> linguistic structure of a text. The should remain valid corpora, but  
+</I>&gt;<i> according to your definition, they would become #4, because they may  
+</I>&gt;<i> converve parts of the original data (e.g., lemma annotation). So, I  
+</I>&gt;<i> would suggest to rephrase #2 as
+</I>&gt;<i>
+</I>&gt;<i> #2 &quot;information about texts and their linguistic organization&quot;
+</I>&gt;<i>
+</I>&gt;<i> On #3 vs. #4: A similar problem persists with respect to ASJP: This  
+</I>&gt;<i> would be derived information, hence #4? But what does derivation  
+</I>&gt;<i> actually mean here?
+</I>&gt;<i>
+</I>&gt;<i> On #4 vs. #6: Honestly, I'm not too happy about #4. Neither the name nor  
+</I>&gt;<i> the definition. Maybe rename the category to &quot;other&quot; for the time being  
+</I>&gt;<i> ? Dissatisfying, of course, but possibly the most achievable compromise.  
+</I>&gt;<i> The above-mentioned problems would fade away, and we would avoid the  
+</I>&gt;<i> slightly dissatisfying definition of the &quot;non-linguistic&quot; category #6.
+</I>&gt;<i>
+</I>&gt;<i> On #3 vs. #5: If we single out information about language as #3 (which I  
+</I>&gt;<i> would support, if we have enough datasets), then we should also  
+</I>&gt;<i> distinguish purely bibliographical information from linguistically  
+</I>&gt;<i> relevant information. These are included, even if not concerned with  
+</I>&gt;<i> linguistic literature, because they point to possible data sources for  
+</I>&gt;<i> linguistic information, but they also represent an old, rich and growing  
+</I>&gt;<i> group of LOD data sets which are clearly distinct from everything else  
+</I>&gt;<i> we're dealing with.
+</I>&gt;<i>
+</I>&gt;<i> As a minor remark on glottolog, I would clearly see it more on the side  
+</I>&gt;<i> of #5 rather than #3, but eventually, this is up to the data provider to  
+</I>&gt;<i> be decided (I would suggest, at least). So, any ideas on this, Sebastian  
+</I>&gt;<i> ?
+</I>&gt;<i>
+</I>&gt;<i> To sum up (with new numbers, to avoid confusion):
+</I>&gt;<i>
+</I>&gt;<i> a) LEXICON: &quot;information about words and semantic concepts&quot; (=#1)
+</I>&gt;<i> b) CORPUS: &quot;information about texts and their linguistic organization&quot;  
+</I>&gt;<i> (=#2)
+</I>&gt;<i>     (footnote: &quot;includes text fragments, e.g., to account for corpora  
+</I>&gt;<i> composed out of scrambled, isolated sentences&quot;)
+</I>&gt;<i> c) LANGUAGE_DATABASE: &quot;information about languages&quot; (= #3)
+</I>&gt;<i> d) REFERENCE: &quot;information about linguistic data sources&quot; (mostly  
+</I>&gt;<i> bibliography, but we can include the LREMap and tool repositories, here,  
+</I>&gt;<i> too) (bibliographical part of #5)
+</I>&gt;<i> e) METADATA: &quot;information about the description of linguistic data&quot;  
+</I>&gt;<i> (non-bibliographical part of #5)
+</I>&gt;<i>    (this is the classical definition of metadata, and it fits  
+</I>&gt;<i> vocabularies, schemes and terminology repositories)
+</I>&gt;<i> f) OTHER &quot;information being derived from linguistic data or  
+</I>&gt;<i> linguistically relevant datasets not directly containing linguistic  
+</I>&gt;<i> data&quot; (= #6+#4)
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> ISOcat: This is either metadata or language database (I am not sure of
+</I>&gt;&gt;&gt;<i> the distinction), it is certainly not a lexicon
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> since the entries are words it looked like a lexicon to me. I don't
+</I>&gt;&gt;<i> think it's a language database because it contains no languages. If
+</I>&gt;&gt;<i> others disagree on the lexicon category I would go for meta data (but I
+</I>&gt;&gt;<i> would answer on your category question &quot;Could this resource be
+</I>&gt;&gt;<i> (directly) reduced to a list of terms? =&gt; Lexicon&quot; with &quot;yes&quot; as well
+</I>&gt;&gt;<i> and therefore stay in the lexicon category)
+</I>&gt;<i>
+</I>&gt;<i> Clearly metadata. Indeed, it is something like a lexicon, too, because  
+</I>&gt;<i> it provides definitions for &quot;words&quot;, but we use it in a very different  
+</I>&gt;<i> way, and these aren't any words, but words that define the semantics of,  
+</I>&gt;<i> say, annotations.
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> Rosetta Project: This is more a lexicon than a language database
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I would answer your &quot;Could this resource be (directly) reduced to a list
+</I>&gt;&gt;<i> of terms? =&gt; Lexicon&quot; clearly with no. I found on rosetta.org texts and
+</I>&gt;&gt;<i> language classification
+</I>&gt;<i>
+</I>&gt;<i> That's a nice test, actually. Considering the Freebase data, it seems to  
+</I>&gt;<i> be something like Glottolog, providing language identifiers and Document  
+</I>&gt;<i> IDs (not strictly speaking bibliographical, though). I presume that the  
+</I>&gt;<i> intended function is actually to provide ids for the Rosetta resources,  
+</I>&gt;<i> so, with the slightly broadened definition of REFERENCE, it could be put  
+</I>&gt;<i> in there.
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> SIMPLE, lemonWordnet, lemonWiktionary, lemonUby: These are lexica and
+</I>&gt;&gt;&gt;<i> the URLs are clearly stated in the datahub source
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> to me an RDF conversion of a lexicon is no lexicon anymore
+</I>&gt;<i>
+</I>&gt;<i> Why's that ?
+</I>&gt;<i>
+</I>&gt;&gt;<i> I am still unsure with Multext-East, but Alpino and Semantic Quran are
+</I>&gt;&gt;<i> again only RDF versions, hence no corpora. The original RDF underlying
+</I>&gt;&gt;<i> data might have been corpora but an RDF version is no corpus (to me)
+</I>&gt;<i>
+</I>&gt;<i> Well, using RDF to represent full corpora is recommendable under certain  
+</I>&gt;<i> circumstances, e.g., if the annotations are too complex to be processed  
+</I>&gt;<i> using more established technologies building on, say, tab-separated  
+</I>&gt;<i> text, plain lists (e.g., Penn Treebank: Syntax) or XML (e.g., TIGER).  
+</I>&gt;<i> However, encoding the full primary data in RDF causes a lot of overhead  
+</I>&gt;<i> (we need to specify precedence explicitly, because this information is  
+</I>&gt;<i> *lost* in the RDF data model), so in many situations, a hybrid solution  
+</I>&gt;<i> with primary data represented in more conventional format (say, a text  
+</I>&gt;<i> file), and annotations being represented in RDF may be the most  
+</I>&gt;<i> efficient modeling. (For certain types of primary data (e.g., audio  
+</I>&gt;<i> streams), encoding the primary data in RDF may not even be possible.)
+</I>&gt;<i> In either case, the dataset still represents a corpus, if the RDF  
+</I>&gt;<i> contains pointers to the primary data and it can be retrieved (even if  
+</I>&gt;<i> not in RDF by itself).
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> WikiWord, WordNet 3.0, LODAC BDLS: These are also lexica, surely?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> WikiWord is only a tool to build a lexicon but no lexicon as such
+</I>&gt;<i>
+</I>&gt;<i> But the WikiWord Thesaurus is:  
+</I>&gt;<i> <A HREF="http://datahub.io/dataset/wikiword_thesaurus">http://datahub.io/dataset/wikiword_thesaurus</A>
+</I>&gt;<i>
+</I>&gt;<i> We could create another category &quot;TOOL&quot; whose instances are *not* put in  
+</I>&gt;<i> the diagram.
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> OLiA, lingvoj, LexInfo: These, much as ISOcat, provide categories for
+</I>&gt;&gt;&gt;<i> linguistic annotation, these resource should all be in the same  
+</I>&gt;&gt;&gt;<i> category
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> unlike ISOcat these data sets contain no single word entry, again the
+</I>&gt;&gt;<i> user gets ontologies here and no lexicons (your first two questions for
+</I>&gt;&gt;<i> the lexicon category below have to be negated here)
+</I>&gt;<i>
+</I>&gt;<i> I would classify all as METADATA.
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i>     Keeping the
+</I>&gt;&gt;&gt;<i>     LLOD cloud as a pure linguistic data cloud and providing a
+</I>&gt;&gt;&gt;<i>     possibility to link to the LOD cloud (which already contains the
+</I>&gt;&gt;&gt;<i>     ?unsure? data sets) could be a practical option here.
+</I>&gt;<i>
+</I>&gt;<i> I would personally advise against purism at this point, as we're still  
+</I>&gt;<i> in the early stages, but the discussion should be encouraged. Would any  
+</I>&gt;<i> of the DBpedia people like to explain why they put it here in the first  
+</I>&gt;<i> place?
+</I>&gt;<i>
+</I>&gt;<i> Best,
+</I>&gt;<i> Christian
+</I>
+
+-- 
+Christian Chiarcos
+Applied Computational Linguistics
+Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+60054 Frankfurt am Main, Germany
+
+office: Robert-Mayer-Str. 10, #401b
+mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+tel: +49-(0)69-798-22463
+fax: +49-(0)69-798-28931
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002114.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+	<LI>Next message: <A HREF="002116.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2115">[ date ]</a>
+              <a href="thread.html#2115">[ thread ]</a>
+              <a href="subject.html#2115">[ subject ]</a>
+              <a href="author.html#2115">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

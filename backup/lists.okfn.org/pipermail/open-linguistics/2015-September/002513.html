@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Inclusion of 'non-open' resources in the LLOD cloud diagram
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Inclusion%20of%20%27non-open%27%20resources%20in%20the%0A%20LLOD%20cloud%20diagram&In-Reply-To=%3Cop.x4ot80j089jat0%40kitaba%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002511.html">
+   <LINK REL="Next"  HREF="000977.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Inclusion of 'non-open' resources in the LLOD cloud diagram</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Inclusion%20of%20%27non-open%27%20resources%20in%20the%0A%20LLOD%20cloud%20diagram&In-Reply-To=%3Cop.x4ot80j089jat0%40kitaba%3E"
+       TITLE="[open-linguistics] Inclusion of 'non-open' resources in the LLOD cloud diagram">chiarcos at informatik.uni-frankfurt.de
+       </A><BR>
+    <I>Wed Sep  9 09:06:26 UTC 2015</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002511.html">[open-linguistics] Inclusion of 'non-open' resources in	the	LLOD cloud diagram
+</A></li>
+        <LI>Next message: <A HREF="000977.html">[open-linguistics] Transferring datahub.io metadata authorship
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2513">[ date ]</a>
+              <a href="thread.html#2513">[ thread ]</a>
+              <a href="subject.html#2513">[ subject ]</a>
+              <a href="author.html#2513">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear all,
+
+first of all thanks to John for summarizing our discussion. Some of these  
+suggestions are controversial, indeed, so we should have a discussion as  
+broad as possible. For me personally, it is not so much a question whether  
+proprietary resources should be removed from the diagram, but when. This  
+does not have to be now, but the diagram is populated to a degree that it  
+might benefit from some pruning (just in case we cannot convince *every*  
+data provider to conform to the enforced inclusion criteria -- which is  
+what we are hoping for, of course).
+
+&gt;<i> 1. Up until now we have allowed a small number of 'closed' resources  
+</I>&gt;<i> into the LLOD cloud diagram &gt;although they do not have an open license.
+</I>
+
+The rationale behind this proposal is to enforce quality criteria. We have  
+done so in the past for the diagram, we started with a very low entry  
+barrier (for the LREC-2012 &quot;draft&quot; -- not a proper LLOD diagram yet -- it  
+was just &quot;promise to provide a LOD edition at some point&quot; !), but the goal  
+has been to create something substantial along the lines of the LOD  
+diagram, and raising the entry barrier as soon as we had a critical mass  
+of higher-quality resources brought us pretty far in this direction.
+In the context of the Open Knowledge Foundation (and that's where the &quot;O&quot;  
+in OWLG and LLOD comes from), &quot;open&quot; is defined by the Open Definition.  
+For the needs of the language resource community, a broader definition may  
+be more applicable (see 2), but the general goal remains to promote open  
+resources in that sense. The idea is not so much to remove resources, but  
+rather to provide an impetus for data providers to consider open licenses  
+for current LLOD resources.
+This does not mean that, eventually, all resources in the LLOD diagram  
+need to be compliant to the Open Definition, we are free to come up with  
+our own, community-specific definition of openness, but this requires a  
+consensus (which requires a discussion).  I'm perfectly happy to follow  
+Victor's proposal to define open as &quot;using open standards&quot; if that's the  
+emerging consensus. But I agree that this means watering down an  
+established definition and we'll probably not get a lot support for doing  
+so.
+
+At the same time, I would also like to see proprietary resources staying  
+linked to the LLOD diagram (or a version of it), but marked in a special  
+way and such that the truly open resources in the LLOD diagram can be  
+visualized on their own without leaving immense gaps between open Bubbles  
+(and without re-positioning). The current visualization is somewhat  
+misleading in this regard -- the primary colors are for types of language  
+resources. Even though Victor's work on licenses is provided in an  
+appealing alternative visualization, we cannot currently visualize both  
+types of information at the same time.
+
+
+IMHO, the ideal visualization would be to have a LLOD diagram proper, and  
+an extended L(O)LD diagram which takes the (visually unaltered) LLOD  
+diagram at its core (&quot;the inner circle&quot; of language resources), but groups  
+proprietary resources around it (&quot;the outer circle&quot; of language  
+resources). I think I've seen something like that on one of Victor's  
+slides at some point. Do you think we could extend the script to produce  
+something like this?
+
+&gt;<i> 1.a Currently, there are four resources that are included with a closed  
+</I>&gt;<i> license, and as they are &gt;not referred to by other datasets I propose we  
+</I>&gt;<i> remove them.
+</I>
+I tend to agree, but this seems quite ad hoc. Another way of having an  
+extended LLOD cloud (with some proprietary resources included) would be to  
+include proprietary resources if they are pointed to from open (in the  
+sense of the open definition) resources. This would allow BabelNet to  
+remain in. But if we do, we should state this as an additional rule for  
+inclusion. However, there is potential for abusing such a rule.
+
+&gt;<i> 2. There are a number of resources with restrictive licenses like  
+</I>&gt;<i> CC-BY-NC and CC-BY-SA. In the &gt;interest of showing a wide acceptance of  
+</I>&gt;<i> resources in the LLOD community, I move we continue to &gt;accept any CC  
+</I>&gt;<i> (or equivalent) licensed resource as 'open.' Should we add a particular  
+</I>&gt;<i> visual &gt;indicator to these resources in future version of the cloud?
+</I>
+As much as I'm supporting removing proprietary resources (just because  
+it's misleading to have them in an LLOD diagram), I'd like to keep  
+CC-BY-NC and -SA included (for the moment). A while ago we had some  
+discussion about &quot;academic&quot; licenses, and back then, many people seemed to  
+be in favor of admitting these. CC-BY-NC can be seen as a rough  
+approximation of the more informal &quot;academic&quot; and we can &quot;sell&quot; it as such  
+to data providers. In addition, CC-BY-NC is actually a way for current  
+proprietary resources to remain in the diagram: By publishing (a subset?)  
+of their resource under an NC license, they prevent interference with  
+their commercial interests but can remain in the diagram. At some later  
+point in time, however, we may discuss whether an even stricter definition  
+of openness should be adopted, and this might include moving from CC-BY-NC  
+or -SA to only CC-BY-SA and maybe even further. It depends on the input we  
+get from the community. Ideas? Impressions?
+
+&gt;<i> 3. Some resources do not have a license in the metadata. From the next  
+</I>&gt;<i> version of the diagram I &gt;propose they are not included in the diagram,  
+</I>&gt;<i> this affects: PDEV-lemon, GOLD, CLLD-GLOTTOLOG, &gt;Zhishi.me, DBpedia-de  
+</I>&gt;<i> and xLiD-Lexica. (Affected parties please add a license to the record on  
+</I>&gt;<i> &gt;<A HREF="http://datahub.io">http://datahub.io</A>)
+</I>
+Again, this is not so much about removing resources as it is to motivate  
+data providers to include meaningful metadata. I would fully support that  
+but we need to learn about possible reasons for data providers not doing  
+so. There may be bureaucratic reasons for not giving resources an explicit  
+license declaration but only informal statements such as &quot;we support open  
+licenses&quot; given in personal communication or as a footnote in the  
+documentation. The latter seems to be the case for GOLD and ISOcat -- both  
+extraordinarily valuable for linguists and NLP people alike.
+
+&gt;<i> 4. A particular point of interest was raised about BabelNet in the last  
+</I>&gt;<i> telco, in particular to &gt;recent changes, such as no longer offering  
+</I>&gt;<i> direct download of the whole up-to-date dataset. The &gt;criteria for  
+</I>&gt;<i> inclusion in the LLOD cloud are given here and as BabelNet offers SPARQL  
+</I>&gt;<i> access it &gt;still qualifies for inclusion in the LLOD cloud. Assuming we  
+</I>&gt;<i> are not changing the guidelines I see &gt;no reason to remove BabelNet from  
+</I>&gt;<i> the LLOD cloud.
+</I>
+I didn't check the end point, but is this the same data? If not, it should  
+get a version number to avoid confusion. But I'm curious what others think  
+about BabelNet. Does the end point have limits on the number of queries of  
+the size of the result set? If so, how shall we deal with such technically  
+semi-restricted resources?
+
+Just my 2 cents (well, maybe 0.50&#8364; ;)
+
+Best,
+Christian
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002511.html">[open-linguistics] Inclusion of 'non-open' resources in	the	LLOD cloud diagram
+</A></li>
+	<LI>Next message: <A HREF="000977.html">[open-linguistics] Transferring datahub.io metadata authorship
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2513">[ date ]</a>
+              <a href="thread.html#2513">[ thread ]</a>
+              <a href="subject.html#2513">[ subject ]</a>
+              <a href="author.html#2513">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

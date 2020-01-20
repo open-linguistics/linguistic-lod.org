@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] How to represent LLOD diagram categories at datahub ?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%20datahub%20%3F&In-Reply-To=%3C5295C894.2000304%40informatik.uni-leipzig.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002115.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] How to represent LLOD diagram categories at datahub ?</H1>
+    <B>Bettina Klimek</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20How%20to%20represent%20LLOD%20diagram%20categories%20at%0A%20datahub%20%3F&In-Reply-To=%3C5295C894.2000304%40informatik.uni-leipzig.de%3E"
+       TITLE="[open-linguistics] How to represent LLOD diagram categories at datahub ?">klimek at informatik.uni-leipzig.de
+       </A><BR>
+    <I>Wed Nov 27 10:25:24 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002115.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2116">[ date ]</a>
+              <a href="thread.html#2116">[ thread ]</a>
+              <a href="subject.html#2116">[ subject ]</a>
+              <a href="author.html#2116">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi John and Christian,
+
+thanks a lot for contributing to my suggestions. I think we are really 
+close to come to a final categorization anyone could accept. First of 
+all, I agree with Christian on working out these test questions to 
+facilitate the categorisation process. If we could agree on the 
+definitions as well and integrate them as tool tips or put them 
+somewhere else on the website that would be great.
+
+Then I like to turn to the ISOcat problem again. Given Christian's 
+definition of metadata I can agree to take it out of the lexicon 
+category. In fact the ISOcat categories described are not part of a 
+language system but define categories to describe elements of language 
+systems.
+
+Your comments revealed that you both really didn't like my category #4 
+and that there seems to be no difference for you between a lexicon and a 
+rdf version of a lexicon. All data sets I put into category #4 have in 
+common that the data they contain is of machine-readable nature. Of 
+course it is a requirement that all data sets are in RDF in order to be 
+linked with each other in the cloud. But some data sets (all I put in 
+category #4) are only RDF (or OWL) data. They differ fundamentally from 
+data sets containg the original data AND the derived RDF 
+representations. Let's take the original Princeton wordnet and wordnet 
+3.0 (VU Amsterdam) for example. To illustrate the difference consider 
+the following analogy:
+
+Hindi (is to) Hindi Grammar (as) Wordnet (is to) Wordnet 3.0
+
+A grammar of Hindi would never be considered equal to the whole Hindi 
+language. It is only a description of the language, which shares several 
+properties with the RDF version of wordnet. Both are linguistic 
+resources which are derived from some other linguistic source. By doing 
+so the source data gets changed and is transformed into a more abstract 
+representation. The grammar and the RDF version have their own 
+underlying structural principles. These can be applied to describing all 
+different languages or linguistic resources (respectively for RDF) and 
+they must not be in the same language as the source data. Let's also 
+consider that the relation between the two kinds of data is 
+unidirectional: the Hindi language (and Wordnet) exists 
+without/independently of the Hindi Grammar (and Wordnet 3.0) but the 
+Hindi grammar cannot be written without the Hindi language. The same 
+holds for all RDF versions: they are always a description OF something 
+and therewith bound to the source data.
+
+I think this is not problematic at all and I don't know why it should be 
+impossible to classify all the data sets I put in my ontology category 
+into Christian's meta data category (because there they fit perfectly 
+according to the definition). All I like to keep apart is the source 
+data and any data (even meta data) derived from them. That means 
+exactly: If a data set does contain source data AND meta data it should 
+be classified according to its source data. This holds for rosetta.org 
+for example. It provides a language classification but is also working 
+on an RFD version of it. That means the same data set contains the 
+source and the meta data. But if meta data is externally in another data 
+set without giving the source data it should be classified as meta data. 
+That is why I assigned the Princeton Wordnet data set to the lexicon 
+category and the Wordnet 3.0 (VU Amsterdam) data set to the meta data 
+category (former #4). That way we do not have to put the derived data 
+into Christian's &quot;other&quot; category and keep that reserved for the 
+&quot;linguistically relevant data sets not directly containing linguistic 
+data&quot;.
+
+This is the only change I would make on Christian's categorization.
+
+If we can agree on taking my #4 data sets out of Christian's category 
+f)OTHER and add it to Christian's category e)METADATA I could make this 
+little change quickly and correct it on my categorization spreadsheet. 
+The colouring of the cloud should not be far from that anymore.
+
+All the best,
+
+Bettina
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20131127/e71ad952/attachment-0002.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20131127/e71ad952/attachment-0002.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002115.html">[open-linguistics] How to represent LLOD diagram categories at datahub ?
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2116">[ date ]</a>
+              <a href="thread.html#2116">[ thread ]</a>
+              <a href="subject.html#2116">[ subject ]</a>
+              <a href="author.html#2116">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

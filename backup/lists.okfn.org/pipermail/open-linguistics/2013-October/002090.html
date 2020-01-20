@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Adding resources in  bulk  to the  datahub
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Adding%20resources%20in%20%20bulk%20%20to%20the%20%20datahub&In-Reply-To=%3C52544DD6.70203%40informatik.uni-leipzig.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000544.html">
+   <LINK REL="Next"  HREF="002092.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Adding resources in  bulk  to the  datahub</H1>
+    <B>Sebastian Hellmann</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Adding%20resources%20in%20%20bulk%20%20to%20the%20%20datahub&In-Reply-To=%3C52544DD6.70203%40informatik.uni-leipzig.de%3E"
+       TITLE="[open-linguistics] Adding resources in  bulk  to the  datahub">hellmann at informatik.uni-leipzig.de
+       </A><BR>
+    <I>Tue Oct  8 18:24:22 UTC 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000544.html">[open-linguistics] OWLGPad
+</A></li>
+        <LI>Next message: <A HREF="002092.html">[open-linguistics] UBY 0.4.0 released
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2090">[ date ]</a>
+              <a href="thread.html#2090">[ thread ]</a>
+              <a href="subject.html#2090">[ subject ]</a>
+              <a href="author.html#2090">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear Datahub-discuss and CKAN-Dev list (cc'ing OWLG and wg-coord),
+
+I have some question regarding the <A HREF="http://datahub.io">http://datahub.io</A>
+Is it possible to add resources of datasets in bulk?
+
+Actually, we have a two part problem:
+
+1. Adding and updating datasets with a high amount of resources:
+e.g. for <A HREF="http://datahub.io/dataset/olia">http://datahub.io/dataset/olia</A>
+there are quite a few resources available at <A HREF="http://purl.org/olia">http://purl.org/olia</A> (maybe 
+170)
+can we add them to this one dataset?
+
+For NIF I recently made a very simple vocab to describe resources:
+<A HREF="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/dev/misc/resources.ttl">http://persistence.uni-leipzig.org/nlp2rdf/ontologies/dev/misc/resources.ttl</A>
+<A HREF="http://persistence.uni-leipzig.org/nlp2rdf/resources.json">http://persistence.uni-leipzig.org/nlp2rdf/resources.json</A>
+
+Ideally, I would think that users can provide and upload such or similar 
+files and then the dataset and resources get updated.
+Does this exist?
+
+I am asking, because we also have a whole lot of other resources here, 
+which we can not add manually any more.
+144 in total, some are added already: 
+<A HREF="https://docs.google.com/spreadsheet/ccc?key=0AlMk5ouIspH1dGx1R1Rnd1ZXX0xmLXppSWFrcm0wNFE&amp;usp=drive_web#gid=0">https://docs.google.com/spreadsheet/ccc?key=0AlMk5ouIspH1dGx1R1Rnd1ZXX0xmLXppSWFrcm0wNFE&amp;usp=drive_web#gid=0</A>
+
+So the core of this first question is, what is the best practice for 
+uploading bulk datasets.
+
+2. Do you have a definition or guidelines what metadata we should have 
+in datahub.io?
+
+So should we add metadata about all individual files? We don't want to 
+host the data, just the metadata.
+
+One example of this is probably this:
+<A HREF="http://downloads.dbpedia.org/3.9/">http://downloads.dbpedia.org/3.9/</A>
+
+It is one dataset, but people also want to download the resources and 
+need links to the individual files.
+So we would need to keep a file list somewhere. Does anybody know a best 
+practise?
+maybe this: <A HREF="http://sw.deri.org/2007/07/sitemapextension/scschema.xsd">http://sw.deri.org/2007/07/sitemapextension/scschema.xsd</A>
+or this: <A HREF="http://wiki.dbpedia.org/sitemap">http://wiki.dbpedia.org/sitemap</A>
+
+We identified two use cases already:
+
+Use Case 1:
+We would need to implement something that allows you to download and 
+load the data automatically.
+Did you know the LOD2 Stack: 
+<A HREF="https://dl.dropboxusercontent.com/u/375401/tmp/dataViaApt-Get.png">https://dl.dropboxusercontent.com/u/375401/tmp/dataViaApt-Get.png</A>
+It allows you to download and install CKAN datasets into a triple store 
+on a unix system automatically:
+<A HREF="http://stack.lod2.eu/blog/wp-content/lod2-stack/attachments/983342/3736389.pdf">http://stack.lod2.eu/blog/wp-content/lod2-stack/attachments/983342/3736389.pdf</A>
+
+Use Case 2:
+Creation of a Linguistic Linked Data Cloud. John McCrae and Christian 
+Chiarcos implemented a python program, which already produces a custom 
+cloud:
+<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20130921/529aa37d/attachment-0001.png">http://lists.okfn.org/pipermail/open-linguistics/attachments/20130921/529aa37d/attachment-0001.png</A>
+<A HREF="https://github.com/jmccrae/llod-cloud.py">https://github.com/jmccrae/llod-cloud.py</A>
+
+We need a tool to keep the metadata for these two use cases. I really 
+hope that CKAN or the datahub can do this. I think, in total we are 
+talking about 20.000 data sets (over the next five years).
+Well, depending on how you count them. Maybe 5.000 data set (also 
+potentially including LRE Map) and 200k urls to individual files.
+
+All the best,
+Sebastian
+
+
+-- 
+Dipl. Inf. Sebastian Hellmann
+Department of Computer Science, University of Leipzig
+Events:
+* NLP &amp; DBpedia 2013 (<A HREF="http://nlp-dbpedia2013.blogs.aksw.org">http://nlp-dbpedia2013.blogs.aksw.org</A>)
+Venha para a Alemanha como PhD: <A HREF="http://bis.informatik.uni-leipzig.de/csf">http://bis.informatik.uni-leipzig.de/csf</A>
+Projects: <A HREF="http://nlp2rdf.org">http://nlp2rdf.org</A> , <A HREF="http://linguistics.okfn.org">http://linguistics.okfn.org</A> , 
+<A HREF="http://dbpedia.org/Wiktionary">http://dbpedia.org/Wiktionary</A> , <A HREF="http://dbpedia.org">http://dbpedia.org</A>
+Homepage: <A HREF="http://bis.informatik.uni-leipzig.de/SebastianHellmann">http://bis.informatik.uni-leipzig.de/SebastianHellmann</A>
+Research Group: <A HREF="http://aksw.org">http://aksw.org</A>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20131008/f51eb351/attachment.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20131008/f51eb351/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000544.html">[open-linguistics] OWLGPad
+</A></li>
+	<LI>Next message: <A HREF="002092.html">[open-linguistics] UBY 0.4.0 released
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2090">[ date ]</a>
+              <a href="thread.html#2090">[ thread ]</a>
+              <a href="subject.html#2090">[ subject ]</a>
+              <a href="author.html#2090">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

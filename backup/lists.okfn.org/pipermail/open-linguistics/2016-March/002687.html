@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%20SPARQL%20BIND%20statement%3F&In-Reply-To=%3Cop.yd93mgc589jat0%40kitaba.sitecomwlr2100%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001146.html">
+   <LINK REL="Next"  HREF="002689.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?</H1>
+    <B>Christian Chiarcos</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Question%3A%20replacing%20language%20codes%20in%20a%0A%20SPARQL%20BIND%20statement%3F&In-Reply-To=%3Cop.yd93mgc589jat0%40kitaba.sitecomwlr2100%3E"
+       TITLE="[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?">chiarcos at informatik.uni-frankfurt.de
+       </A><BR>
+    <I>Sun Mar 13 19:40:54 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001146.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+        <LI>Next message: <A HREF="002689.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2687">[ date ]</a>
+              <a href="thread.html#2687">[ thread ]</a>
+              <a href="subject.html#2687">[ subject ]</a>
+              <a href="author.html#2687">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Am .03.2016, 19:24 Uhr, schrieb Manuel Fiorelli  
+&lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">manuel.fiorelli at gmail.com</A>&gt;:
+
+&gt;<i> Hi John, All
+</I>&gt;<i>
+</I>&gt;<i> In the SPARQL 1.1 specification, I found some functions that could be  
+</I>&gt;<i> useful to Dr. Christian Chiarcos.
+</I>&gt;<i>
+</I>&gt;<i> STRLANG (<A HREF="https://www.w3.org/TR/sparql11-query/#func-strlang">https://www.w3.org/TR/sparql11-query/#func-strlang</A>) allows to  
+</I>&gt;<i> construct an RDF literal from its literal form and language tag, such as:
+</I>&gt;<i>
+</I>&gt;<i> bind(strlang(&quot;Mais&quot;, &quot;it&quot;) as ?aLiteral)
+</I>
+Yes, strlang() was precisely what I was looking for. I felt I was missing  
+something obvious, and I cannot quite explain how I missed that when I  
+consulted the page. Thanks!
+
+As for *fully automated* conversion, we can simply strip region subtags  
+ from the language tag and then consult lexvo (e.g.,  
+<A HREF="http://www.lexvo.org/page/iso639-3/rus">http://www.lexvo.org/page/iso639-3/rus</A>) to retrieve the iso639-2 tag which  
+is then assigned to the string via strlang().
+
+Christian
+-- 
+Prof. Dr. Christian Chiarcos
+Applied Computational Linguistics
+Johann Wolfgang Goethe Universit&#228;t Frankfurt a. M.
+60054 Frankfurt am Main, Germany
+
+office: Robert-Mayer-Str. 10, #401b
+mail: <A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">chiarcos at informatik.uni-frankfurt.de</A>
+web: <A HREF="http://acoli.cs.uni-frankfurt.de">http://acoli.cs.uni-frankfurt.de</A>
+tel: +49-(0)69-798-22463
+fax: +49-(0)69-798-28931
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://lists.okfn.org/pipermail/open-linguistics/attachments/20160313/7c6ff239/attachment-0002.html">http://lists.okfn.org/pipermail/open-linguistics/attachments/20160313/7c6ff239/attachment-0002.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001146.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+	<LI>Next message: <A HREF="002689.html">[open-linguistics] Question: replacing language codes in a SPARQL BIND statement?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2687">[ date ]</a>
+              <a href="thread.html#2687">[ thread ]</a>
+              <a href="subject.html#2687">[ subject ]</a>
+              <a href="author.html#2687">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

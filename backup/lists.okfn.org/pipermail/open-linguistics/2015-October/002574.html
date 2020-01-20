@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] Linked Open Data and Endangered Languages
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Linked%20Open%20Data%20and%20Endangered%20Languages&In-Reply-To=%3C56264FA1.1020102%40me.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002573.html">
+   <LINK REL="Next"  HREF="002576.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] Linked Open Data and Endangered Languages</H1>
+    <B>Damir Cavar</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20Linked%20Open%20Data%20and%20Endangered%20Languages&In-Reply-To=%3C56264FA1.1020102%40me.com%3E"
+       TITLE="[open-linguistics] Linked Open Data and Endangered Languages">dcavar at me.com
+       </A><BR>
+    <I>Tue Oct 20 14:28:49 UTC 2015</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002573.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+        <LI>Next message: <A HREF="002576.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2574">[ date ]</a>
+              <a href="thread.html#2574">[ thread ]</a>
+              <a href="subject.html#2574">[ subject ]</a>
+              <a href="author.html#2574">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Chris and everybody,
+
+On 10/20/2015 07:06 AM, Christian Chiarcos wrote:
+
+&gt;<i> GORILLA also comes at a critical point in time where existing European
+</I>&gt;<i> infrastructures for endangered languages are in transition, e.g., the
+</I>&gt;<i> TLA tools at the MPI Nijmegen. Considering, for example, the lexicon
+</I>&gt;<i> portal lexus (<A HREF="https://tla.mpi.nl/tools/tla-tools/older-tools/lexus/">https://tla.mpi.nl/tools/tla-tools/older-tools/lexus/</A>), it
+</I>&gt;<i> is impossible to register new users to the system since about a year
+</I>&gt;<i> ago, and accordingly, it is no longer possible to provide access to
+</I>&gt;<i> certain resources. For these (or their providers), GORILLA could
+</I>&gt;<i> represent a great alternative.
+</I>
+Many projects and institutions have to deal with the question of
+sustainability and continued funding not only for the development of new
+technologies and tools, but also for maintenance of existing resources.
+This is a serious issue. We need to come up with models to keep the
+important and existing infrastructure alive.
+
+&gt;<i> Please let us know whether any input from the side of this community
+</I>&gt;<i> would be helpful for future GORILLA development, e.g., regarding
+</I>&gt;<i> preferred formats and tool support, whether you need assistance for
+</I>&gt;<i> developing converters or an (L)LOD interface, or recommendations with
+</I>&gt;<i> respect to other technological aspects.
+</I>
+We welcome collaborators, volunteers, and helpers!
+
+We have to work out documents that describe the recommendations or
+requirements for different parts of a data-set (e.g. meta-information,
+formats, RDF etc.). As for some aspects of language documentation and
+technologies we maintain the EMELD (<A HREF="http://emeld.org/">http://emeld.org/</A>) pages. But these
+are outdated and need urgently some update. We might consider applying
+for funding to do exactly that, i.e. to develop new documents that
+describe best practice in different areas of technology for language
+documentation. Joint grant applications with e.g. European and
+US-institutions are possible, and as far as we at LINGUIST List are
+concerned, they are desired, in fact, inclusion of the global community
+would be ideal, but I know little of joint grant opportunities with
+other regions than Europe.
+
+While we are working on the back-end for managing all the digital data
+and storage issues, we do want to develop as well web-based front-ends
+for viewing, commenting, searching and so on. This includes formats like
+interlinear glossed text, time-alignments over audio and video as
+produced by ELAN or Praat, constituent and dependency trees in
+treebanks, mappings of tags to some ontology or taxonomy for
+terminology, etc. This means that we will try to integrate existing open
+web-based tools, but also develop our own. The code of the GORILLA-site
+is using Python 3.x and Django 1.8 and it is stored in a Bitbucket
+repository. We might be able to add a certain number of co-developers.
+We should talk about that.
+
+&gt;<i> Of course, the question of recommended formats is quite an urgent one in
+</I>&gt;<i> this context, and if understood correctly, you do not want to create
+</I>&gt;<i> yet-another generic formalism. But when focusing on established formats,
+</I>&gt;<i> the choice depends on what you want to achieve. For merely depositing
+</I>&gt;<i> language resources, a restricted choice of formats with offline tool
+</I>&gt;<i> support is a great solution. To mention one format not on your list
+</I>&gt;<i> below, Toolbox is perfectly fine for this purpose.
+</I>
+We have a broader goal here with GORILLA. It is not just about storing
+language documentation data. We are converting this data to common
+corpus formats. So the speech recordings and transcriptions we convert
+to common speech corpus formats and extract data and models from those
+to be able to train different types of Forced Alignment tools or basic
+ASRs. We develop computational morphologies for some of the languages,
+basic CFGs, even Feature Grammars that can be useful for LFG parsers,
+etc. We will provide the corpora, data and technologies for the
+different languages on GORILLA, e.g. a first Yiddish speech corpus of
+several hours with two functioning Forced Aligners and a basic set of
+models for ASR development, same for Chatino, Burmese, etc. The data is
+being PoS-tagged and word-by-word and utterance-translated (to English,
+partially to German too).
+
+The goals are, among others:
+
+- to archive digital language data, and develop an archive
+infrastructure that allows for global and interconnected repos that can
+mirror each other, sync annotations and extensions, etc.
+
+- bring the language data into some format that allows for
+cross-linguistic and cross-linguistic level analyses and studies (some
+level of compatibility of data encoding and interoperable annotation
+required), our large research goal being a snapshot of all languages
+that grows over time
+
+- bring the data into various common formats for speech and language
+technology tools and environments (enable it as a training/testing
+corpus, bootstrap technologies for low-resourced or endangered
+languages, as well as offer resources for common languages that so far
+are inaccessible to economically challenged members of the global
+community, researchers, or corpus or NLP-interested people)
+
+The story is complicated and long. Hopefully we will get to a paper on
+that, and maybe we will have an opportunity to present this some time
+somewhere.
+
+Right now we have started launching the initial infrastructure,
+negotiating various necessary components, creating first corpora and
+data-sets that we can present online, working out documents, legal
+arrangements at our hosting institution, etc.
+
+&gt;<i> If you want to go beyond this in the longer perspective, e.g., by
+</I>&gt;<i> encouraging an (L)LOD conversion for selected resources, or by providing
+</I>&gt;<i> online search in these language resources, (...) have interoperability
+</I>&gt;<i> issues, and we need to discuss and document advantages and disadvantages
+</I>&gt;<i> of using one or the other before promoting one of these to yet another
+</I>&gt;<i> de-facto standard.
+</I>&gt;<i> 
+</I>&gt;<i> What I would like to suggest is to initiate a discussion with respect to
+</I>&gt;<i> which formats to recommend (not necessarily now, but as soon as first
+</I>&gt;<i> data sets are available, and certainly not exclusively to this mailing
+</I>&gt;<i> list), and a good way to do so would be to present the platform and its
+</I>&gt;<i> goals as soon as a minimal level of maturity is achieved, on our
+</I>&gt;<i> blog/website or at one of our workshops (e.g., LDL-2016). Please let me
+</I>&gt;<i> know what you think ;)
+</I>
+We are submitting some abstracts to the next LREC, we could have a
+spontaneous workshop at the beach in Portoroz, should at least one of
+those be accepted... :-) Or, we could organize some alternative location
+and environment for an LREC chat on that topic. We would be happy to
+participate at LDL and discuss some of that.
+
+We would also be happy to include some of you in a proposal, or get
+included in yours, applying for funding to support the development of an
+infrastructure, resources, network of intercontinental mirrors and
+networked systems for language data, etc.
+
+Thanks!
+
+All the best
+
+Damir
+
+
+
+
+-- 
+Damir Cavar
+Dept. of Linguistics, Indiana University
+Co-director and Moderator of The LINGUIST List
+<A HREF="https://linguistlist.org/people/damir_cavar.html">https://linguistlist.org/people/damir_cavar.html</A>
+
+
+
+&gt;<i> Am .10.2015, 16:43 Uhr, schrieb Damir Cavar &lt;<A HREF="https://lists.okfn.org/mailman/listinfo/open-linguistics">dcavar at me.com</A>&gt;:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> Hi there,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> we are right now setting up the environment and tools to launch
+</I>&gt;&gt;<i> something like that, a linked repository for language data and corpora,
+</I>&gt;&gt;<i> covering among others also endangered language data (processed using eg.
+</I>&gt;&gt;<i> ELAN, Praat, or Flex). On GORILLA
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://gorilla.linguistlist.org/about/">http://gorilla.linguistlist.org/about/</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> we will set up our own data for a number of languages, i.e.
+</I>&gt;&gt;<i> time-aligned, tagged and translated ELAN files (and corresponding audio
+</I>&gt;&gt;<i> recordings), transcoded and augmented Praat files, and plain TIMIT-type
+</I>&gt;&gt;<i> of speech corpus files etc. with acoustic and language models for
+</I>&gt;&gt;<i> training of Forced Aligners or common ASRs. This is aiming at corpora as
+</I>&gt;&gt;<i> well as speech and language technologies for endangered and
+</I>&gt;&gt;<i> low-resourced languages, and it will serve also as a repository for
+</I>&gt;&gt;<i> language documentation data in general. Two corpora that we created this
+</I>&gt;&gt;<i> summer that are from endangered languages, a bunch more from
+</I>&gt;&gt;<i> low-resourced ones. Since we are busy setting up some of the technology,
+</I>&gt;&gt;<i> it might still take us a month or two to come up with the first data and
+</I>&gt;&gt;<i> catalog.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> There are various possibilities. We could host people's data (maybe for
+</I>&gt;&gt;<i> the time being, till you establish a mirror), attach CMDI
+</I>&gt;&gt;<i> meta-information to it, assign it DOIs, and put it up in a linked
+</I>&gt;&gt;<i> catalog that also connects to the CLARIN (and OAI) infrastructure (we
+</I>&gt;&gt;<i> did not set this up yet, just solved the DOI issue right now), and then
+</I>&gt;&gt;<i> we can generate the RDF and so on.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> We will come up with more tutorials and material on our site that might
+</I>&gt;&gt;<i> be helpful for you to set up your own repository, maybe mirror ours, so
+</I>&gt;&gt;<i> that we have cross-continental redundancy and backups etc.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Our requirements are that the data is at least CC BY-SA (or CC BY, but
+</I>&gt;&gt;<i> we would not accept an NC clause), if we are to invest in the above
+</I>&gt;&gt;<i> described process of meta-information and linking. We can take any kind
+</I>&gt;&gt;<i> of data into the archive, though. Our GORILLA goal is to document as
+</I>&gt;&gt;<i> many languages as possible using audio or video recordings,
+</I>&gt;&gt;<i> transcription, phonetic or phonemic transcription, PoS-tagging,
+</I>&gt;&gt;<i> translation. We are using a uniform standard (or two, e.g. ELAN
+</I>&gt;&gt;<i> annotation format, Praat TextGrid, TEI XML) and interoperable linguistic
+</I>&gt;&gt;<i> tags or annotations (linking to GOLD and/or ISOCat).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Ritesh, I do not know, whether I could make it to Agra in February, but
+</I>&gt;&gt;<i> I will be somewhere closer there next year spring. We could talk about
+</I>&gt;&gt;<i> that over a private line.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Best wishes
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Damir
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002573.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+	<LI>Next message: <A HREF="002576.html">[open-linguistics] Linked Open Data and Endangered Languages
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2574">[ date ]</a>
+              <a href="thread.html#2574">[ thread ]</a>
+              <a href="subject.html#2574">[ subject ]</a>
+              <a href="author.html#2574">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>

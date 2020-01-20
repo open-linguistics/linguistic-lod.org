@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [open-linguistics] [ANN] Wiktionary RDF-extraction with DBpedia for	en and de
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BANN%5D%20Wiktionary%20RDF-extraction%20with%20DBpedia%20for%0A%09en%20and%20de&In-Reply-To=%3C1324476784.4617.206.camel%40jonas-laptop%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001715.html">
+   <LINK REL="Next"  HREF="001717.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[open-linguistics] [ANN] Wiktionary RDF-extraction with DBpedia for	en and de</H1>
+    <B>Jonas Brekle</B> 
+    <A HREF="mailto:open-linguistics%40lists.okfn.org?Subject=Re%3A%20%5Bopen-linguistics%5D%20%5BANN%5D%20Wiktionary%20RDF-extraction%20with%20DBpedia%20for%0A%09en%20and%20de&In-Reply-To=%3C1324476784.4617.206.camel%40jonas-laptop%3E"
+       TITLE="[open-linguistics] [ANN] Wiktionary RDF-extraction with DBpedia for	en and de">jonas.brekle at gmail.com
+       </A><BR>
+    <I>Wed Dec 21 14:13:04 UTC 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001715.html">[open-linguistics] Linking different Wiktionary dumps
+</A></li>
+        <LI>Next message: <A HREF="001717.html">[open-linguistics] Wiktionary RDF-extraction with DBpedia for	en	and de
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1716">[ date ]</a>
+              <a href="thread.html#1716">[ thread ]</a>
+              <a href="subject.html#1716">[ subject ]</a>
+              <a href="author.html#1716">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Dear all,
+
+the past months Sebastian and I worked on a DBpedia-based extractor for
+Wiktionary. The main goal was to create one that is so configurable,
+that applying it to the different languages-versions of Wiktionary is
+just a matter of configuration but not programming. And the
+configuration should be possible to do for someone that has a good
+understanding of the Wiki syntax (and currently XML, but we plan to hide
+that too, via a web-based frontend similar to the mappings-wiki) but not
+Scala or RDF.
+
+We now have configs and dumps at the example of the english and german wiktionary, to show the state of our development and
+initiate a discussion about design and implementation. If you are not
+interested in the technical stuff you may skip the detailed
+description below and just evaluate the dump. 
+English contains 16M triples and took 9days on my dual core 2GHz laptop; thats 4 articles per second.
+German contains 1.3M triples and took 3h (German has only 300k articles, whereas English has 3M and the config is smaller). We know that there is some &quot;noise&quot; in the data (incorrect parsed data), we fix that in the next weeks.
+The source code is in the &quot;wiktionary&quot; branch of the dbpedia svn-repo, the dump files can be downloaded here:
+<A HREF="http://downloads.dbpedia.org/wiktionary/wiktionary.dbpedia.org_en.nt.bz2">http://downloads.dbpedia.org/wiktionary/wiktionary.dbpedia.org_en.nt.bz2</A>
+<A HREF="http://downloads.dbpedia.org/wiktionary/wiktionary.dbpedia.org_de.nt.bz2">http://downloads.dbpedia.org/wiktionary/wiktionary.dbpedia.org_de.nt.bz2</A>
+
+The idea is somewhat different from dbpedia (although we use the framework): 
+Instead of infoboxes and very specific extractors we tried to make a meta-extractor of declarative nature instead of imperative. 
+The rational is that although there exist some scrapers, none of them allows to parse more than a 3-5 languages.
+So we encode the language-specific characteristics of each Wiktionary in a machine-readable format (e.g. the &quot;config-de.xml&quot;).
+Top-Down these properties are:
+
+* the Entry Layout (EL) 
+  e.g. in the german Wiktionary, a given page has the structure: Lexical
+Entity -&gt; languages it occurs in -&gt; part of speech it is used as -&gt;
+different senses/meanings -&gt; properties like synonyms, example sentence,
+pronunciation, translations, etc.
+In the english Wiktionary there is a etymology section after the language.
+These structure implies the schema for our extracted ontology (an ER-Diagram). 
+More about the EL: <A HREF="http://en.wiktionary.org/wiki/Wiktionary:Entry_layout_explained">http://en.wiktionary.org/wiki/Wiktionary:Entry_layout_explained</A>
+We configure the EL with nested XML-nodes and define which URIs to be used.
+The EL does differ greatly between wiktionaries. 
+The question is: how do we assure a common schema?
+currently we leave that open - the schema of the resulting RDF is
+implicitly inferred from the PS. Either we come up with a good idea on
+how to transform it automatically (how to configure it easily to
+auto-transform) or we leave that merging step open to specialized tools. Which schema should be the global one? Lemon?
+
+* Context defining markers
+  big word, it just means occurring label within the EL. a
+made up example:
+  == green (Englisch) ==
+  === Adjektiv ===
+  [1] eine Farbe
+  [2] umweltfreundlich
+In this wiki snippet there are two CDM: &quot;Englisch&quot; and &quot;Adjektiv&quot;. They
+indicate that the following section is about a english word and its part
+of speech is adjective. Obviously we need a mapping from them to a
+shared vocabulary. Such a mapping is easy and part of the configuration.
+But a nice thing to have would be a ontology backing of this vocabulary.
+some ontology about PoS (GOLD?) and language families (ISO 639-3?)) - we
+should discuss what to use there.
+
+* wiki templates
+  now we come to the core of the extraction. We made an engine that can
+match a given Wiktionary page to several &quot;extraction templates&quot; (ET). An ET is Wiki syntax but it can contain
+placeholders/variables and controlsymbols that indicate the possible
+repeating of parts (like the regex &quot;(ab)*&quot; matches &quot;ababab&quot;). The engine
+then fills the placeholders with information scraped from the page (in
+other words binds variables). The configuration contains declaration on
+what to do with the bound variables, often that is a &quot;use it as literal
+object of predicate x&quot; but we imagine more complex transformations there
+like &quot;format to URI by ...&quot; or &quot;call a static method y&quot;.
+An example: we have the wiki snippet from above (green) as the page and
+we defined a ET like this:
+  &lt;template name=&quot;definitons&quot;&gt;
+    &lt;vars&gt;
+      &lt;var name=&quot;definition&quot; property=&quot;rdfs:comment&quot; /&gt;
+    &lt;/vars&gt;
+    &lt;wikiSyntax&gt;([$id] $definition
+      )*
+&lt;/wikisyntax&gt;
+  &lt;/template&gt;
+The syntax looks like Regular Expressions but we only allow ()*, ()+, ()?. 
+Then you will notice the variables/placeholders: the extractor will determine whats on the actual page for them. 
+The engine finds a set of bindings:
+  definition -&gt; &quot;eine Farbe&quot;
+  definition -&gt; &quot;umweltfreundlich&quot;
+and then generates triples according to the config
+  wiktionary:green-english-adjective rdfs:comment &quot;eine Farbe&quot; .
+  wiktionary:green-english-adjective rdfs:comment &quot;umweltfreundlich&quot; .
+
+the used properties (rdfs:comment is just a made up example) and
+namespaces are open to discussion. 
+
+Our prototype recognizes the EL and thus gives information about Languages and PoS usages of all
+words in the Wiktionary and has ETs for the definitions, hyphenation and example sentences.
+
+The next steps will be either expanding it to more languages or first going deeper within the german and english Wiktionary: finding synonyms (to have community based wordnet) and translations.
+
+So what do you think? What are important things to keep in mind, wishes,
+comments etc?
+
+Regards,
+Jonas
+
+
+
+
+
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001715.html">[open-linguistics] Linking different Wiktionary dumps
+</A></li>
+	<LI>Next message: <A HREF="001717.html">[open-linguistics] Wiktionary RDF-extraction with DBpedia for	en	and de
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1716">[ date ]</a>
+              <a href="thread.html#1716">[ thread ]</a>
+              <a href="subject.html#1716">[ subject ]</a>
+              <a href="author.html#1716">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.okfn.org/mailman/listinfo/open-linguistics">More information about the open-linguistics
+mailing list</a><br>
+</body></html>
